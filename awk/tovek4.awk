@@ -1,19 +1,19 @@
 #
-# tövek felvétele a tulajdonnevek melléknévképzõs alakjaihoz
+# tÃ¶vek felvÃ©tele a tulajdonnevek mellÃ©knÃ©vkÃ©pzÅ‘s alakjaihoz
 #
 /.	./ {
     l1 = length($1);
     l2 = length($2);
-    # ha a tulajdonnév és a melléknév megegyezik (elsõ betût és a képzõt nem nézzük)
+    # ha a tulajdonnÃ©v Ã©s a mellÃ©knÃ©v megegyezik (elsÅ‘ betÅ±t Ã©s a kÃ©pzÅ‘t nem nÃ©zzÃ¼k)
     if (substr($1, 2, l1-1) == substr($2, 2, l1-1)) {
 	if (l1 != l2) {
 	    print $2 "\t" $1
 	} else {
-	    # a méretük megegyezik (pl. Hawaii/hawaii)
+	    # a mÃ©retÃ¼k megegyezik (pl. Hawaii/hawaii)
 	    print $2 "\t" $1
 	}
     } else {
-	# egyébként ha nem -y (vagyis i vagy j végû)
+	# egyÃ©bkÃ©nt ha nem -y (vagyis i vagy j vÃ©gÅ±)
 	if (match($1,"[^ij]$")) {
 	    print $2 "\t" $1	    
 	}

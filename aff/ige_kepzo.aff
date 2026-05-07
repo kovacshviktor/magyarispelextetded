@@ -1,7 +1,7 @@
 # 	
 #	magyar.aff/magyar.dict: Hungarian Ispell affix table and dictionary 
 #
-#	Copyright (C) 1998-2003 L·szlÛ NÈmeth
+#	Copyright (C) 1998-2003 L√°szl√≥ N√©meth
 #
 #	This program is free software; you can redistribute it and/or modify
 #	it under the terms of the GNU General Public License as published by
@@ -18,7 +18,7 @@
 #	Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
 ############################################################
-# igekÈpzık
+# igek√©pz≈ëk
 ############################################################
 
 define(pfx_verb,X)
@@ -29,21 +29,21 @@ define(compound_,Y@)
 define(compound_last,x)
 define(rule119,!)
 define(upper2lower,")
-define(i_kepzo, ü)
+define(i_kepzo, ¬ü)
 
-######## hangrend-v·ltÛ ##########
+######## hangrend-v√°lt√≥ ##########
 
 define(`BACK',
 `define'(``Noun_'', AUKic)
 `define'(``Noun2_'', UKi)
 `define'(``noun_nonmorph_'', AU$ic)
 `define'(``noun_adj'', Ui)
-`define'(``noun_con'', mÙ)
-`define'(``noun_con2'', mÙ)
-`define'(``noun_vow'', œ)
-`define'(``noun_On'', “÷)
-`define'(``noun_OnA'', “)
-`define'(``noun_On2'', “÷)
+`define'(``noun_con'', m√¥)
+`define'(``noun_con2'', m√¥)
+`define'(``noun_vow'', ƒé)
+`define'(``noun_On'', ≈á√ñ)
+`define'(``noun_OnA'', ≈á)
+`define'(``noun_On2'', ≈á√ñ)
 `define'(``noun2_'', UKic)
 `define'(``poss'', A)
 `define'(``verb_'', O)
@@ -60,12 +60,12 @@ define(`NONROUND',
 `define'(``Noun2_'', VLj)
 `define'(``noun_nonmorph_'', BVLjc)
 `define'(``noun_adj'', Vj)
-`define'(``noun_con'', nÚ)
-`define'(``noun_con2'', nÚ)
-`define'(``noun_vow'', –)
-`define'(``noun_On'', ”◊)
-`define'(``noun_OnA'', ”◊)
-`define'(``noun_On2'', ”◊)
+`define'(``noun_con'', n≈à)
+`define'(``noun_con2'', n≈à)
+`define'(``noun_vow'', ƒê)
+`define'(``noun_On'', √ì√ó)
+`define'(``noun_OnA'', √ì√ó)
+`define'(``noun_On2'', √ì√ó)
 `define'(``noun2_'', VLjc)
 `define'(``poss'', B)
 `define'(``verb_'', E)
@@ -82,12 +82,12 @@ define(`ROUND',
 `define'(``Noun2_'', WMj)
 `define'(``noun_nonmorph_'', BVLjc)
 `define'(``noun_adj'', Wj)
-`define'(``noun_con'', ›Ú)
-`define'(``noun_con2'', nÚ)
-`define'(``noun_vow'', ﬁ)
-`define'(``noun_On'', ‘ÿ)
-`define'(``noun_OnA'', ‘ÿ)
-`define'(``noun_On2'', ”◊)
+`define'(``noun_con'', √ù≈à)
+`define'(``noun_con2'', n≈à)
+`define'(``noun_vow'', ≈¢)
+`define'(``noun_On'', √î≈ò)
+`define'(``noun_OnA'', √î≈ò)
+`define'(``noun_On2'', √ì√ó)
 `define'(``noun2_'', VLjc)
 `define'(``poss'', B)
 `define'(``verb_'', P)
@@ -127,20 +127,20 @@ define(noun_On_round, noun_On)
 
 UNDEF
 
-######## kÛdok rˆvidÌtÈse #########
+######## k√≥dok r√∂vid√≠t√©se #########
 
 define(tAt,``[tAt_FACTITIVE_vrb_tr]{+[PRES_INDIC_INDEF_SG_3]}'')
 define(gAt,``[gAt_FREQ_vrb]{+[PRES_INDIC_INDEF_SG_3]}'')
 define(_hAt_,``[hAt_MODAL_vrb]{+[PRES_INDIC_INDEF_SG_3]}'')
-define(hAtO,``[hAt”_ABLE_(adj,present_part)]{+[NOM]}'')
+define(hAtO,``[hAt√ì_ABLE_(adj,present_part)]{+[NOM]}'')
 define(hAtAtlAn,``[hAtAtlAn_UNABLE_adj]{+[NOM]}'')
 
-define(O2dik,``[”dik_PASSIVE_vrb_it]{+[PRES_INDIC_INDEF_SG_3]}'')
+define(O2dik,``[√ìdik_PASSIVE_vrb_it]{+[PRES_INDIC_INDEF_SG_3]}'')
 
 define(AtlAn,``[tAlAn_LESS_adj]{+[NOM]}'')
 
-define(sAg,``[s¡g_ABSTRACT_noun]{+[NOM]}'')
-define(As,``[¡s_PROCESS/RESULT_noun]{+[NOM]}'')
+define(sAg,``[s√Åg_ABSTRACT_noun]{+[NOM]}'')
+define(As,``[√Ås_PROCESS/RESULT_noun]{+[NOM]}'')
 define(AcskA,``[cskA_DIMINUTIVE_(noun,adj)]{+[NOM]}'')
 
 define(_i_,``[i_PLACE/TIME_adj]{+[NOM]}'')
@@ -148,15 +148,15 @@ define(lAg,``[lAg_MODE_adv]'')
 define(Os,``[s_ATTRIBUTE_adj]{+[NOM]}'')
 define(Os2,``[s_OCCUPATION_noun]{+[NOM]}'')
 define(_nyi_,``[nyi_MEASURE_adj]{+[NOM]}'')
-define(JU,``[j⁄_PROPERTY_adj]{+[NOM]}'')
+define(JU,``[j√ö_PROPERTY_adj]{+[NOM]}'')
 
 define(Abb,``[bb_COMPARATIVE_adj]{+[NOM]}'')
 define(Abbik,``[bbik_DESIGNATE_adj]'')
 define(_ik_,``[Der-adj-ik]{+[NOM]}'')
 
-define(_O_,``[”_PRESPART_adj]{+[NOM]}'')
+define(_O_,``[√ì_PRESPART_adj]{+[NOM]}'')
 define(Ott,``[tt_PASTPART_adj]{+[NOM]}'')
-define(AndO,``[And”_FUTPART_adj]{+[NOM]}'')
+define(AndO,``[And√ì_FUTPART_adj]{+[NOM]}'')
 
 ######## -tat, -tet ###############
 
@@ -168,332 +168,332 @@ ik > ``-ik,$1'' $2 $3$4$5$6$7$8$9$10
 UNDEF
 
 define(`k_verb',
-`k_'(t$1t, +tAt, verb_, verb_sub_) # <csin·ltatja>
-`k_'(t$1t$3tt, +tAt+Ott, noun_con, noun_OnA, noun_nonmorph_, Adj_, noun_jA, noun_Ai) # <csin·ltatottamat>
-`k_'(t$1t$3tt, +tAt+[PAST_INDIC_INDEF_SG_3]) # <megcsin·ltatott>
-`k_'(t$1th$1t, +tAt+_hAt_, verb_, verb_sub_) # <csin·ltathassa>
-    `k_'(t$1th$1t$3tt, +tAt+_hAt_+[PAST_INDIC_INDEF_SG_3]) # <csin·ltathatott>
-        `k_'(t$1th$1t$4s$2g, +tAt+hAtO+sAg, noun_con, noun_On, Noun_, noun_A, noun_Ai, compound_, i_kepzo) # ??? <csin·ltathatÛs·g>
+`k_'(t$1t, +tAt, verb_, verb_sub_) # <csin√°ltatja>
+`k_'(t$1t$3tt, +tAt+Ott, noun_con, noun_OnA, noun_nonmorph_, Adj_, noun_jA, noun_Ai) # <csin√°ltatottamat>
+`k_'(t$1t$3tt, +tAt+[PAST_INDIC_INDEF_SG_3]) # <megcsin√°ltatott>
+`k_'(t$1th$1t, +tAt+_hAt_, verb_, verb_sub_) # <csin√°ltathassa>
+    `k_'(t$1th$1t$3tt, +tAt+_hAt_+[PAST_INDIC_INDEF_SG_3]) # <csin√°ltathatott>
+        `k_'(t$1th$1t$4s$2g, +tAt+hAtO+sAg, noun_con, noun_On, Noun_, noun_A, noun_Ai, compound_, i_kepzo) # ??? <csin√°ltathat√≥s√°g>
 
-# -kÈpzıs alakok (-i)
-`k_'(t$1th$1t$4s$2gi, +tAt+hAtO+sAg+_i_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <csin·ltathatÛs·gi>
+# -k√©pz≈ës alakok (-i)
+`k_'(t$1th$1t$4s$2gi, +tAt+hAtO+sAg+_i_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <csin√°ltathat√≥s√°gi>
 
-# -kÈpzıs alakok (-nyi)
-`k_'(t$1th$1t$4s$2gnyi, +tAt+hAtO+sAg+_nyi_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <csin·ltathatÛs·gnyi>
+# -k√©pz≈ës alakok (-nyi)
+`k_'(t$1th$1t$4s$2gnyi, +tAt+hAtO+sAg+_nyi_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <csin√°ltathat√≥s√°gnyi>
 
-    `k_'(t$1th$1t$1tl$1n, +tAt+hAtAtlAn, noun_con, noun_On, Noun_, Adj_, noun_jA, noun_Ai) # ??? <csin·ltathatatlan>
-        `k_'(t$1th$1t$1tl$1n$1bb, +tAt+hAtAtlAn+Abb, noun_con, noun_OnA, noun_adj, Adj_, noun_jA, pfx_verb_leg) # ??? <legmegcsin·ltathatatlanabb>
-        `k_'(t$1th$1t$1tl$1n$1bb$1n, +tAt+hAtAtlAn+Abb+[An_MODE_adv]) # ??? <legmegcsin·ltathatatlanabban>
-        `k_'(t$1th$1t$1tl$1n$1bbik, +tAt+hAtAtlAn+Abbik, noun_con, noun_OnA, noun_adj, Adj_, noun_A, noun_Ai, pfx_verb_leg) # ??? <legmegcsin·ltathatatlanabbik>
+    `k_'(t$1th$1t$1tl$1n, +tAt+hAtAtlAn, noun_con, noun_On, Noun_, Adj_, noun_jA, noun_Ai) # ??? <csin√°ltathatatlan>
+        `k_'(t$1th$1t$1tl$1n$1bb, +tAt+hAtAtlAn+Abb, noun_con, noun_OnA, noun_adj, Adj_, noun_jA, pfx_verb_leg) # ??? <legmegcsin√°ltathatatlanabb>
+        `k_'(t$1th$1t$1tl$1n$1bb$1n, +tAt+hAtAtlAn+Abb+[An_MODE_adv]) # ??? <legmegcsin√°ltathatatlanabban>
+        `k_'(t$1th$1t$1tl$1n$1bbik, +tAt+hAtAtlAn+Abbik, noun_con, noun_OnA, noun_adj, Adj_, noun_A, noun_Ai, pfx_verb_leg) # ??? <legmegcsin√°ltathatatlanabbik>
     
-        `k_'(t$1th$1t$1tl$1ns$2g, +tAt+hAtAtlAn+sAg, noun_con, noun_On, Noun_, noun_A, noun_Ai, compound_) # ??? <csin·ltathatatlans·g>
+        `k_'(t$1th$1t$1tl$1ns$2g, +tAt+hAtAtlAn+sAg, noun_con, noun_On, Noun_, noun_A, noun_Ai, compound_) # ??? <csin√°ltathatatlans√°g>
 
-# -kÈpzıs alakok (-i)
-`k_'(t$1th$1t$1tl$1ns$2gi, +tAt+hAtAtlAn+sAg+_i_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <csin·ltathatatlans·gi>
+# -k√©pz≈ës alakok (-i)
+`k_'(t$1th$1t$1tl$1ns$2gi, +tAt+hAtAtlAn+sAg+_i_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <csin√°ltathatatlans√°gi>
 
-# -kÈpzıs alakok (-nyi)
-`k_'(t$1th$1t$1tl$1ns$2gnyi, +tAt+hAtAtlAn+sAg+_nyi_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <csin·ltathatatlans·gnyi>
+# -k√©pz≈ës alakok (-nyi)
+`k_'(t$1th$1t$1tl$1ns$2gnyi, +tAt+hAtAtlAn+sAg+_nyi_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <csin√°ltathatatlans√°gnyi>
         
-`k_'(t$1t$2s, +tAt+As, noun_con, noun_On, Noun_, noun_A, noun_Ai, compound_, i_kepzo) # <csin·ltat·ssal>
+`k_'(t$1t$2s, +tAt+As, noun_con, noun_On, Noun_, noun_A, noun_Ai, compound_, i_kepzo) # <csin√°ltat√°ssal>
 
-# -kÈpzıs alakok (-i)
-`k_'(t$1t$2si, +tAt+As+_i_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <csin·ltat·si>
+# -k√©pz≈ës alakok (-i)
+`k_'(t$1t$2si, +tAt+As+_i_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <csin√°ltat√°si>
 
-# -kÈpzıs alakok (-os, -es)
-`k_'(t$1t$2s$3s, +tAt+As+Os, noun_con, noun_On, Noun_, Adj_, noun_A, noun_Ai, compound_last, rule119) # <csin·ltat·sos>
+# -k√©pz≈ës alakok (-os, -es)
+`k_'(t$1t$2s$3s, +tAt+As+Os, noun_con, noun_On, Noun_, Adj_, noun_A, noun_Ai, compound_last, rule119) # <csin√°ltat√°sos>
 
-# -kÈpzıs alakok (-nyi)
-`k_'(t$1t$2snyi, +tAt+As+_nyi_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <csin·ltat·snyi>
+# -k√©pz≈ës alakok (-nyi)
+`k_'(t$1t$2snyi, +tAt+As+_nyi_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <csin√°ltat√°snyi>
 
-        `k_'(t$1th$1t$4bb, +tAt+hAtO+Abb, noun_con, noun_On, noun_adj, Adj_, noun_jA, pfx_verb_leg, round_hoz) # ??? <legmegcsin·ltathatÛbb>
-        `k_'(t$1th$1t$4bb$1n, +tAt+hAtO+Abb+[An_MODE_adv]) # ??? <legmegcsin·ltathatÛbban>
-        `k_'(t$1th$1t$4bbik, +tAt+hAtO+Abbik, noun_con, noun_On, noun_adj, Adj_, noun_A, noun_Ai, pfx_verb_leg) # ??? <legmegcsin·ltathatÛbbik>
+        `k_'(t$1th$1t$4bb, +tAt+hAtO+Abb, noun_con, noun_On, noun_adj, Adj_, noun_jA, pfx_verb_leg, round_hoz) # ??? <legmegcsin√°ltathat√≥bb>
+        `k_'(t$1th$1t$4bb$1n, +tAt+hAtO+Abb+[An_MODE_adv]) # ??? <legmegcsin√°ltathat√≥bban>
+        `k_'(t$1th$1t$4bbik, +tAt+hAtO+Abbik, noun_con, noun_On, noun_adj, Adj_, noun_A, noun_Ai, pfx_verb_leg) # ??? <legmegcsin√°ltathat√≥bbik>
 
-# -kÈpzıs alakok (-i)
-`k_'(t$1th$1t$4i, +tAt+hAtO+_i_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <csin·ltathatÛi>
+# -k√©pz≈ës alakok (-i)
+`k_'(t$1th$1t$4i, +tAt+hAtO+_i_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <csin√°ltathat√≥i>
 
-# -kÈpzıs alakok (-nyi)
-`k_'(t$1th$1t$4nyi, +tAt+hAtO+_nyi_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <csin·ltathatÛnyi>
+# -k√©pz≈ës alakok (-nyi)
+`k_'(t$1th$1t$4nyi, +tAt+hAtO+_nyi_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <csin√°ltathat√≥nyi>
 
-##`k_'(t$1t$4, ???, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_, i_kepzo) # <csin·ltatÛikrÛl>
-        `k_'(t$1t$4bb, +tAt+_O_+Abb, noun_con, noun_OnA, noun_adj, Adj_, noun_jA, pfx_verb_leg) # ??? <legelgondolkodtatÛbb>
-        `k_'(t$1t$4bb$1n, +tAt+_O_+Abb+[An_MODE_adv]) # ??? <legelgondolkodtatÛbban>
-        `k_'(t$1t$4bbik, +tAt+_O_+Abbik, noun_con, noun_OnA, noun_adj, Adj_, noun_A, noun_Ai, pfx_verb_leg) # ??? <legelgondolkodtatÛbbik>
+##`k_'(t$1t$4, ???, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_, i_kepzo) # <csin√°ltat√≥ikr√≥l>
+        `k_'(t$1t$4bb, +tAt+_O_+Abb, noun_con, noun_OnA, noun_adj, Adj_, noun_jA, pfx_verb_leg) # ??? <legelgondolkodtat√≥bb>
+        `k_'(t$1t$4bb$1n, +tAt+_O_+Abb+[An_MODE_adv]) # ??? <legelgondolkodtat√≥bban>
+        `k_'(t$1t$4bbik, +tAt+_O_+Abbik, noun_con, noun_OnA, noun_adj, Adj_, noun_A, noun_Ai, pfx_verb_leg) # ??? <legelgondolkodtat√≥bbik>
 
-# -kÈpzıs alakok (-i)
-`k_'(t$1t$4i, +tAt+_O_+_i_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <csin·ltatÛi>
+# -k√©pz≈ës alakok (-i)
+`k_'(t$1t$4i, +tAt+_O_+_i_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <csin√°ltat√≥i>
 
-# -kÈpzıs alakok (-nyi)
-`k_'(t$1t$4nyi, +tAt+_O_+_nyi_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <csin·ltatÛnyi>
+# -k√©pz≈ës alakok (-nyi)
+`k_'(t$1t$4nyi, +tAt+_O_+_nyi_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <csin√°ltat√≥nyi>
 )
 
-flag *°: BACK k_verb(a,·,o,Û,˙)
+flag *ƒÑ: BACK k_verb(a,√°,o,√≥,√∫)
 
-flag *¢: NONROUND k_verb(e,È,e,ı,˚) UNDEF 
+flag *Àò: NONROUND k_verb(e,√©,e,≈ë,≈±) UNDEF 
 
 define(`k_verb',
 
-# -kÈpzıs alakok (-j˙, -j˚)
-`k_'(t$1th$1t$4s$2g$5, +tAt+hAtO+sAg+JU, noun_vow, noun_On, noun_adj, Adj_, noun_jA, compound_last, rule119) # <csin·ltathatÛs·g˙>
+# -k√©pz≈ës alakok (-j√∫, -j≈±)
+`k_'(t$1th$1t$4s$2g$5, +tAt+hAtO+sAg+JU, noun_vow, noun_On, noun_adj, Adj_, noun_jA, compound_last, rule119) # <csin√°ltathat√≥s√°g√∫>
 
-# -kÈpzıs alakok (-j˙, -j˚)
-`k_'(t$1th$1t$1tl$1ns$2g$5, +tAt+hAtAtlAn+sAg+JU, noun_vow, noun_On, noun_adj, Adj_, noun_jA, compound_last, rule119) # <csin·ltathatatlans·g˙>
+# -k√©pz≈ës alakok (-j√∫, -j≈±)
+`k_'(t$1th$1t$1tl$1ns$2g$5, +tAt+hAtAtlAn+sAg+JU, noun_vow, noun_On, noun_adj, Adj_, noun_jA, compound_last, rule119) # <csin√°ltathatatlans√°g√∫>
 
-# -kÈpzıs alakok (-j˙, -j˚)
-`k_'(t$1t$2s$5, +tAt+As+JU, noun_vow, noun_On, noun_adj, Adj_, noun_jA, compound_last, rule119) # <csin·ltat·s˙>
+# -k√©pz≈ës alakok (-j√∫, -j≈±)
+`k_'(t$1t$2s$5, +tAt+As+JU, noun_vow, noun_On, noun_adj, Adj_, noun_jA, compound_last, rule119) # <csin√°ltat√°s√∫>
 
-`k_'(t$1th$1t$4, +tAt+hAtO, noun_vow, noun_On, Noun_, Adj_, noun_jA, i_kepzo) # <csin·ltathatÛakat>
+`k_'(t$1th$1t$4, +tAt+hAtO, noun_vow, noun_On, Noun_, Adj_, noun_jA, i_kepzo) # <csin√°ltathat√≥akat>
 
-# -kÈpzıs alakok (-j˙, -j˚)
-`k_'(t$1th$1t$4j$5, +tAt+hAtO+JU, noun_vow, noun_On, noun_adj, Adj_, noun_jA, compound_last, rule119) # <csin·ltathatÛj˙>
+# -k√©pz≈ës alakok (-j√∫, -j≈±)
+`k_'(t$1th$1t$4j$5, +tAt+hAtO+JU, noun_vow, noun_On, noun_adj, Adj_, noun_jA, compound_last, rule119) # <csin√°ltathat√≥j√∫>
 
-# -kÈpzıs alakok (-os, -es)
-`k_'(t$1th$1t$4s, +tAt+hAtO+Os, noun_con, noun_On, Noun_, Adj_, noun_A, noun_Ai, compound_last, rule119) # <csin·ltathatÛs>
+# -k√©pz≈ës alakok (-os, -es)
+`k_'(t$1th$1t$4s, +tAt+hAtO+Os, noun_con, noun_On, Noun_, Adj_, noun_A, noun_Ai, compound_last, rule119) # <csin√°ltathat√≥s>
 
-`k_'(t$1t$4, +tAt+_O_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_, i_kepzo) # <csin·ltatÛikrÛl>
+`k_'(t$1t$4, +tAt+_O_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_, i_kepzo) # <csin√°ltat√≥ikr√≥l>
 
-# -kÈpzıs alakok (-j˙, -j˚)
-`k_'(t$1t$4j$5, +tAt+_O_+JU, noun_vow, noun_On, noun_adj, Adj_, noun_jA, compound_last, rule119) # <csin·ltatÛj˙>
+# -k√©pz≈ës alakok (-j√∫, -j≈±)
+`k_'(t$1t$4j$5, +tAt+_O_+JU, noun_vow, noun_On, noun_adj, Adj_, noun_jA, compound_last, rule119) # <csin√°ltat√≥j√∫>
 
-# -kÈpzıs alakok (-os, -es)
-`k_'(t$1t$4s, +tAt+_O_+JU, noun_con, noun_On, noun_adj, Adj_, noun_A, noun_Ai, compound_last, rule119) # <csin·ltatÛs>
+# -k√©pz≈ës alakok (-os, -es)
+`k_'(t$1t$4s, +tAt+_O_+JU, noun_con, noun_On, noun_adj, Adj_, noun_A, noun_Ai, compound_last, rule119) # <csin√°ltat√≥s>
 )
 
-flag *°: BACK k_verb(a,·,o,Û,˙)
+flag *ƒÑ: BACK k_verb(a,√°,o,√≥,√∫)
 
-flag *¢: ROUND k_verb(e,È,ˆ,ı,˚) UNDEF 
+flag *Àò: ROUND k_verb(e,√©,√∂,≈ë,≈±) UNDEF 
 
 ######### -_hAt_, -het alanyi ###############
 
 define(`k_verb',
-`k_'(h$1t, +_hAt_, verb_, verb_sub_) # <csin·lhass·l>
+`k_'(h$1t, +_hAt_, verb_, verb_sub_) # <csin√°lhass√°l>
 
-`k_'(h$1tnÈk$3m, +_hAt_+[nÈk_WISH_noun_poss]+[POSS_SG_1]{+[NOM]}, +noun_con, noun_OnA, noun_adj) # <csin·lhatnÈkommal>
-`k_'(h$1tnÈk$3d, +_hAt_+[nÈk_WISH_noun_poss]+[POSS_SG_2]{+[NOM]}, +noun_con, noun_OnA, noun_adj) # <csin·lhatnÈkommal>
-`k_'(h$1tnÈk$1, +_hAt_+[nÈk_WISH_noun_poss]+[POSS_SG_3]{+[NOM]}, +noun_vow, noun_On, noun_adj) # <csin·lhatnÈkommal>
-`k_'(h$1tnÈkj$1, +_hAt_+[nÈk_WISH_noun_poss]+[POSS_SG_3]{+[NOM]}, +noun_vow, noun_On, noun_adj) # <csin·lhatnÈkommal>
-`k_'(h$1tnÈk$6nk, +_hAt_+[nÈk_WISH_noun_poss]+[POSS_PL_1]{+[NOM]}, +noun_con, noun_On_round, noun_adj) # <csin·lhatnÈkommal>
-`k_'(h$1tnÈk$3t$3k, +_hAt_+[nÈk_WISH_noun_poss]+[POSS_PL_2]{+[NOM]}, +noun_con, noun_OnA, noun_adj) # <csin·lhatnÈkommal>
-`k_'(h$1tnÈkj$6k, +_hAt_+[nÈk_WISH_noun_poss]+[POSS_PL_3]{+[NOM]}, +noun_con, noun_OnA, noun_adj) # <csin·lhatnÈkommal>
-`k_'(h$1tnÈk$6k, +_hAt_+[nÈk_WISH_noun_poss]+[POSS_PL_3]{+[NOM]}, +noun_con, noun_OnA, noun_adj) # <csin·lhatnÈkommal>
+`k_'(h$1tn√©k$3m, +_hAt_+[n√©k_WISH_noun_poss]+[POSS_SG_1]{+[NOM]}, +noun_con, noun_OnA, noun_adj) # <csin√°lhatn√©kommal>
+`k_'(h$1tn√©k$3d, +_hAt_+[n√©k_WISH_noun_poss]+[POSS_SG_2]{+[NOM]}, +noun_con, noun_OnA, noun_adj) # <csin√°lhatn√©kommal>
+`k_'(h$1tn√©k$1, +_hAt_+[n√©k_WISH_noun_poss]+[POSS_SG_3]{+[NOM]}, +noun_vow, noun_On, noun_adj) # <csin√°lhatn√©kommal>
+`k_'(h$1tn√©kj$1, +_hAt_+[n√©k_WISH_noun_poss]+[POSS_SG_3]{+[NOM]}, +noun_vow, noun_On, noun_adj) # <csin√°lhatn√©kommal>
+`k_'(h$1tn√©k$6nk, +_hAt_+[n√©k_WISH_noun_poss]+[POSS_PL_1]{+[NOM]}, +noun_con, noun_On_round, noun_adj) # <csin√°lhatn√©kommal>
+`k_'(h$1tn√©k$3t$3k, +_hAt_+[n√©k_WISH_noun_poss]+[POSS_PL_2]{+[NOM]}, +noun_con, noun_OnA, noun_adj) # <csin√°lhatn√©kommal>
+`k_'(h$1tn√©kj$6k, +_hAt_+[n√©k_WISH_noun_poss]+[POSS_PL_3]{+[NOM]}, +noun_con, noun_OnA, noun_adj) # <csin√°lhatn√©kommal>
+`k_'(h$1tn√©k$6k, +_hAt_+[n√©k_WISH_noun_poss]+[POSS_PL_3]{+[NOM]}, +noun_con, noun_OnA, noun_adj) # <csin√°lhatn√©kommal>
 
-`k_'(h$1tnÈk$3m, +_hAt_+[nÈk_WISH_noun_poss]+[POSS_SG_1]{+[ACC]})
-`k_'(h$1tnÈk$3d, +_hAt_+[nÈk_WISH_noun_poss]+[POSS_SG_2]{+[ACC]})
-`k_'(h$1tnÈk$6nk, +_hAt_+[nÈk_WISH_noun_poss]+[POSS_PL_1]{+[ACC]})
-`k_'(h$1tnÈk$3t$3k, +_hAt_+[nÈk_WISH_noun_poss]+[POSS_PL_2]{+[ACC]})
-`k_'(h$1tnÈkj$6k, +_hAt_+[nÈk_WISH_noun_poss]+[POSS_PL_3]{+[ACC]})
-`k_'(h$1tnÈk$6k, +_hAt_+[nÈk_WISH_noun_poss]+[POSS_PL_3]{+[ACC]})
+`k_'(h$1tn√©k$3m, +_hAt_+[n√©k_WISH_noun_poss]+[POSS_SG_1]{+[ACC]})
+`k_'(h$1tn√©k$3d, +_hAt_+[n√©k_WISH_noun_poss]+[POSS_SG_2]{+[ACC]})
+`k_'(h$1tn√©k$6nk, +_hAt_+[n√©k_WISH_noun_poss]+[POSS_PL_1]{+[ACC]})
+`k_'(h$1tn√©k$3t$3k, +_hAt_+[n√©k_WISH_noun_poss]+[POSS_PL_2]{+[ACC]})
+`k_'(h$1tn√©kj$6k, +_hAt_+[n√©k_WISH_noun_poss]+[POSS_PL_3]{+[ACC]})
+`k_'(h$1tn√©k$6k, +_hAt_+[n√©k_WISH_noun_poss]+[POSS_PL_3]{+[ACC]})
 
-`k_'(h$1t$3tt, +_hAt_+[PAST_INDIC_INDEF_SG_3]) # <csin·lhatott>
+`k_'(h$1t$3tt, +_hAt_+[PAST_INDIC_INDEF_SG_3]) # <csin√°lhatott>
 
-`k_'(h$1t$1tl$1n, +hAtAtlAn, noun_con, noun_On, Noun_, Adj_, noun_jA, noun_Ai) # <csin·lhatatlanrÛl>
-    `k_'(h$1t$1tl$1n$1bb, +hAtAtlAn+Abb, noun_con, noun_OnA, noun_adj, Adj_, noun_jA, pfx_verb_leg) # <legvisszacsin·lhatatlanabb>
-    `k_'(h$1t$1tl$1n$1bb$1n, +hAtAtlAn+Abb+[An_MODE_adv]) # <legvisszacsin·lhatatlanabban>
-        `k_'(h$1t$1tl$1n$1bbik, +hAtAtlAn+Abbik, noun_con, noun_OnA, noun_adj, Adj_, noun_jA, pfx_verb_leg) # <legvisszacsin·lhatatlanabb>
-    `k_'(h$1t$1tl$1ns$2g, +hAtAtlAn+sAg, noun_con, noun_On, Noun_, noun_A, noun_Ai, compound_, i_kepzo) # <csin·lhatatlans·g>
+`k_'(h$1t$1tl$1n, +hAtAtlAn, noun_con, noun_On, Noun_, Adj_, noun_jA, noun_Ai) # <csin√°lhatatlanr√≥l>
+    `k_'(h$1t$1tl$1n$1bb, +hAtAtlAn+Abb, noun_con, noun_OnA, noun_adj, Adj_, noun_jA, pfx_verb_leg) # <legvisszacsin√°lhatatlanabb>
+    `k_'(h$1t$1tl$1n$1bb$1n, +hAtAtlAn+Abb+[An_MODE_adv]) # <legvisszacsin√°lhatatlanabban>
+        `k_'(h$1t$1tl$1n$1bbik, +hAtAtlAn+Abbik, noun_con, noun_OnA, noun_adj, Adj_, noun_jA, pfx_verb_leg) # <legvisszacsin√°lhatatlanabb>
+    `k_'(h$1t$1tl$1ns$2g, +hAtAtlAn+sAg, noun_con, noun_On, Noun_, noun_A, noun_Ai, compound_, i_kepzo) # <csin√°lhatatlans√°g>
 
-# -kÈpzıs alakok (-i)
-`k_'(h$1t$1tl$1ns$2gi, +hAtAtlAn+sAg+_i_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <megcsin·lhatatlans·gi>
+# -k√©pz≈ës alakok (-i)
+`k_'(h$1t$1tl$1ns$2gi, +hAtAtlAn+sAg+_i_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <megcsin√°lhatatlans√°gi>
 
-# -kÈpzıs alakok (-nyi)
-`k_'(h$1t$1tl$1ns$2gnyi, +hAtAtlAn+sAg+_nyi_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <csin·lhatatlans·gnyi>
+# -k√©pz≈ës alakok (-nyi)
+`k_'(h$1t$1tl$1ns$2gnyi, +hAtAtlAn+sAg+_nyi_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <csin√°lhatatlans√°gnyi>
 )
 
-flag *£: BACK k_verb(a,·,o,Û,˙,u)
+flag *≈Å: BACK k_verb(a,√°,o,√≥,√∫,u)
 
-flag *§: NONROUND k_verb(e,È,e,ı,˚,¸) UNDEF 
+flag *¬§: NONROUND k_verb(e,√©,e,≈ë,≈±,√º) UNDEF 
 
 define(`k_verb',
-# -kÈpzıs alakok (-j˙, -j˚)
-`k_'(h$1t$1tl$1ns$2g$5, +hAtAtlAn+sAg+JU, noun_vow, noun_On, noun_adj, Adj_, noun_jA, compound_last, rule119) # <csin·lhatatlans·g˙>
+# -k√©pz≈ës alakok (-j√∫, -j≈±)
+`k_'(h$1t$1tl$1ns$2g$5, +hAtAtlAn+sAg+JU, noun_vow, noun_On, noun_adj, Adj_, noun_jA, compound_last, rule119) # <csin√°lhatatlans√°g√∫>
 )
 
-flag *£: BACK k_verb(a,·,o,Û,˙)
+flag *≈Å: BACK k_verb(a,√°,o,√≥,√∫)
 
-flag *§: ROUND k_verb(e,È,e,ı,˚) UNDEF 
+flag *¬§: ROUND k_verb(e,√©,e,≈ë,≈±) UNDEF 
 
-######### -_hAt_, -het t·rgyas, -andÛ, -endı, -atlan, -atlans·g, -Ûdik, ıdik ###############
+######### -_hAt_, -het t√°rgyas, -and√≥, -end≈ë, -atlan, -atlans√°g, -√≥dik, ≈ëdik ###############
 
-# -hatÛs·g, -hetısÈg
+# -hat√≥s√°g, -het≈ës√©g
 define(`k_verb',
-`k_'(h$1t$4s$2g, +hAtO+sAg, noun_con, noun_On, Noun_, noun_A, noun_Ai, compound_, i_kepzo) # <megcsin·lhatÛs·g>
+`k_'(h$1t$4s$2g, +hAtO+sAg, noun_con, noun_On, Noun_, noun_A, noun_Ai, compound_, i_kepzo) # <megcsin√°lhat√≥s√°g>
 
-# -kÈpzıs alakok (-i)
-`k_'(h$1t$4s$2gi, +hAtO+sAg+_i_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <megcsin·lhatÛs·gi>
+# -k√©pz≈ës alakok (-i)
+`k_'(h$1t$4s$2gi, +hAtO+sAg+_i_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <megcsin√°lhat√≥s√°gi>
 
-# -kÈpzıs alakok (-nyi)
-`k_'(h$1t$4s$2gnyi, +hAtO+sAg+_nyi_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <csin·lhatÛs·gnyi>
+# -k√©pz≈ës alakok (-nyi)
+`k_'(h$1t$4s$2gnyi, +hAtO+sAg+_nyi_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <csin√°lhat√≥s√°gnyi>
 
-# -hat·s, -hetÈs?
-#`k_'(h$1t$2s, ???, noun_con, noun_On, Noun_, noun_A, noun_Ai, compound_) # ??? csin·lhat·s
+# -hat√°s, -het√©s?
+#`k_'(h$1t$2s, ???, noun_con, noun_On, Noun_, noun_A, noun_Ai, compound_) # ??? csin√°lhat√°s
 
 # -atlan, -etlen
 
-`k_'($1tl$1n, +AtlAn, noun_con, noun_On, Noun_, Adj_, noun_jA, noun_Ai) # <megcsin·latlan>
-        `k_'($1tl$1n$1bb, +AtlAn+Abb, noun_con, noun_OnA, noun_adj, Adj_, noun_jA, pfx_verb_leg) # ??? <legmegcsin·latlanabb>
-        `k_'($1tl$1n$1bb$1n, +AtlAn+Abb+[An_MODE_adv]) # ??? <legmegcsin·latlanabban
-        `k_'($1tl$1n$1bbik, +AtlAn+Abbik, noun_con, noun_OnA, noun_adj, Adj_, noun_A, noun_Ai, pfx_verb_leg) # ??? <legmegcsin·latlanabbik>
+`k_'($1tl$1n, +AtlAn, noun_con, noun_On, Noun_, Adj_, noun_jA, noun_Ai) # <megcsin√°latlan>
+        `k_'($1tl$1n$1bb, +AtlAn+Abb, noun_con, noun_OnA, noun_adj, Adj_, noun_jA, pfx_verb_leg) # ??? <legmegcsin√°latlanabb>
+        `k_'($1tl$1n$1bb$1n, +AtlAn+Abb+[An_MODE_adv]) # ??? <legmegcsin√°latlanabban
+        `k_'($1tl$1n$1bbik, +AtlAn+Abbik, noun_con, noun_OnA, noun_adj, Adj_, noun_A, noun_Ai, pfx_verb_leg) # ??? <legmegcsin√°latlanabbik>
 
-`k_'($1tl$1ns$2g, +AtlAn+sAg, noun_con, noun_On, Noun_, noun_A, noun_Ai, compound_, i_kepzo) # <megcsin·latlans·g>
+`k_'($1tl$1ns$2g, +AtlAn+sAg, noun_con, noun_On, Noun_, noun_A, noun_Ai, compound_, i_kepzo) # <megcsin√°latlans√°g>
 
-# -kÈpzıs alakok (-i)
-`k_'($1tl$1ns$2gi, +AtlAn+sAg+_i_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <megcsin·latlans·gi>
+# -k√©pz≈ës alakok (-i)
+`k_'($1tl$1ns$2gi, +AtlAn+sAg+_i_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <megcsin√°latlans√°gi>
 
-# -kÈpzıs alakok (-nyi)
-`k_'($1tl$1ns$2gnyi, +AtlAn+sAg+_nyi_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <megcsin·latlans·gnyi>
+# -k√©pz≈ës alakok (-nyi)
+`k_'($1tl$1ns$2gnyi, +AtlAn+sAg+_nyi_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <megcsin√°latlans√°gnyi>
 
-# -Ûd·s, -ıdÈs
+# -√≥d√°s, -≈ëd√©s
 
-`k_'($4d$2s, +O2dik+As, noun_con, noun_On, Noun_, noun_A, noun_Ai, compound_, i_kepzo) # <csÛv·lÛd·s>
+`k_'($4d$2s, +O2dik+As, noun_con, noun_On, Noun_, noun_A, noun_Ai, compound_, i_kepzo) # <cs√≥v√°l√≥d√°s>
 
-# -kÈpzıs alakok (-i)
-`k_'($4d$2si, +O2dik+As+_i_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <megcsÛv·lÛd·si>
+# -k√©pz≈ës alakok (-i)
+`k_'($4d$2si, +O2dik+As+_i_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <megcs√≥v√°l√≥d√°si>
 
-# -kÈpzıs alakok (-os, -es)
-`k_'($4d$2s$3s, +O2dik+As+Os, noun_con, noun_On, Noun_, Adj_, noun_A, noun_Ai, compound_last, rule119) # <csÛv·lÛd·sos>
+# -k√©pz≈ës alakok (-os, -es)
+`k_'($4d$2s$3s, +O2dik+As+Os, noun_con, noun_On, Noun_, Adj_, noun_A, noun_Ai, compound_last, rule119) # <cs√≥v√°l√≥d√°sos>
 
-# -kÈpzıs alakok (-nyi)
-`k_'($4d$2snyi, +O2dik+As+_nyi_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <csÛv·lÛd·snyi>
+# -k√©pz≈ës alakok (-nyi)
+`k_'($4d$2snyi, +O2dik+As+_nyi_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <cs√≥v√°l√≥d√°snyi>
 
-# -Ûd_hAt_, -ıdhet
+# -√≥d_hAt_, -≈ëdhet
 
-`k_'($4dh$1t, +O2dik+_hAt_, verb_) # <csÛv·lÛdhat>
-`k_'($4dh$1t$3tt, +O2dik+_hAt_+[PAST_INDIC_INDEF_SG_3]) # <csÛv·lÛdhatott>
+`k_'($4dh$1t, +O2dik+_hAt_, verb_) # <cs√≥v√°l√≥dhat>
+`k_'($4dh$1t$3tt, +O2dik+_hAt_+[PAST_INDIC_INDEF_SG_3]) # <cs√≥v√°l√≥dhatott>
 )
 
-flag *•: BACK k_verb(a,·,o,Û,˙)
+flag *ƒΩ: BACK k_verb(a,√°,o,√≥,√∫)
 
-flag *¶: NONROUND k_verb(e,È,e,ı,˚) UNDEF 
+flag *≈ö: NONROUND k_verb(e,√©,e,≈ë,≈±) UNDEF 
 
 define(`k_verb',
-# -kÈpzıs alakok (-j˙, -j˚)
-`k_'(h$1t$4s$2g$5, +hAtO+sAg+JU, noun_vow, noun_On, noun_adj, Adj_, noun_jA, compound_last, rule119) # <csin·lhatÛs·g˙>
+# -k√©pz≈ës alakok (-j√∫, -j≈±)
+`k_'(h$1t$4s$2g$5, +hAtO+sAg+JU, noun_vow, noun_On, noun_adj, Adj_, noun_jA, compound_last, rule119) # <csin√°lhat√≥s√°g√∫>
 
-# -kÈpzıs alakok (-j˙, -j˚)
-`k_'($1tl$1ns$2g$5, +AtlAn+sAg+JU, noun_vow, noun_On, noun_adj, Adj_, noun_jA, compound_last, rule119) # <megcsin·latlans·g˙>
+# -k√©pz≈ës alakok (-j√∫, -j≈±)
+`k_'($1tl$1ns$2g$5, +AtlAn+sAg+JU, noun_vow, noun_On, noun_adj, Adj_, noun_jA, compound_last, rule119) # <megcsin√°latlans√°g√∫>
 
-# -kÈpzıs alakok (-j˙, -j˚)
-`k_'($4d$2s$5, +O2dik+As+JU, noun_vow, noun_On, noun_adj, Adj_, noun_jA, compound_last, rule119) # <csÛv·lÛd·s˙>
+# -k√©pz≈ës alakok (-j√∫, -j≈±)
+`k_'($4d$2s$5, +O2dik+As+JU, noun_vow, noun_On, noun_adj, Adj_, noun_jA, compound_last, rule119) # <cs√≥v√°l√≥d√°s√∫>
 
-`k_'(h$1t$4, +hAtO, noun_vow, noun_On, Noun_, Adj_, noun_jA, i_kepzo) # <csin·lhatÛ>
-`k_'(h$1t$4bb, +hAtO+Abb, noun_con, noun_OnA, noun_adj, Adj_, noun_jA, pfx_verb_leg) # <legvisszacsin·lhatÛbb>
-	`k_'(h$1t$4bb$1n, +hAtO+Abb+[An_MODE_adv]) # <legvisszacsin·lhatÛbban>
-    `k_'(h$1t$4bbik, +hAtO+Abbik, noun_con, noun_OnA, noun_adj, Adj_, noun_jA, pfx_verb_leg) # <legvisszacsin·lhatÛbb>
+`k_'(h$1t$4, +hAtO, noun_vow, noun_On, Noun_, Adj_, noun_jA, i_kepzo) # <csin√°lhat√≥>
+`k_'(h$1t$4bb, +hAtO+Abb, noun_con, noun_OnA, noun_adj, Adj_, noun_jA, pfx_verb_leg) # <legvisszacsin√°lhat√≥bb>
+	`k_'(h$1t$4bb$1n, +hAtO+Abb+[An_MODE_adv]) # <legvisszacsin√°lhat√≥bban>
+    `k_'(h$1t$4bbik, +hAtO+Abbik, noun_con, noun_OnA, noun_adj, Adj_, noun_jA, pfx_verb_leg) # <legvisszacsin√°lhat√≥bb>
     
-# -kÈpzıs alakok (-os, -es)
-`k_'(h$1t$4s, +hAtO+Os, noun_con, noun_On, Noun_, Adj_, noun_A, noun_Ai, compound_last, rule119) # <eldobhatÛs>
+# -k√©pz≈ës alakok (-os, -es)
+`k_'(h$1t$4s, +hAtO+Os, noun_con, noun_On, Noun_, Adj_, noun_A, noun_Ai, compound_last, rule119) # <eldobhat√≥s>
 
-# -andÛ, -endı
-`k_'($1nd$4, +AndO, noun_vow, noun_On, Noun_, Adj_, noun_jA) # <csin·landÛ>
-`k_'($1nd$4s$2g, +AndO+sAg, noun_con, noun_On, Noun_, noun_A, noun_Ai, compound_, i_kepzo) # <frissÌtendøsÈg>
+# -and√≥, -end≈ë
+`k_'($1nd$4, +AndO, noun_vow, noun_On, Noun_, Adj_, noun_jA) # <csin√°land√≥>
+`k_'($1nd$4s$2g, +AndO+sAg, noun_con, noun_On, Noun_, noun_A, noun_Ai, compound_, i_kepzo) # <friss√≠tend≈ºs√©g>
 
-# -Ûdik, -ıdik
-`k_'($4dik, +O2dik, verb_) # <csÛv·lÛdik>, <·tlÈpıdik>
-`k_'($4d$3tt, +O2dik+[PAST_INDIC_INDEF_SG_3], noun_nonmorph_, Adj_, noun_jA, noun_Ai, round_hoz) # <csÛv·lÛdott>, <·tlÈpıdˆtteket>
-`k_'($4d$4, +O2dik+_O_, noun_vow, noun_On, Noun_, Adj_, noun_jA) # <megcsÛv·lÛdÛ>, <·tlÈpıdı>
+# -√≥dik, -≈ëdik
+`k_'($4dik, +O2dik, verb_) # <cs√≥v√°l√≥dik>, <√°tl√©p≈ëdik>
+`k_'($4d$3tt, +O2dik+[PAST_INDIC_INDEF_SG_3], noun_nonmorph_, Adj_, noun_jA, noun_Ai, round_hoz) # <cs√≥v√°l√≥dott>, <√°tl√©p≈ëd√∂tteket>
+`k_'($4d$4, +O2dik+_O_, noun_vow, noun_On, Noun_, Adj_, noun_jA) # <megcs√≥v√°l√≥d√≥>, <√°tl√©p≈ëd≈ë>
 
-# -kÈpzıs alakok (-os, -es)
-`k_'($4d$4s, +O2dik+_O_+Os, noun_con, noun_On, Noun_, Adj_, noun_A, noun_Ai, compound_last, rule119) # <megcsÛv·lÛdÛs>
+# -k√©pz≈ës alakok (-os, -es)
+`k_'($4d$4s, +O2dik+_O_+Os, noun_con, noun_On, Noun_, Adj_, noun_A, noun_Ai, compound_last, rule119) # <megcs√≥v√°l√≥d√≥s>
 
-`k_'($4d$4s$1bb, +O2dik+_O_+Os+Abb, noun_con, noun_OnA, noun_adj, Adj_, noun_jA, pfx_verb_leg) # <legfrusztr·lÛdÛsabbjainkat>
-	`k_'($4d$4s$1bb$1n, +O2dik+_O_+Os+Abb+[An_MODE_adv]) # <legfrusztr·lÛdÛsabbjainkat>
+`k_'($4d$4s$1bb, +O2dik+_O_+Os+Abb, noun_con, noun_OnA, noun_adj, Adj_, noun_jA, pfx_verb_leg) # <legfrusztr√°l√≥d√≥sabbjainkat>
+	`k_'($4d$4s$1bb$1n, +O2dik+_O_+Os+Abb+[An_MODE_adv]) # <legfrusztr√°l√≥d√≥sabbjainkat>
     `k_'($4d$4s$1bbik, +O2dik+_O_+Os+Abbik, noun_con, noun_OnA, noun_adj, Adj_, noun_jA, pfx_verb_leg)
 )
 
-flag *•: BACK k_verb(a,·,o,Û,˙)
+flag *ƒΩ: BACK k_verb(a,√°,o,√≥,√∫)
 
-flag *¶: ROUND k_verb(e,È,ˆ,ı,˚) UNDEF 
+flag *≈ö: ROUND k_verb(e,√©,√∂,≈ë,≈±) UNDEF 
 
 ######### -gat, -get ###############
 
 define(`k_verb',
-`k_'(g$1t, +gAt, verb_, verb_sub_) # csin·lgat
-`k_'(g$1t$3tt, +gAt+[PAST_INDIC_INDEF_SG_3]) # csin·lgatott
-`k_'(g$1t$2s, +gAt+As, noun_con, noun_On, Noun_, noun_A, noun_Ai, compound_, i_kepzo) # gAt+csin·lgat·s
+`k_'(g$1t, +gAt, verb_, verb_sub_) # csin√°lgat
+`k_'(g$1t$3tt, +gAt+[PAST_INDIC_INDEF_SG_3]) # csin√°lgatott
+`k_'(g$1t$2s, +gAt+As, noun_con, noun_On, Noun_, noun_A, noun_Ai, compound_, i_kepzo) # gAt+csin√°lgat√°s
 
-# -kÈpzıs alakok (-i)
-`k_'(g$1t$2si, +gAt+As+_i_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <csin·lgat·si>
+# -k√©pz≈ës alakok (-i)
+`k_'(g$1t$2si, +gAt+As+_i_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <csin√°lgat√°si>
 
-# -kÈpzıs alakok (-os, -es)
-`k_'(g$1t$2s$3s, +gAt+As+Os, noun_con, noun_On, Noun_, Adj_, noun_A, noun_Ai, compound_last, rule119) # <csin·lgat·sos>
+# -k√©pz≈ës alakok (-os, -es)
+`k_'(g$1t$2s$3s, +gAt+As+Os, noun_con, noun_On, Noun_, Adj_, noun_A, noun_Ai, compound_last, rule119) # <csin√°lgat√°sos>
 
-# -kÈpzıs alakok (-nyi)
-`k_'(g$1t$2snyi, +gAt+As+_nyi_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <csin·lgat·snyi>
+# -k√©pz≈ës alakok (-nyi)
+`k_'(g$1t$2snyi, +gAt+As+_nyi_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <csin√°lgat√°snyi>
 
-`k_'(g$1th$1t, +gAt+_hAt_, verb_, verb_sub_) # csin·lgathat
-    #`k_'(g$1th$1t$4s$2g, +gAt+, noun_con, noun_On, Adj_, noun_A, noun_Ai, compound_) # csin·lgathatÛs·g???
-    `k_'(g$1th$1t$3tt, +gAt+_hAt_+[PAST_INDIC_INDEF_SG_3]) # csin·lgathatott
+`k_'(g$1th$1t, +gAt+_hAt_, verb_, verb_sub_) # csin√°lgathat
+    #`k_'(g$1th$1t$4s$2g, +gAt+, noun_con, noun_On, Adj_, noun_A, noun_Ai, compound_) # csin√°lgathat√≥s√°g???
+    `k_'(g$1th$1t$3tt, +gAt+_hAt_+[PAST_INDIC_INDEF_SG_3]) # csin√°lgathatott
 )
 
-flag *ß: BACK k_verb(a,·,o,Û,˙)
+flag *¬ß: BACK k_verb(a,√°,o,√≥,√∫)
 
-flag *®: NONROUND k_verb(e,È,e,ı,˚) UNDEF 
+flag *¬®: NONROUND k_verb(e,√©,e,≈ë,≈±) UNDEF 
 
 define(`k_verb',
-# -kÈpzıs alakok (-j˙, -j˚)
-`k_'(g$1t$2s$5, +gAt+As+JU, noun_vow, noun_On, noun_adj, Adj_, noun_jA, compound_last, rule119) # <csin·lgat·s˙>
+# -k√©pz≈ës alakok (-j√∫, -j≈±)
+`k_'(g$1t$2s$5, +gAt+As+JU, noun_vow, noun_On, noun_adj, Adj_, noun_jA, compound_last, rule119) # <csin√°lgat√°s√∫>
 
-`k_'(g$1t$4, +gAt+_O_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_) # csin·lgatÛ
-    `k_'(g$1th$1t$4, +gAt+_hAt_+_O_, noun_vow, noun_On, Noun_, Adj_, noun_jA) # csin·lgathatÛ
+`k_'(g$1t$4, +gAt+_O_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_) # csin√°lgat√≥
+    `k_'(g$1th$1t$4, +gAt+_hAt_+_O_, noun_vow, noun_On, Noun_, Adj_, noun_jA) # csin√°lgathat√≥
 )
 
-flag *ß: BACK k_verb(a,·,o,Û,˙)
+flag *¬ß: BACK k_verb(a,√°,o,√≥,√∫)
 
-flag *®: ROUND k_verb(e,È,ˆ,ı,˚) UNDEF 
+flag *¬®: ROUND k_verb(e,√©,√∂,≈ë,≈±) UNDEF 
 
-######### -Û, -ı Ès -·s, -Ès ###############
+######### -√≥, -≈ë √©s -√°s, -√©s ###############
 
 define(`k_verb',
-`k_'($4, +_O_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_, i_kepzo) # <csin·lÛ>
-`k_'($4bb, +_O_+Abb, noun_con, noun_OnA, noun_adj, Adj_, noun_jA, pfx_verb_leg) # <legvisszacsin·lÛbb>
+`k_'($4, +_O_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_, i_kepzo) # <csin√°l√≥>
+`k_'($4bb, +_O_+Abb, noun_con, noun_OnA, noun_adj, Adj_, noun_jA, pfx_verb_leg) # <legvisszacsin√°l√≥bb>
 
-# -kÈpzıs alakok (-j˙, -j˚)
-`k_'($4j$5, +_O_+JU, noun_vow, noun_On, noun_adj, Adj_, noun_jA, compound_last, rule119) # <ˆttapsikolÛj˙><macskatapsikolÛj˙>
+# -k√©pz≈ës alakok (-j√∫, -j≈±)
+`k_'($4j$5, +_O_+JU, noun_vow, noun_On, noun_adj, Adj_, noun_jA, compound_last, rule119) # <√∂ttapsikol√≥j√∫><macskatapsikol√≥j√∫>
 
-# -kÈpzıs alakok (-os, -es)
-`k_'($4s, +_O_+Os, noun_con, noun_On, Noun_, Adj_, noun_A, noun_Ai, compound_last, rule119) # <ˆttapsikolÛs><macskatapsikolÛs>
+# -k√©pz≈ës alakok (-os, -es)
+`k_'($4s, +_O_+Os, noun_con, noun_On, Noun_, Adj_, noun_A, noun_Ai, compound_last, rule119) # <√∂ttapsikol√≥s><macskatapsikol√≥s>
 
-# -kÈpzıs alakok (-j˙, -j˚)
-`k_'($2s$5, +As+JU, noun_vow, noun_On, noun_adj, Adj_, noun_jA, compound_last, rule119) # <ˆttapsikol·s˙><macskatapsikol·s˙>
+# -k√©pz≈ës alakok (-j√∫, -j≈±)
+`k_'($2s$5, +As+JU, noun_vow, noun_On, noun_adj, Adj_, noun_jA, compound_last, rule119) # <√∂ttapsikol√°s√∫><macskatapsikol√°s√∫>
 )
 
-flag *©: BACK k_verb(a,·,o,Û,˙)
+flag *≈†: BACK k_verb(a,√°,o,√≥,√∫)
 
-flag *™: ROUND k_verb(e,È,ˆ,ı,˚) UNDEF 
+flag *≈û: ROUND k_verb(e,√©,√∂,≈ë,≈±) UNDEF 
 
 define(`k_verb',
 
-    `k_'($4bb$1n, +_O_+Abb+[An_MODE_adv]) # <legvisszacsin·lÛbban>
-    `k_'($4bbik, +_O_+Abbik, noun_con, noun_OnA, noun_adj, Adj_, noun_jA, pfx_verb_leg) # <legvisszacsin·lÛbbik>
-    `k_'($4csk$1, +_O_+AcskA, noun_vow, noun_On, Noun_, noun_jA) # <fızıcskÈrıl>
+    `k_'($4bb$1n, +_O_+Abb+[An_MODE_adv]) # <legvisszacsin√°l√≥bban>
+    `k_'($4bbik, +_O_+Abbik, noun_con, noun_OnA, noun_adj, Adj_, noun_jA, pfx_verb_leg) # <legvisszacsin√°l√≥bbik>
+    `k_'($4csk$1, +_O_+AcskA, noun_vow, noun_On, Noun_, noun_jA) # <f≈ëz≈ëcsk√©r≈ël>
 
-# -kÈpzıs alakok (-i)
-`k_'($4i, +_O_+_i_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <ˆttapsikolÛi><macskatapsikolÛi>
+# -k√©pz≈ës alakok (-i)
+`k_'($4i, +_O_+_i_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <√∂ttapsikol√≥i><macskatapsikol√≥i>
 
-# -kÈpzıs alakok (-nyi)
-`k_'($4nyi, +_O_+_nyi_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <ˆttapsikolÛnyi><macskatapsikolÛnyi>
+# -k√©pz≈ës alakok (-nyi)
+`k_'($4nyi, +_O_+_nyi_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <√∂ttapsikol√≥nyi><macskatapsikol√≥nyi>
 
-`k_'($2s, +As, noun_con, noun_On, Noun_, noun_A, noun_Ai, compound_, i_kepzo) # csin·l·s
+`k_'($2s, +As, noun_con, noun_On, Noun_, noun_A, noun_Ai, compound_, i_kepzo) # csin√°l√°s
 
-# -kÈpzıs alakok (-i)
-`k_'($2si, +As+_i_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <ˆttapsikol·si><macskatapsikol·si>
-    `k_'($2sil$1g, +As+_i_+lAg) # <ÈrintÈsileg>
+# -k√©pz≈ës alakok (-i)
+`k_'($2si, +As+_i_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <√∂ttapsikol√°si><macskatapsikol√°si>
+    `k_'($2sil$1g, +As+_i_+lAg) # <√©rint√©sileg>
 
-# -kÈpzıs alakok (-os, -es)
-`k_'($2s$3s, +As+Os, noun_con, noun_On, Noun_, Adj_, noun_A, noun_Ai, compound_last, rule119) # <ˆttapsikol·sos><macskatapsikol·sos>
+# -k√©pz≈ës alakok (-os, -es)
+`k_'($2s$3s, +As+Os, noun_con, noun_On, Noun_, Adj_, noun_A, noun_Ai, compound_last, rule119) # <√∂ttapsikol√°sos><macskatapsikol√°sos>
 
-# -kÈpzıs alakok (-nyi)
-`k_'($2snyi, +As+_nyi_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <ˆttapsikol·snyi><macskatapsikol·snyi>
+# -k√©pz≈ës alakok (-nyi)
+`k_'($2snyi, +As+_nyi_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <√∂ttapsikol√°snyi><macskatapsikol√°snyi>
 )
 
-flag *©: BACK k_verb(a,·,o,Û,˙)
+flag *≈†: BACK k_verb(a,√°,o,√≥,√∫)
 
-flag *™: NONROUND k_verb(e,È,e,ı,˚) UNDEF 
+flag *≈û: NONROUND k_verb(e,√©,e,≈ë,≈±) UNDEF 
 
-############ -ott, -ett, -ˆtt, -t ####################
+############ -ott, -ett, -√∂tt, -t ####################
 
-# nem ikes k-ra vÈgzıdıek k¸lˆn kezelve
-# kell k¸lˆn kezelve (nem kellt, hanem kellett)
+# nem ikes k-ra v√©gz≈ëd≈ëek k√ºl√∂n kezelve
+# kell k√ºl√∂n kezelve (nem kellt, hanem kellett)
 
 define(`k_',
 # -ott
@@ -505,39 +505,39 @@ gy > ott$1 $2 $3$4$5$6$7$8$9$10
 [bdfgkmpstvz]ik > ``-ik,ott$1'' $2 $3$4$5$6$7$8$9$10
 gyik > ``-ik,ott$1'' $2 $3$4$5$6$7$8$9$10
 llik > ``-ik,ott$1'' $2 $3$4$5$6$7$8$9$10
-[^a·eÈiÌoÛˆıu˙¸˚][^bgkmpstvzyd]ik > ``-ik,ott$1'' $2 $3$4$5$6$7$8$9$10
+[^a√°e√©i√≠o√≥√∂≈ëu√∫√º≈±][^bgkmpstvzyd]ik > ``-ik,ott$1'' $2 $3$4$5$6$7$8$9$10
 [bdgjklmrtzy][ldgrz]ik > ``-ik,ott$1'' $2 $3$4$5$6$7$8$9$10
 
 # -t
 
 [^bgkmpstvzyd] > t$1 $2 $3$4$5$6$7$8$9$10
 ny > t$1 $2 $3$4$5$6$7$8$9$10
-[a·eÈiÌoÛˆıu˙¸˚][^bgkmpstvzyd]ik > ``-ik,t$1'' $2 $3$4$5$6$7$8$9$10
+[a√°e√©i√≠o√≥√∂≈ëu√∫√º≈±][^bgkmpstvzyd]ik > ``-ik,t$1'' $2 $3$4$5$6$7$8$9$10
 lyik > ``-ik,t$1'' $2 $3$4$5$6$7$8$9$10
 )
 
 define(`k_verb',
-`k_'(, +Ott, noun_con, noun_OnA, noun_nonmorph_, Adj_, noun_jA, noun_Ai, round_hoz) # <kicsin·lt> <megpˆckˆlthˆz>
-`k_'(, +[PAST_INDIC_INDEF_SG_3]) # <kicsin·lt> <megpˆckˆlthˆz>
-`k_'($1bb, +Ott+Abb, noun_con, noun_OnA, noun_adj, Adj_, noun_jA, pfx_verb_leg) # <legkicsin·ltabb>
-	`k_'($1bb$1n, +Ott+Abb+[An_MODE_adv]) # <legkicsin·ltabban>
-    `k_'($1bbik, +Ott+Abbik, noun_con, noun_OnA, noun_adj, Adj_, noun_jA, pfx_verb_leg) # <legkicsin·ltabb>
-`k_'(s$2g, +Ott+sAg, noun_con, noun_On, Noun_, noun_A, noun_Ai, compound_, i_kepzo) # <kicsin·lts·g>
+`k_'(, +Ott, noun_con, noun_OnA, noun_nonmorph_, Adj_, noun_jA, noun_Ai, round_hoz) # <kicsin√°lt> <megp√∂ck√∂lth√∂z>
+`k_'(, +[PAST_INDIC_INDEF_SG_3]) # <kicsin√°lt> <megp√∂ck√∂lth√∂z>
+`k_'($1bb, +Ott+Abb, noun_con, noun_OnA, noun_adj, Adj_, noun_jA, pfx_verb_leg) # <legkicsin√°ltabb>
+	`k_'($1bb$1n, +Ott+Abb+[An_MODE_adv]) # <legkicsin√°ltabban>
+    `k_'($1bbik, +Ott+Abbik, noun_con, noun_OnA, noun_adj, Adj_, noun_jA, pfx_verb_leg) # <legkicsin√°ltabb>
+`k_'(s$2g, +Ott+sAg, noun_con, noun_On, Noun_, noun_A, noun_Ai, compound_, i_kepzo) # <kicsin√°lts√°g>
 
-# -kÈpzıs alakok (-i)
-`k_'(s$2gi, +Ott+sAg+_i_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <ˆtcsin·lts·gi><macskakicsin·lts·gi>
+# -k√©pz≈ës alakok (-i)
+`k_'(s$2gi, +Ott+sAg+_i_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <√∂tcsin√°lts√°gi><macskakicsin√°lts√°gi>
 
-# -kÈpzıs alakok (-j˙, -j˚)
-`k_'(s$2g$5, +Ott+sAg+JU, noun_vow, noun_On, noun_adj, Adj_, noun_jA, compound_last, rule119, round_hoz) # <kicsin·lts·g˙><macskakicsin·lts·g˙>
+# -k√©pz≈ës alakok (-j√∫, -j≈±)
+`k_'(s$2g$5, +Ott+sAg+JU, noun_vow, noun_On, noun_adj, Adj_, noun_jA, compound_last, rule119, round_hoz) # <kicsin√°lts√°g√∫><macskakicsin√°lts√°g√∫>
 
-# -kÈpzıs alakok (-os, -es)
-`k_'(s$2g$3s, +Ott+sAg+Os, noun_con, noun_On, Noun_, Adj_, noun_A, noun_Ai, compound_last, rule119) # <kicsin·lts·gos><macskacsin·lts·gos>
+# -k√©pz≈ës alakok (-os, -es)
+`k_'(s$2g$3s, +Ott+sAg+Os, noun_con, noun_On, Noun_, Adj_, noun_A, noun_Ai, compound_last, rule119) # <kicsin√°lts√°gos><macskacsin√°lts√°gos>
 
-# -kÈpzıs alakok (-nyi)
-`k_'(s$2gnyi, +Ott+sAg+_nyi_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <kicsin·lts·gnyi><macskacsin·lts·gnyi>
+# -k√©pz≈ës alakok (-nyi)
+`k_'(s$2gnyi, +Ott+sAg+_nyi_, noun_vow, noun_On, Noun_, Adj_, noun_jA, compound_last, rule119) # <kicsin√°lts√°gnyi><macskacsin√°lts√°gnyi>
 )
 
-flag *´: BACK k_verb(a,·,o,Û,˙)
+flag *≈§: BACK k_verb(a,√°,o,√≥,√∫)
 
 # -ETT
 
@@ -551,40 +551,40 @@ gy > ett$1 $2 $3$4$5$6$7$8$9$10
 [bdfgkmpstvz]ik > ``-ik,ett$1'' $2 $3$4$5$6$7$8$9$10
 gyik > ``-ik,ett$1'' $2 $3$4$5$6$7$8$9$10
 llik > ``-ik,ett$1'' $2 $3$4$5$6$7$8$9$10
-[^a·eÈiÌoÛˆıu˙¸˚][^bgkmpstvzyd]ik > ``-ik,ett$1'' $2 $3$4$5$6$7$8$9$10
+[^a√°e√©i√≠o√≥√∂≈ëu√∫√º≈±][^bgkmpstvzyd]ik > ``-ik,ett$1'' $2 $3$4$5$6$7$8$9$10
 [bdgjklmrtzy][ldgrz]ik > ``-ik,ett$1'' $2 $3$4$5$6$7$8$9$10
 
 # -t
 
 [^bgkmpstvzyd] > t$1 $2 $3$4$5$6$7$8$9$10
 ny > t$1 $2 $3$4$5$6$7$8$9$10
-[a·eÈiÌoÛˆıu˙¸˚][^bgkmpstvzyd]ik > ``-ik,t$1'' $2 $3$4$5$6$7$8$9$10
+[a√°e√©i√≠o√≥√∂≈ëu√∫√º≈±][^bgkmpstvzyd]ik > ``-ik,t$1'' $2 $3$4$5$6$7$8$9$10
 lyik > ``-ik,t$1'' $2 $3$4$5$6$7$8$9$10
 )
 
-flag *¨: NONROUND k_verb(e,È,e,ı,˚)
+flag *≈π: NONROUND k_verb(e,√©,e,≈ë,≈±)
 
-# -÷TT
+# -√ñTT
 
 define(`k_',
-# -ˆtt
+# -√∂tt
 
-[bdfgmpstvz] > ˆtt$1 $2 $3$4$5$6$7$8$9$10
-gy > ˆtt$1 $2 $3$4$5$6$7$8$9$10
-[nl]l > ˆtt$1 $2 $3$4$5$6$7$8$9$10
+[bdfgmpstvz] > √∂tt$1 $2 $3$4$5$6$7$8$9$10
+gy > √∂tt$1 $2 $3$4$5$6$7$8$9$10
+[nl]l > √∂tt$1 $2 $3$4$5$6$7$8$9$10
                 
-[bdfgkmpstvz]ik > ``-ik,ˆtt$1'' $2 $3$4$5$6$7$8$9$10
-gyik > ``-ik,ˆtt$1'' $2 $3$4$5$6$7$8$9$10
-llik > ``-ik,ˆtt$1'' $2 $3$4$5$6$7$8$9$10
-[^a·eÈiÌoÛˆıu˙¸˚][^bgkmpstvzyd]ik > ``-ik,ˆtt$1'' $2 $3$4$5$6$7$8$9$10
-[bdgjklmrtzy][ldgrz]ik > ``-ik,ˆtt$1'' $2 $3$4$5$6$7$8$9$10
+[bdfgkmpstvz]ik > ``-ik,√∂tt$1'' $2 $3$4$5$6$7$8$9$10
+gyik > ``-ik,√∂tt$1'' $2 $3$4$5$6$7$8$9$10
+llik > ``-ik,√∂tt$1'' $2 $3$4$5$6$7$8$9$10
+[^a√°e√©i√≠o√≥√∂≈ëu√∫√º≈±][^bgkmpstvzyd]ik > ``-ik,√∂tt$1'' $2 $3$4$5$6$7$8$9$10
+[bdgjklmrtzy][ldgrz]ik > ``-ik,√∂tt$1'' $2 $3$4$5$6$7$8$9$10
 
 # -t
 
 [^bgkmpstvzyd] > t$1 $2 $3$4$5$6$7$8$9$10
 ny > t$1 $2 $3$4$5$6$7$8$9$10
-[a·eÈiÌoÛˆıu˙¸˚][^bgkmpstvzyd]ik > ``-ik,t$1'' $2 $3$4$5$6$7$8$9$10
+[a√°e√©i√≠o√≥√∂≈ëu√∫√º≈±][^bgkmpstvzyd]ik > ``-ik,t$1'' $2 $3$4$5$6$7$8$9$10
 lyik > ``-ik,t$1'' $2 $3$4$5$6$7$8$9$10
 )
 
-flag *≠: ROUND k_verb(e,È,ˆ,ı,˚) UNDEF 
+flag *¬≠: ROUND k_verb(e,√©,√∂,≈ë,≈±) UNDEF 

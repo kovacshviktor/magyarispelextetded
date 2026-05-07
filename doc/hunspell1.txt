@@ -2,413 +2,413 @@ hunspell(1)                                           hunspell(1)
 
 
 
-NÉV
-       hunspell - helyesírás-javító és szótövezõ program
+NÃ‰V
+       hunspell - helyesÃ­rÃ¡s-javÃ­tÃ³ Ã©s szÃ³tÃ¶vezÅ‘ program
 
-ÁTTEKINTÉS
-       hunspell  [-1  -a -G -h -H -l -L -n -s -t] [-d szótár] [-p
-       saját_szótár] [állomány(ok)]
+ÃTTEKINTÃ‰S
+       hunspell  [-1  -a -G -h -H -l -L -n -s -t] [-d szÃ³tÃ¡r] [-p
+       sajÃ¡t_szÃ³tÃ¡r] [Ã¡llomÃ¡ny(ok)]
 
-LEÍRÁS
-       A  hunspell  Ispell-szerû  interaktív  és   csõfelület   a
-       (Magyar)   MySpell   függvénykönyvtárhoz.    Felismeri  és
-       javítja  az  elütéseket  és  típushibákat  sima  szöveges,
-       (La)TeX,  HTML,  és groff (kézikönyv oldal) állományokban.
-       A -s kapcsolóval szótövezõ üzemmódban fut (Hunstem).
+LEÃRÃS
+       A  hunspell  Ispell-szerÅ±  interaktÃ­v  Ã©s   csÅ‘felÃ¼let   a
+       (Magyar)   MySpell   fÃ¼ggvÃ©nykÃ¶nyvtÃ¡rhoz.    Felismeri  Ã©s
+       javÃ­tja  az  elÃ¼tÃ©seket  Ã©s  tÃ­pushibÃ¡kat  sima  szÃ¶veges,
+       (La)TeX,  HTML,  Ã©s groff (kÃ©zikÃ¶nyv oldal) Ã¡llomÃ¡nyokban.
+       A -s kapcsolÃ³val szÃ³tÃ¶vezÅ‘ Ã¼zemmÃ³dban fut (Hunstem).
 
-       Ha nem adunk meg állománynév  paramétert,  a  Hunspell  az
-       Ispell  csõfelületéhez hasonlóan mûködik: a bemenet sorait
-       szavakra bontja, és *, +, vagy - jellel  kezdõdõ  kimeneti
-       sorral jelzi, ha egy szó jó, és # vagy & jellel, ha rossz.
-       A csõfelület parancsait  viszont  az  Ispellhez  hasonlóan
-       csak a -a kapcsoló megadásával értelmezi.
+       Ha nem adunk meg Ã¡llomÃ¡nynÃ©v  paramÃ©tert,  a  Hunspell  az
+       Ispell  csÅ‘felÃ¼letÃ©hez hasonlÃ³an mÅ±kÃ¶dik: a bemenet sorait
+       szavakra bontja, Ã©s *, +, vagy - jellel  kezdÅ‘dÅ‘  kimeneti
+       sorral jelzi, ha egy szÃ³ jÃ³, Ã©s # vagy & jellel, ha rossz.
+       A csÅ‘felÃ¼let parancsait  viszont  az  Ispellhez  hasonlÃ³an
+       csak a -a kapcsolÃ³ megadÃ¡sÃ¡val Ã©rtelmezi.
 
-       Állománynév  paraméter  esetén  elindul  egy az Ispelléhez
-       hasonló interaktív felület.
+       ÃllomÃ¡nynÃ©v  paramÃ©ter  esetÃ©n  elindul  egy az IspellÃ©hez
+       hasonlÃ³ interaktÃ­v felÃ¼let.
 
-       A program a következõ elõnyöket nyújtja a hasonló  célokat
-       szolgáló Ispell-lel szemben:
+       A program a kÃ¶vetkezÅ‘ elÅ‘nyÃ¶ket nyÃºjtja a hasonlÃ³  cÃ©lokat
+       szolgÃ¡lÃ³ Ispell-lel szemben:
 
-       -      Helyes javaslatok a több karakter változásával járó
-              tipikus hibákra (j/ly, íj/ijj, nyj/nny és még  több
-              tucatnyi  tévesztés  megvizsgálásával).   Az Ispell
-              csak két karakter felcserélése; vagy  egy  karakter
-              hiánya,   cseréje,   illetve  felesleges  jelenléte
-              esetén ad helyes javaslatot.
+       -      Helyes javaslatok a tÃ¶bb karakter vÃ¡ltozÃ¡sÃ¡val jÃ¡rÃ³
+              tipikus hibÃ¡kra (j/ly, Ã­j/ijj, nyj/nny Ã©s mÃ©g  tÃ¶bb
+              tucatnyi  tÃ©vesztÃ©s  megvizsgÃ¡lÃ¡sÃ¡val).   Az Ispell
+              csak kÃ©t karakter felcserÃ©lÃ©se; vagy  egy  karakter
+              hiÃ¡nya,   cserÃ©je,   illetve  felesleges  jelenlÃ©te
+              esetÃ©n ad helyes javaslatot.
 
-       -      Az  összes  helyes  összetett  szónak  látszó,   de
-              tipikus   hibával  elõálló  alak  tiltása  (karvaj,
-              színtû, súlytó stb.)
+       -      Az  Ã¶sszes  helyes  Ã¶sszetett  szÃ³nak  lÃ¡tszÃ³,   de
+              tipikus   hibÃ¡val  elÅ‘Ã¡llÃ³  alak  tiltÃ¡sa  (karvaj,
+              szÃ­ntÅ±, sÃºlytÃ³ stb.)
 
-       -      Javaslatok valószínûségi sorrendben   jelennek  meg
-              (tipikus hibák, i/í, o/ó, u/ú tévesztések stb.).
+       -      Javaslatok valÃ³szÃ­nÅ±sÃ©gi sorrendben   jelennek  meg
+              (tipikus hibÃ¡k, i/Ã­, o/Ã³, u/Ãº tÃ©vesztÃ©sek stb.).
 
-       -      Összetett szavak esetén  6-3-as szabály alkalmazása
-              (helyesírás-ellenõrzõ, gépkocsi-összeszerelés).
+       -      Ã–sszetett szavak esetÃ©n  6-3-as szabÃ¡ly alkalmazÃ¡sa
+              (helyesÃ­rÃ¡s-ellenÅ‘rzÅ‘, gÃ©pkocsi-Ã¶sszeszerelÃ©s).
 
-       -      Mozgószabály   alkalmazása   (kiviteli    engedély,
-              kiviteliengedély-kérés).
+       -      MozgÃ³szabÃ¡ly   alkalmazÃ¡sa   (kiviteli    engedÃ©ly,
+              kiviteliengedÃ©ly-kÃ©rÃ©s).
 
-       -      A   magyar  nyelv  egyéb  összetételi  szabályainak
-              alkalmazása (például  hatlövetû,  tizenkét  lövetû,
-              kéthavi, két hónapos, másodmagával).
+       -      A   magyar  nyelv  egyÃ©b  Ã¶sszetÃ©teli  szabÃ¡lyainak
+              alkalmazÃ¡sa (pÃ©ldÃ¡ul  hatlÃ¶vetÅ±,  tizenkÃ©t  lÃ¶vetÅ±,
+              kÃ©thavi, kÃ©t hÃ³napos, mÃ¡sodmagÃ¡val).
 
-       -      Leg-,  legesleg-  és  -bb  confixum helyes kezelése
-              (nincs pl. legédes, csak legédesebb).
+       -      Leg-,  legesleg-  Ã©s  -bb  confixum helyes kezelÃ©se
+              (nincs pl. legÃ©des, csak legÃ©desebb).
 
-       -      Ragozható tõszófelvétel.  Megkönnyíti  egy  új  szó
-              ragozott  változatainak  ellenõrzését, feleslegessé
-              téve ezek külön-külön történõ  felvételét  a  saját
-              szótárba.
+       -      RagozhatÃ³ tÅ‘szÃ³felvÃ©tel.  MegkÃ¶nnyÃ­ti  egy  Ãºj  szÃ³
+              ragozott  vÃ¡ltozatainak  ellenÅ‘rzÃ©sÃ©t, feleslegessÃ©
+              tÃ©ve ezek kÃ¼lÃ¶n-kÃ¼lÃ¶n tÃ¶rtÃ©nÅ‘  felvÃ©telÃ©t  a  sajÃ¡t
+              szÃ³tÃ¡rba.
 
-       -      Javaslatok    mássalhangzó-triplázások    (sakkkör,
-              baletttáncos,   dzsesszszak)    esetén.     (Ispell
+       -      Javaslatok    mÃ¡ssalhangzÃ³-triplÃ¡zÃ¡sok    (sakkkÃ¶r,
+              baletttÃ¡ncos,   dzsesszszak)    esetÃ©n.     (Ispell
               helyesnek fogadja el ezeket.)
 
-       -      Javaslatok szótagduplázások (oktatatás, igenenevet)
-              esetén.
+       -      Javaslatok szÃ³tagduplÃ¡zÃ¡sok (oktatatÃ¡s, igenenevet)
+              esetÃ©n.
 
-       -      Javaslatok      ékezet       nélküli       szövegre
-              (tukorfurogep->tükörfúrógép).
+       -      Javaslatok      Ã©kezet       nÃ©lkÃ¼li       szÃ¶vegre
+              (tukorfurogep->tÃ¼kÃ¶rfÃºrÃ³gÃ©p).
 
-       -      Kötõjeles szavak kezelése (unos-untalan).
+       -      KÃ¶tÅ‘jeles szavak kezelÃ©se (unos-untalan).
 
-       -      Toldalékolt  számok (1-jén, 11-én, 5.-et) kezelése.
+       -      ToldalÃ©kolt  szÃ¡mok (1-jÃ©n, 11-Ã©n, 5.-et) kezelÃ©se.
 
-       -      °, %, és §  jelek  (%-kal)  toldalékolt  alakjainak
-              kezelése.
+       -      Â°, %, Ã©s Â§  jelek  (%-kal)  toldalÃ©kolt  alakjainak
+              kezelÃ©se.
 
-       -      Mozaikszavak (MÁV-osokat) kezelése.
+       -      Mozaikszavak (MÃV-osokat) kezelÃ©se.
 
-       -      Y-ra végzõdõ szavak (boyjal, pennyvel) kezelése.
+       -      Y-ra vÃ©gzÅ‘dÅ‘ szavak (boyjal, pennyvel) kezelÃ©se.
 
-       -      Idegen     ejtésû     szótagra    végzõdõ    szavak
-              (Anonymusszal, Voltaire-nek) kezelése.
+       -      Idegen     ejtÃ©sÅ±     szÃ³tagra    vÃ©gzÅ‘dÅ‘    szavak
+              (Anonymusszal, Voltaire-nek) kezelÃ©se.
 
-       -      Két szóból álló földrajzi nevek  (San  Franciscó-i)
-              kezelése.
+       -      KÃ©t szÃ³bÃ³l Ã¡llÃ³ fÃ¶ldrajzi nevek  (San  FranciscÃ³-i)
+              kezelÃ©se.
 
-       -      Hibás    alakok    tiltása    (Babitssal,    tanit,
-              alkotómûvész stb.)
+       -      HibÃ¡s    alakok    tiltÃ¡sa    (Babitssal,    tanit,
+              alkotÃ³mÅ±vÃ©sz stb.)
 
-       -      Tiltások jelzése a felhasználói felületen.
+       -      TiltÃ¡sok jelzÃ©se a felhasznÃ¡lÃ³i felÃ¼leten.
 
-       -      Egyéb (például az Ispell ragozott  utószó  esetében
-              bármilyen  szóösszetételt  elfogad:  macskatekerem,
+       -      EgyÃ©b (pÃ©ldÃ¡ul az Ispell ragozott  utÃ³szÃ³  esetÃ©ben
+              bÃ¡rmilyen  szÃ³Ã¶sszetÃ©telt  elfogad:  macskatekerem,
               kutyakavarom, ezt a Hunspell nem teszi meg).
 
-       -      Magyar nyelvû (illetve locale (7) függõ) felület.
+       -      Magyar nyelvÅ± (illetve locale (7) fÃ¼ggÅ‘) felÃ¼let.
 
-       -      Hordozható szöveges  szótárállományok,  szemben  az
-              Ispell  platform,  és  bináris  Ispell  fordítástól
-              függõen (nem) kezelhetõ adatállományaival.
+       -      HordozhatÃ³ szÃ¶veges  szÃ³tÃ¡rÃ¡llomÃ¡nyok,  szemben  az
+              Ispell  platform,  Ã©s  binÃ¡ris  Ispell  fordÃ­tÃ¡stÃ³l
+              fÃ¼ggÅ‘en (nem) kezelhetÅ‘ adatÃ¡llomÃ¡nyaival.
 
-KAPCSOLÓK
-       -1     Speciális  formátum:  a  bemeneti  állomány  minden
-              sorából csak az elsõ szót vizsgálja meg.
+KAPCSOLÃ“K
+       -1     SpeciÃ¡lis  formÃ¡tum:  a  bemeneti  Ã¡llomÃ¡ny  minden
+              sorÃ¡bÃ³l csak az elsÅ‘ szÃ³t vizsgÃ¡lja meg.
 
-       -a     Ispellhez  csõfelület.  A  !,  +,  -,  @, #, vagy ^
-              jellel  kezdõdõ  sorok  a   csõfelület   parancsai,
-              jelentésüket az Ispell kézikönyvoldal részletezi. A
-              -a kapcsoló hatására a  kimenetben  a  jó  szavakat
+       -a     Ispellhez  csÅ‘felÃ¼let.  A  !,  +,  -,  @, #, vagy ^
+              jellel  kezdÅ‘dÅ‘  sorok  a   csÅ‘felÃ¼let   parancsai,
+              jelentÃ©sÃ¼ket az Ispell kÃ©zikÃ¶nyvoldal rÃ©szletezi. A
+              -a kapcsolÃ³ hatÃ¡sÃ¡ra a  kimenetben  a  jÃ³  szavakat
               csak   csillaggal  jelzi  a  Hunspell.  Ez  nagyobb
-              kompatibilitást  biztosít   az   Ispellt   használó
-              programok  némelyikével (például a LyX-szel). Ekkor
-              nem kell megadnunk a -a kapcsolót, mivel az Ispellt
-              használó    programok    automatikusan    ezzel   a
-              kapcsolóval indítják  el  az  Ispell  nevében  futó
+              kompatibilitÃ¡st  biztosÃ­t   az   Ispellt   hasznÃ¡lÃ³
+              programok  nÃ©melyikÃ©vel (pÃ©ldÃ¡ul a LyX-szel). Ekkor
+              nem kell megadnunk a -a kapcsolÃ³t, mivel az Ispellt
+              hasznÃ¡lÃ³    programok    automatikusan    ezzel   a
+              kapcsolÃ³val indÃ­tjÃ¡k  el  az  Ispell  nevÃ©ben  futÃ³
               Hunspellt is.
 
-       -d  szótár
-              Meghatározza     a    helyesírási    szótárt.    Az
-              alapértelmezett              szótár               a
-              /usr/share/hunspell/default.   A  megadott  útvonal
-              lehet  abszolút  és  relatív  is.  Relatív  útvonal
-              esetén     elõször     az    aktuális,    majd    a
-              /usr/share/hunspell könyvtárban keresi a szótárt  a
-              program. L.  PÉLDÁK.
+       -d  szÃ³tÃ¡r
+              MeghatÃ¡rozza     a    helyesÃ­rÃ¡si    szÃ³tÃ¡rt.    Az
+              alapÃ©rtelmezett              szÃ³tÃ¡r               a
+              /usr/share/hunspell/default.   A  megadott  Ãºtvonal
+              lehet  abszolÃºt  Ã©s  relatÃ­v  is.  RelatÃ­v  Ãºtvonal
+              esetÃ©n     elÅ‘szÃ¶r     az    aktuÃ¡lis,    majd    a
+              /usr/share/hunspell kÃ¶nyvtÃ¡rban keresi a szÃ³tÃ¡rt  a
+              program. L.  PÃ‰LDÃK.
 
-       -G     A  -l,  és  -L  kapcsolókat  kiegészítõ kapcsoló. A
-              standard bemenetrõl érkezõ  hibás  szavak,  illetve
-              sorok  megjelenítése  helyett  a  jó  szavak  és  a
-              hibátlan sorok megjelenítését kérhetjük vele.
+       -G     A  -l,  Ã©s  -L  kapcsolÃ³kat  kiegÃ©szÃ­tÅ‘ kapcsolÃ³. A
+              standard bemenetrÅ‘l Ã©rkezÅ‘  hibÃ¡s  szavak,  illetve
+              sorok  megjelenÃ­tÃ©se  helyett  a  jÃ³  szavak  Ã©s  a
+              hibÃ¡tlan sorok megjelenÃ­tÃ©sÃ©t kÃ©rhetjÃ¼k vele.
 
        -h, --help
-              A beépített leírás megjelenítése.
+              A beÃ©pÃ­tett leÃ­rÃ¡s megjelenÃ­tÃ©se.
 
-       -H     HTML bemeneti állományformátum  beállítása.  Ha  az
-              állomány   nevének   .html,   .htm,   vagy  .xml  a
-              kiterjesztése, ez automatikusan bekövetkezik.
+       -H     HTML bemeneti Ã¡llomÃ¡nyformÃ¡tum  beÃ¡llÃ­tÃ¡sa.  Ha  az
+              Ã¡llomÃ¡ny   nevÃ©nek   .html,   .htm,   vagy  .xml  a
+              kiterjesztÃ©se, ez automatikusan bekÃ¶vetkezik.
 
-       -l     Csak a hibás szavakat írja ki a standard bemenetrõl
-              érkezõ  állományból.   Használható a -H, -t, -n, -1
-              kapcsolókkal együtt is. A -G kapcsoló megfordítja a
-              Hunspell  mûködését:  csak  a  jó  szavak  kerülnek
-              kiírásra.
+       -l     Csak a hibÃ¡s szavakat Ã­rja ki a standard bemenetrÅ‘l
+              Ã©rkezÅ‘  Ã¡llomÃ¡nybÃ³l.   HasznÃ¡lhatÃ³ a -H, -t, -n, -1
+              kapcsolÃ³kkal egyÃ¼tt is. A -G kapcsolÃ³ megfordÃ­tja a
+              Hunspell  mÅ±kÃ¶dÃ©sÃ©t:  csak  a  jÃ³  szavak  kerÃ¼lnek
+              kiÃ­rÃ¡sra.
 
-       -L     Csak a hibás szavakat tartalmazó sorokat írja ki  a
-              standard     bemenetrõl     érkezõ     állományból.
-              Használható a -H, -t, -n,  -1  kapcsolókkal  együtt
-              is.  A  -G  kapcsoló  megfordítja a mûködését: csak
-              azok a sorok kerülnek kiírásra, amelyek  egy  hibás
-              szót sem tartalmaznak.
+       -L     Csak a hibÃ¡s szavakat tartalmazÃ³ sorokat Ã­rja ki  a
+              standard     bemenetrÅ‘l     Ã©rkezÅ‘     Ã¡llomÃ¡nybÃ³l.
+              HasznÃ¡lhatÃ³ a -H, -t, -n,  -1  kapcsolÃ³kkal  egyÃ¼tt
+              is.  A  -G  kapcsolÃ³  megfordÃ­tja a mÅ±kÃ¶dÃ©sÃ©t: csak
+              azok a sorok kerÃ¼lnek kiÃ­rÃ¡sra, amelyek  egy  hibÃ¡s
+              szÃ³t sem tartalmaznak.
 
-       -n     Nroff/troff  bemeneti  állományformátum beállítása,
-              elsõsorban a kézikönyvlapok ellenõrzésére.
+       -n     Nroff/troff  bemeneti  Ã¡llomÃ¡nyformÃ¡tum beÃ¡llÃ­tÃ¡sa,
+              elsÅ‘sorban a kÃ©zikÃ¶nyvlapok ellenÅ‘rzÃ©sÃ©re.
 
-       -p  saját_szótár
-              A   felhasználó   saját   szótárának   beállítására
-              szolgál.
+       -p  sajÃ¡t_szÃ³tÃ¡r
+              A   felhasznÃ¡lÃ³   sajÃ¡t   szÃ³tÃ¡rÃ¡nak   beÃ¡llÃ­tÃ¡sÃ¡ra
+              szolgÃ¡l.
 
-              Az      alapértelmezett      saját     szótár     a
-              $HOME/.hunspell_default állomány.  Ha  szótárat  is
-              megadunk   a  -d  kapcsolóval,  vagy  a  DICTIONARY
-              környezeti   változóval,   a   saját    szótár    a
-              $HOME/.hunspell_szótárnév  lesz.  Ha a saját szótár
-              nem létezik, létrehozza.
+              Az      alapÃ©rtelmezett      sajÃ¡t     szÃ³tÃ¡r     a
+              $HOME/.hunspell_default Ã¡llomÃ¡ny.  Ha  szÃ³tÃ¡rat  is
+              megadunk   a  -d  kapcsolÃ³val,  vagy  a  DICTIONARY
+              kÃ¶rnyezeti   vÃ¡ltozÃ³val,   a   sajÃ¡t    szÃ³tÃ¡r    a
+              $HOME/.hunspell_szÃ³tÃ¡rnÃ©v  lesz.  Ha a sajÃ¡t szÃ³tÃ¡r
+              nem lÃ©tezik, lÃ©trehozza.
 
-              Ha az aktuális könyvtárban is  van  egy  ugyanilyen
-              nevû  állomány, akkor annak tartalma is beolvasásra
-              kerül, mint saját szótár,  és  az  újonnan  felvett
-              szavak is ide kerülnek.
+              Ha az aktuÃ¡lis kÃ¶nyvtÃ¡rban is  van  egy  ugyanilyen
+              nevÅ±  Ã¡llomÃ¡ny, akkor annak tartalma is beolvasÃ¡sra
+              kerÃ¼l, mint sajÃ¡t szÃ³tÃ¡r,  Ã©s  az  Ãºjonnan  felvett
+              szavak is ide kerÃ¼lnek.
 
-              A   -p   ,   vagy  a  WORDLIST  környezeti  változó
-              megadásával új saját szótárat jelölünk ki. A  saját
-              szótárat   az  aktuális  könyvtárban,  és  a  saját
-              könyvtár gyökerében ($HOME) keresi a  Hunspell.  Ha
-              nem  található,  akkor  az  újonnan  felvett szavak
-              mentésénél létrehozza a saját könyvtár  gyökerében.
+              A   -p   ,   vagy  a  WORDLIST  kÃ¶rnyezeti  vÃ¡ltozÃ³
+              megadÃ¡sÃ¡val Ãºj sajÃ¡t szÃ³tÃ¡rat jelÃ¶lÃ¼nk ki. A  sajÃ¡t
+              szÃ³tÃ¡rat   az  aktuÃ¡lis  kÃ¶nyvtÃ¡rban,  Ã©s  a  sajÃ¡t
+              kÃ¶nyvtÃ¡r gyÃ¶kerÃ©ben ($HOME) keresi a  Hunspell.  Ha
+              nem  talÃ¡lhatÃ³,  akkor  az  Ãºjonnan  felvett szavak
+              mentÃ©sÃ©nÃ©l lÃ©trehozza a sajÃ¡t kÃ¶nyvtÃ¡r  gyÃ¶kerÃ©ben.
 
-       -s     Tokenizálás  és  szótövek  elõállítása.  Amennyiben
-              állományokat adunk meg paraméterként,  a  fájlnevek
-              is megjelennek a kimenetben, lehetõséget nyújtva az
-              állományok indexelésére.  Ez utóbbiban a makedb, és
-              a lookdb parancsok segítenek.
+       -s     TokenizÃ¡lÃ¡s  Ã©s  szÃ³tÃ¶vek  elÅ‘Ã¡llÃ­tÃ¡sa.  Amennyiben
+              Ã¡llomÃ¡nyokat adunk meg paramÃ©terkÃ©nt,  a  fÃ¡jlnevek
+              is megjelennek a kimenetben, lehetÅ‘sÃ©get nyÃºjtva az
+              Ã¡llomÃ¡nyok indexelÃ©sÃ©re.  Ez utÃ³bbiban a makedb, Ã©s
+              a lookdb parancsok segÃ­tenek.
 
-              A tövezõ üzemmód kimenete a következõ: egy bemeneti
-              szóhoz  tartozik  egy  normalizált  szóalak,   majd
-              további sorokban a lehetséges tövek, végül egy üres
-              sor. Az  ellenõrzõ  által  nem  ismert  szavak  egy
-              kettõskereszttel   és   egy   szóközzel   bevezetve
-              kerülnek a kimenetbe.
+              A tÃ¶vezÅ‘ Ã¼zemmÃ³d kimenete a kÃ¶vetkezÅ‘: egy bemeneti
+              szÃ³hoz  tartozik  egy  normalizÃ¡lt  szÃ³alak,   majd
+              tovÃ¡bbi sorokban a lehetsÃ©ges tÃ¶vek, vÃ©gÃ¼l egy Ã¼res
+              sor. Az  ellenÅ‘rzÅ‘  Ã¡ltal  nem  ismert  szavak  egy
+              kettÅ‘skereszttel   Ã©s   egy   szÃ³kÃ¶zzel   bevezetve
+              kerÃ¼lnek a kimenetbe.
 
-       -t     LaTeX bemeneti állományformátum beállítása.  Ha  az
-              állomány   nevének   .tex   a   kiterjesztése,   ez
-              automatikusan bekövetkezik.
+       -t     LaTeX bemeneti Ã¡llomÃ¡nyformÃ¡tum beÃ¡llÃ­tÃ¡sa.  Ha  az
+              Ã¡llomÃ¡ny   nevÃ©nek   .tex   a   kiterjesztÃ©se,   ez
+              automatikusan bekÃ¶vetkezik.
 
-       -v     Verziószám.
+       -v     VerziÃ³szÃ¡m.
 
-       -vv    Verziószám (Ispell kompatibilitás miatt).
+       -vv    VerziÃ³szÃ¡m (Ispell kompatibilitÃ¡s miatt).
 
-INTERAKTÍV FELÜLET
-       A felület legfelsõ sorában a hibás szóalakot, és az  éppen
-       vizsgált  állomány  nevét  látjuk.  Amennyiben egy szóalak
-       szótári tiltás miatt nem kerül elfogadásra,  a  bal  felsõ
-       sarokban a TILTOTT!  (FORBIDDEN!) üzenet is megjelenik. Ez
-       az üzenet arra utal,  hogy  nem  hiányos  szókincs,  hanem
-       szándékos  tiltás  miatt  nem került a szó elfogadásra. Az
-       elsõ sor alatt az állomány hibás szót tartalmazó sorát, és
-       szövegkörnyezetét    láthatjuk,   majd   ezt   követik   a
+INTERAKTÃV FELÃœLET
+       A felÃ¼let legfelsÅ‘ sorÃ¡ban a hibÃ¡s szÃ³alakot, Ã©s az  Ã©ppen
+       vizsgÃ¡lt  Ã¡llomÃ¡ny  nevÃ©t  lÃ¡tjuk.  Amennyiben egy szÃ³alak
+       szÃ³tÃ¡ri tiltÃ¡s miatt nem kerÃ¼l elfogadÃ¡sra,  a  bal  felsÅ‘
+       sarokban a TILTOTT!  (FORBIDDEN!) Ã¼zenet is megjelenik. Ez
+       az Ã¼zenet arra utal,  hogy  nem  hiÃ¡nyos  szÃ³kincs,  hanem
+       szÃ¡ndÃ©kos  tiltÃ¡s  miatt  nem kerÃ¼lt a szÃ³ elfogadÃ¡sra. Az
+       elsÅ‘ sor alatt az Ã¡llomÃ¡ny hibÃ¡s szÃ³t tartalmazÃ³ sorÃ¡t, Ã©s
+       szÃ¶vegkÃ¶rnyezetÃ©t    lÃ¡thatjuk,   majd   ezt   kÃ¶vetik   a
        javaslatok, ha vannak.
 
-       A használható billentyûkombinációk:
+       A hasznÃ¡lhatÃ³ billentyÅ±kombinÃ¡ciÃ³k:
 
-       Szóköz Továbblépés javítás nélkül a következõ hibás szóra.
+       SzÃ³kÃ¶z TovÃ¡bblÃ©pÃ©s javÃ­tÃ¡s nÃ©lkÃ¼l a kÃ¶vetkezÅ‘ hibÃ¡s szÃ³ra.
 
-       Számok A megfelelõ javaslat kiválasztása.
+       SzÃ¡mok A megfelelÅ‘ javaslat kivÃ¡lasztÃ¡sa.
 
-       c      Csere.  A  hibás szó cseréje a megadott szóra, vagy
-              szavakra.     Az    Escape    billentyû    kétszeri
-              lenyomásával megszakíthatjuk a a cserét.
+       c      Csere.  A  hibÃ¡s szÃ³ cserÃ©je a megadott szÃ³ra, vagy
+              szavakra.     Az    Escape    billentyÅ±    kÃ©tszeri
+              lenyomÃ¡sÃ¡val megszakÃ­thatjuk a a cserÃ©t.
 
-       j      A    szó    elfogadása    a    program    futásának
-              befejezõdéséig.
+       j      A    szÃ³    elfogadÃ¡sa    a    program    futÃ¡sÃ¡nak
+              befejezÅ‘dÃ©sÃ©ig.
 
-       f      A szó felvétele a saját szótárba.
+       f      A szÃ³ felvÃ©tele a sajÃ¡t szÃ³tÃ¡rba.
 
-       k      A szó kisbetûsként való felvétele a saját szótárba.
+       k      A szÃ³ kisbetÅ±skÃ©nt valÃ³ felvÃ©tele a sajÃ¡t szÃ³tÃ¡rba.
 
-       t      Ragozott  tõszó  felvétele. A ragozás a másodikként
-              megadott, mintául szolgáló  szó  alapján  történik.
-              Ha   ez   a   szó   nincs  felvéve  a  szótárba,  a
-              tõszófelvételt elölrõl kell kezdeni.
+       t      Ragozott  tÅ‘szÃ³  felvÃ©tele. A ragozÃ¡s a mÃ¡sodikkÃ©nt
+              megadott, mintÃ¡ul szolgÃ¡lÃ³  szÃ³  alapjÃ¡n  tÃ¶rtÃ©nik.
+              Ha   ez   a   szÃ³   nincs  felvÃ©ve  a  szÃ³tÃ¡rba,  a
+              tÅ‘szÃ³felvÃ©telt elÃ¶lrÅ‘l kell kezdeni.
 
-              Példa:  gyakran   hiányoznak   az   idegen   és   a
-              mozaikszavak.  Vegyük  fel  a hiányzó OTP szót a tv
-              köznévi mozaikszó  toldalékaival!   Lenyomjuk  a  t
-              billentyût, beírjuk, hogy OTP, Enter, beírjuk, hogy
-              tv, és Enter. A  tv  szó  ugyanis  már  szerepel  a
-              szótárban,  és  ragozása  mondja  meg a programnak,
-              hogy az OTP szót  milyen  toldalékokkal  szeretnénk
-              látni,  pl.  OTP-hez, OTP-met stb. a tv-hez, tv-met
-              mintájára.  A  -val/-vel,  -vá/-vé  toldalékokat  a
-              kötõjellel kapcsolt toldalékú szavak esetében külön
-              kell felvenni, de még így is sokkal kényelmesebb  a
-              speciális  tõfelvétel, mint minden (akár több száz)
-              toldalékos alakot külön-külön felvenni.
+              PÃ©lda:  gyakran   hiÃ¡nyoznak   az   idegen   Ã©s   a
+              mozaikszavak.  VegyÃ¼k  fel  a hiÃ¡nyzÃ³ OTP szÃ³t a tv
+              kÃ¶znÃ©vi mozaikszÃ³  toldalÃ©kaival!   Lenyomjuk  a  t
+              billentyÅ±t, beÃ­rjuk, hogy OTP, Enter, beÃ­rjuk, hogy
+              tv, Ã©s Enter. A  tv  szÃ³  ugyanis  mÃ¡r  szerepel  a
+              szÃ³tÃ¡rban,  Ã©s  ragozÃ¡sa  mondja  meg a programnak,
+              hogy az OTP szÃ³t  milyen  toldalÃ©kokkal  szeretnÃ©nk
+              lÃ¡tni,  pl.  OTP-hez, OTP-met stb. a tv-hez, tv-met
+              mintÃ¡jÃ¡ra.  A  -val/-vel,  -vÃ¡/-vÃ©  toldalÃ©kokat  a
+              kÃ¶tÅ‘jellel kapcsolt toldalÃ©kÃº szavak esetÃ©ben kÃ¼lÃ¶n
+              kell felvenni, de mÃ©g Ã­gy is sokkal kÃ©nyelmesebb  a
+              speciÃ¡lis  tÅ‘felvÃ©tel, mint minden (akÃ¡r tÃ¶bb szÃ¡z)
+              toldalÃ©kos alakot kÃ¼lÃ¶n-kÃ¼lÃ¶n felvenni.
 
-              Egy kis  segítség  a  minta  kiválasztásához:  elsõ
-              menetben  a  hangrend számít. Pl. mozaikszavaknál a
-              mély hangrendû új szavak felvételénél használhatjuk
-              a  MÁV  szót példaként, ajakréses magas hangrendnél
-              pedig  az  említett  tv-t.  Ajakkerekítéses   magas
-              hangrend esetében a HÖK szót használhatjuk (amíg át
-              nem lesz javítva a helyes hök-re). Ha a hiányzó szó
-              nem  mozaikszó,  hanem  például tulajdonnév, a Pál,
-              Péter,  Örs  szavakat  adhatjuk  meg   példának   a
-              hangrendtõl  függõen. Ha meg egyszerû köznévrõl van
-              szó, akkor  használjuk  az  ok,  ék,  ük  szavakat.
-              Igéknél  áll,  vél,  ül, ikes igéknél ázik, vérzik,
-              nõzik  lehet  a  példa  (remélhetõleg  a  következõ
-              változatokban egyszerûsödik ez a tõfelvétel).
+              Egy kis  segÃ­tsÃ©g  a  minta  kivÃ¡lasztÃ¡sÃ¡hoz:  elsÅ‘
+              menetben  a  hangrend szÃ¡mÃ­t. Pl. mozaikszavaknÃ¡l a
+              mÃ©ly hangrendÅ± Ãºj szavak felvÃ©telÃ©nÃ©l hasznÃ¡lhatjuk
+              a  MÃV  szÃ³t pÃ©ldakÃ©nt, ajakrÃ©ses magas hangrendnÃ©l
+              pedig  az  emlÃ­tett  tv-t.  AjakkerekÃ­tÃ©ses   magas
+              hangrend esetÃ©ben a HÃ–K szÃ³t hasznÃ¡lhatjuk (amÃ­g Ã¡t
+              nem lesz javÃ­tva a helyes hÃ¶k-re). Ha a hiÃ¡nyzÃ³ szÃ³
+              nem  mozaikszÃ³,  hanem  pÃ©ldÃ¡ul tulajdonnÃ©v, a PÃ¡l,
+              PÃ©ter,  Ã–rs  szavakat  adhatjuk  meg   pÃ©ldÃ¡nak   a
+              hangrendtÅ‘l  fÃ¼ggÅ‘en. Ha meg egyszerÅ± kÃ¶znÃ©vrÅ‘l van
+              szÃ³, akkor  hasznÃ¡ljuk  az  ok,  Ã©k,  Ã¼k  szavakat.
+              IgÃ©knÃ©l  Ã¡ll,  vÃ©l,  Ã¼l, ikes igÃ©knÃ©l Ã¡zik, vÃ©rzik,
+              nÅ‘zik  lehet  a  pÃ©lda  (remÃ©lhetÅ‘leg  a  kÃ¶vetkezÅ‘
+              vÃ¡ltozatokban egyszerÅ±sÃ¶dik ez a tÅ‘felvÃ©tel).
 
-              Az    Escape    billentyû   kétszeri   lenyomásával
-              megszakíthatjuk ezt a mûveletet.
+              Az    Escape    billentyÅ±   kÃ©tszeri   lenyomÃ¡sÃ¡val
+              megszakÃ­thatjuk ezt a mÅ±veletet.
 
-              Az  itt  felvett  szavak  automatikusan   a   saját
-              szótárba kerülnek. Ha ezt innen törölni szeretnénk,
-              a  programból   kilépve   a   saját   szótár   kézi
-              átszerkesztésével tehetjük meg.
+              Az  itt  felvett  szavak  automatikusan   a   sajÃ¡t
+              szÃ³tÃ¡rba kerÃ¼lnek. Ha ezt innen tÃ¶rÃ¶lni szeretnÃ©nk,
+              a  programbÃ³l   kilÃ©pve   a   sajÃ¡t   szÃ³tÃ¡r   kÃ©zi
+              Ã¡tszerkesztÃ©sÃ©vel tehetjÃ¼k meg.
 
 
-       m      Kilépés  a  változtatások mentése nélkül. A program
-              változtatás megléte esetén megerõsítést kér.
+       m      KilÃ©pÃ©s  a  vÃ¡ltoztatÃ¡sok mentÃ©se nÃ©lkÃ¼l. A program
+              vÃ¡ltoztatÃ¡s meglÃ©te esetÃ©n megerÅ‘sÃ­tÃ©st kÃ©r.
 
-       v      Az   állomány   ellenõrzésének    megszakítása    a
-              változtatások    mentésével.   Ha   van   következõ
-              állomány, akkor a program annak ellenõrzését  kezdi
+       v      Az   Ã¡llomÃ¡ny   ellenÅ‘rzÃ©sÃ©nek    megszakÃ­tÃ¡sa    a
+              vÃ¡ltoztatÃ¡sok    mentÃ©sÃ©vel.   Ha   van   kÃ¶vetkezÅ‘
+              Ã¡llomÃ¡ny, akkor a program annak ellenÅ‘rzÃ©sÃ©t  kezdi
               el.
 
-       ?      Segítség.  Hasonló  rövid  leírás  megjelenítése  a
-              billentyûparancsokról.
+       ?      SegÃ­tsÃ©g.  HasonlÃ³  rÃ¶vid  leÃ­rÃ¡s  megjelenÃ­tÃ©se  a
+              billentyÅ±parancsokrÃ³l.
 
-CSÕFELÜLET
-       A MIspell   soronként  dolgozza  fel  az  állományokat,  a
-       helyes  szavakat  *  (tõszó),  -  (összetett  szó), vagy +
-       (ragozott  szó)  karakterrel  jelöli,  a  helyteleneket  #
+CSÅFELÃœLET
+       A MIspell   soronkÃ©nt  dolgozza  fel  az  Ã¡llomÃ¡nyokat,  a
+       helyes  szavakat  *  (tÅ‘szÃ³),  -  (Ã¶sszetett  szÃ³), vagy +
+       (ragozott  szÃ³)  karakterrel  jelÃ¶li,  a  helyteleneket  #
        (nincs  javaslat) , vagy & (van javaslat) karakterrel. A +
-       jelet a kimenetben követi még a szótõ.  A  #  jel  után  a
-       hibás  szó,  és kezdõpozíciója van feltüntetve.  A & jelet
-       követi a hibás  szó;  a  javaslatok  száma;  a  hibás  szó
-       kezdõpozíciója;   majd   kettõspont   után  a  javaslatok,
-       vesszõvel elválasztva:
+       jelet a kimenetben kÃ¶veti mÃ©g a szÃ³tÅ‘.  A  #  jel  utÃ¡n  a
+       hibÃ¡s  szÃ³,  Ã©s kezdÅ‘pozÃ­ciÃ³ja van feltÃ¼ntetve.  A & jelet
+       kÃ¶veti a hibÃ¡s  szÃ³;  a  javaslatok  szÃ¡ma;  a  hibÃ¡s  szÃ³
+       kezdÅ‘pozÃ­ciÃ³ja;   majd   kettÅ‘spont   utÃ¡n  a  javaslatok,
+       vesszÅ‘vel elvÃ¡lasztva:
 
               macska
               *
               macskabajusz
               -
-              macskák
+              macskÃ¡k
               + macska
               mcsk
               # mcsk 0
               macka
               & macka 7 0: macska, maca, racka, packa, vacka, 
-marka, mackó
+marka, mackÃ³
 
-PÉLDÁK
+PÃ‰LDÃK
        hunspell -d en_US english.html
-              Az amerikai angol helyesírási  szótár  kiválasztása
-              (aktuális,  vagy a /usr/share/hunspell könyvtárból.
+              Az amerikai angol helyesÃ­rÃ¡si  szÃ³tÃ¡r  kivÃ¡lasztÃ¡sa
+              (aktuÃ¡lis,  vagy a /usr/share/hunspell kÃ¶nyvtÃ¡rbÃ³l.
 
        hunspell -d /opt/OpenOffice.org1.0.1/share/dict/ooo/de_DE
-              A német helyesírási szótár kiválasztása a  megadott
-              abszolút    útvonalról,    a    standard    bemenet
-              feldolgozásával.
+              A nÃ©met helyesÃ­rÃ¡si szÃ³tÃ¡r kivÃ¡lasztÃ¡sa a  megadott
+              abszolÃºt    ÃºtvonalrÃ³l,    a    standard    bemenet
+              feldolgozÃ¡sÃ¡val.
 
        hunspell *.html
-              Az  aktuális  könyvtárban  található  összes   HTML
-              állomány interaktív ellenõrzése.
+              Az  aktuÃ¡lis  kÃ¶nyvtÃ¡rban  talÃ¡lhatÃ³  Ã¶sszes   HTML
+              Ã¡llomÃ¡ny interaktÃ­v ellenÅ‘rzÃ©se.
 
-       hunspell -l szöveg.html
-              A megadott állomány hibás szavainak kiírása.
+       hunspell -l szÃ¶veg.html
+              A megadott Ã¡llomÃ¡ny hibÃ¡s szavainak kiÃ­rÃ¡sa.
 
        hunspell -r *.html
-              Az   aktuális  könyvtárban  található  összes  HTML
-              állomány  szavainak,  és   a   szavak   szótöveinek
-              kiírása.
+              Az   aktuÃ¡lis  kÃ¶nyvtÃ¡rban  talÃ¡lhatÃ³  Ã¶sszes  HTML
+              Ã¡llomÃ¡ny  szavainak,  Ã©s   a   szavak   szÃ³tÃ¶veinek
+              kiÃ­rÃ¡sa.
 
-KÖRNYEZET
+KÃ–RNYEZET
        DICTIONARY
-              A   szótár  helyének  megadására  szolgál.  Szerepe
-              megegyezik a -d kapcsolóval.
+              A   szÃ³tÃ¡r  helyÃ©nek  megadÃ¡sÃ¡ra  szolgÃ¡l.  Szerepe
+              megegyezik a -d kapcsolÃ³val.
 
        WORDLIST
-              A saját szótár helyének megadására szolgál. Szerepe
-              megegyezik a -p kapcsolóval.
+              A sajÃ¡t szÃ³tÃ¡r helyÃ©nek megadÃ¡sÃ¡ra szolgÃ¡l. Szerepe
+              megegyezik a -p kapcsolÃ³val.
 
-ÁLLOMÁNYOK
-       /usr/share/default.aff    Az    alapértelmezett   ragozási
-       táblázat. Lásd hunspell(4).
+ÃLLOMÃNYOK
+       /usr/share/default.aff    Az    alapÃ©rtelmezett   ragozÃ¡si
+       tÃ¡blÃ¡zat. LÃ¡sd hunspell(4).
 
-       /usr/share/default.dic Az alapértelmezett szótár az  elõzõ
-       ragozási       táblázathoz.        Lásd       hunspell(4).
-       $HOME/.hunspell_default Az alapértelmezett  saját  szótár.
-       Az  állományt  létrehozza a Hunspell, ha nem létezik. Lásd
+       /usr/share/default.dic Az alapÃ©rtelmezett szÃ³tÃ¡r az  elÅ‘zÅ‘
+       ragozÃ¡si       tÃ¡blÃ¡zathoz.        LÃ¡sd       hunspell(4).
+       $HOME/.hunspell_default Az alapÃ©rtelmezett  sajÃ¡t  szÃ³tÃ¡r.
+       Az  Ã¡llomÃ¡nyt  lÃ©trehozza a Hunspell, ha nem lÃ©tezik. LÃ¡sd
        ispell(1).
 
-LÁSD MÉG
+LÃSD MÃ‰G
        hunspell (4), hunstem (1), makedb (1), lookdb (1),  ispell
-       (1), ispell (4), Magyar Ispell dokumentáció.
+       (1), ispell (4), Magyar Ispell dokumentÃ¡ciÃ³.
 
-SZERZÕ
-       A Hunspell az International Ispell lényegi részének C++-os
-       újramegvalósításának,  a  MySpell  függvénykönyvtárnak   a
-       bõvítése.    Nemcsak  felület  a  könyvtárhoz,  hanem  egy
-       jelentõs bõvítés is a magyar nyelv vonatkozásában  (Magyar
+SZERZÅ
+       A Hunspell az International Ispell lÃ©nyegi rÃ©szÃ©nek C++-os
+       ÃºjramegvalÃ³sÃ­tÃ¡sÃ¡nak,  a  MySpell  fÃ¼ggvÃ©nykÃ¶nyvtÃ¡rnak   a
+       bÅ‘vÃ­tÃ©se.    Nemcsak  felÃ¼let  a  kÃ¶nyvtÃ¡rhoz,  hanem  egy
+       jelentÅ‘s bÅ‘vÃ­tÃ©s is a magyar nyelv vonatkozÃ¡sÃ¡ban  (Magyar
        MySpell).
 
-       A  mintaként  szolgáló International Ispell szerzõje Geoff
-       Kuenning,  sok  más  elõdje  munkájára   támaszkodva   (l.
+       A  mintakÃ©nt  szolgÃ¡lÃ³ International Ispell szerzÅ‘je Geoff
+       Kuenning,  sok  mÃ¡s  elÅ‘dje  munkÃ¡jÃ¡ra   tÃ¡maszkodva   (l.
        ispell(1)).
 
-       A MySpellt Kevin Hendricks készítette a kiváló és ingyenes
+       A MySpellt Kevin Hendricks kÃ©szÃ­tette a kivÃ¡lÃ³ Ã©s ingyenes
        OpenOffice.org     (eredetileg     StarOffice)      irodai
        programcsomaghoz 2001-2002-ben.
 
-       A  Magyar  MySpellt,  illetve  a Hunspell felületet Németh
-       László <nemethl@gyorsposta.hu> készítette 2002-2003-ban.
+       A  Magyar  MySpellt,  illetve  a Hunspell felÃ¼letet NÃ©meth
+       LÃ¡szlÃ³ <nemethl@gyorsposta.hu> kÃ©szÃ­tette 2002-2003-ban.
 
-       2003 márciusától a fejlesztést a Szószablya projekt  viszi
-       tovább  egy  nyitott  forráskódú magyar morfológiai elemzõ
-       elkészítésének irányába.
+       2003 mÃ¡rciusÃ¡tÃ³l a fejlesztÃ©st a SzÃ³szablya projekt  viszi
+       tovÃ¡bb  egy  nyitott  forrÃ¡skÃ³dÃº magyar morfolÃ³giai elemzÅ‘
+       elkÃ©szÃ­tÃ©sÃ©nek irÃ¡nyÃ¡ba.
 
-       A Hunspell a Magyar Ispell projekt  eredményét,  a  magyar
-       Ispell/MySpell helyesírási szótármodult használja a magyar
-       nyelvû   szövegek   ellenõrzésekor.    A   Magyar   Ispell
-       levelezõlista    a    magyarispell@yahoogroups.com   címen
-       található.  Várunk  minden  olyan   észrevételt,   illetve
-       segítséget,    ami   jobbá   teheti   a   Magyar   MySpell
-       helyesírás-ellenõrzõt, és a Magyar Ispell szótármodult.
+       A Hunspell a Magyar Ispell projekt  eredmÃ©nyÃ©t,  a  magyar
+       Ispell/MySpell helyesÃ­rÃ¡si szÃ³tÃ¡rmodult hasznÃ¡lja a magyar
+       nyelvÅ±   szÃ¶vegek   ellenÅ‘rzÃ©sekor.    A   Magyar   Ispell
+       levelezÅ‘lista    a    magyarispell@yahoogroups.com   cÃ­men
+       talÃ¡lhatÃ³.  VÃ¡runk  minden  olyan   Ã©szrevÃ©telt,   illetve
+       segÃ­tsÃ©get,    ami   jobbÃ¡   teheti   a   Magyar   MySpell
+       helyesÃ­rÃ¡s-ellenÅ‘rzÅ‘t, Ã©s a Magyar Ispell szÃ³tÃ¡rmodult.
 
-       Az International Ispell-nek, és így a MySpellnek is magyar
-       vonatkozása    is    van.     A    programokban   szereplõ
-       affixumtömörítés a Dömölki-algoritmuson alapszik,  Dömölki
-       Bálint  egyik 60-as években publikált algoritmusán, amit a
-       magyar  M3-as,  az  elsõ  hazai  elektronikus   számítógép
-       megépítését   követõen,   nyelvészeti   jellegû  kutatások
-       kapcsán dolgozott ki.
+       Az International Ispell-nek, Ã©s Ã­gy a MySpellnek is magyar
+       vonatkozÃ¡sa    is    van.     A    programokban   szereplÅ‘
+       affixumtÃ¶mÃ¶rÃ­tÃ©s a DÃ¶mÃ¶lki-algoritmuson alapszik,  DÃ¶mÃ¶lki
+       BÃ¡lint  egyik 60-as Ã©vekben publikÃ¡lt algoritmusÃ¡n, amit a
+       magyar  M3-as,  az  elsÅ‘  hazai  elektronikus   szÃ¡mÃ­tÃ³gÃ©p
+       megÃ©pÃ­tÃ©sÃ©t   kÃ¶vetÅ‘en,   nyelvÃ©szeti   jellegÅ±  kutatÃ¡sok
+       kapcsÃ¡n dolgozott ki.
 
-HIBÁK
-       A saját szótár mérete jelenleg 1000 szóban van korlátozva.
-       A forrásban a MAXUSERWORD makró beállításával állítható be
-       a kívánt érték.
+HIBÃK
+       A sajÃ¡t szÃ³tÃ¡r mÃ©rete jelenleg 1000 szÃ³ban van korlÃ¡tozva.
+       A forrÃ¡sban a MAXUSERWORD makrÃ³ beÃ¡llÃ­tÃ¡sÃ¡val Ã¡llÃ­thatÃ³ be
+       a kÃ­vÃ¡nt Ã©rtÃ©k.
 
-       Az  UTF-8,   vagy   UTF-16   karakterkódolású   állományok
-       ellenõrzését még nem támogatja.
+       Az  UTF-8,   vagy   UTF-16   karakterkÃ³dolÃ¡sÃº   Ã¡llomÃ¡nyok
+       ellenÅ‘rzÃ©sÃ©t mÃ©g nem tÃ¡mogatja.
 
-       A  sorok  maximális  mérete nincs korlátozva, de a 8 kB-os
-       határokon tévesen  hibát  jelezhet  a  program.  A  szóköz
-       lenyomásával ugorjuk át a téves hibajelzést!
+       A  sorok  maximÃ¡lis  mÃ©rete nincs korlÃ¡tozva, de a 8 kB-os
+       hatÃ¡rokon tÃ©vesen  hibÃ¡t  jelezhet  a  program.  A  szÃ³kÃ¶z
+       lenyomÃ¡sÃ¡val ugorjuk Ã¡t a tÃ©ves hibajelzÃ©st!
 
-       Az  e-mail  címek, URL-ek, és egyéb útvonalak ellenõrzését
-       elkerülhetjük, ha ezeket a javasolt módon; HTML esetében a
-       <var>útvonal</var>,  LaTeX esetében \url{útvonal} formában
-       adjuk meg. (A címek elválasztást  is  lehetõvé  tevõ  \url
-       LaTeX   parancs   az   url   csomagban   található,  tehát
-       használatához  a  \usepackage{url}  parancs  kiadására  is
-       szükség van a preambulumban.)
-
-
+       Az  e-mail  cÃ­mek, URL-ek, Ã©s egyÃ©b Ãºtvonalak ellenÅ‘rzÃ©sÃ©t
+       elkerÃ¼lhetjÃ¼k, ha ezeket a javasolt mÃ³don; HTML esetÃ©ben a
+       <var>Ãºtvonal</var>,  LaTeX esetÃ©ben \url{Ãºtvonal} formÃ¡ban
+       adjuk meg. (A cÃ­mek elvÃ¡lasztÃ¡st  is  lehetÅ‘vÃ©  tevÅ‘  \url
+       LaTeX   parancs   az   url   csomagban   talÃ¡lhatÃ³,  tehÃ¡t
+       hasznÃ¡latÃ¡hoz  a  \usepackage{url}  parancs  kiadÃ¡sÃ¡ra  is
+       szÃ¼ksÃ©g van a preambulumban.)
 
 
-                         2003. június 13.             hunspell(1)
+
+
+                         2003. jÃºnius 13.             hunspell(1)

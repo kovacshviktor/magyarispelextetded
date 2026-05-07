@@ -1,5 +1,5 @@
 #!/bin/sh
-# A szotar könyvtárban állva kigyûjti a szótár szavait
+# A szotar kÃ¶nyvtÃ¡rban Ã¡llva kigyÅ±jti a szÃ³tÃ¡r szavait
 export LC_ALL=C
 cd ../szotar
 cat `find -type f -name '*.[0-9]'` | m4 | grep -v TILTOTT | grep -v '/.*w' |

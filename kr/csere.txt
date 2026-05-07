@@ -40,7 +40,7 @@ s#\[SBL]#<CAS<SBL>>#g
 s#\[SUE]#<CAS<SUE>>#g
 s#\[TEMP]#<CAS<TEM>>#g
 s#\[PLUR]#<PLUR>#g
-s#\[ék_FAMILIAR_noun]#<PLUR<FAM>>#g
+s#\[Ã©k_FAMILIAR_noun]#<PLUR<FAM>>#g
 s#\[adj]{+\[PLUR]+\[NOM]}#/ADJ{<PLUR>}#g
 s#\[adj]{+\[NOM]}#/ADJ#g
 s#\[adj]#/ADJ#g

@@ -2,43 +2,43 @@ makedb(1)                                               makedb(1)
 
 
 
-NÉV
-       makedb - webhelyek indexállományának létrehozása
+NÃ‰V
+       makedb - webhelyek indexÃ¡llomÃ¡nyÃ¡nak lÃ©trehozÃ¡sa
 
-ÁTTEKINTÉS
-       makedb [-d könyvtár [-r]] [-o állomány]
+ÃTTEKINTÃ‰S
+       makedb [-d kÃ¶nyvtÃ¡r [-r]] [-o Ã¡llomÃ¡ny]
 
-LEÍRÁS
-       A  makedb  parancs az aktuális könyvtár és alkönyvtárainak
-       txt, htm vagy html  kiterjesztésû  állományait  a  Hunstem
-       segítségével  indexeli,  és annak kimenetét a Lookdb által
-       kereshetõ formára hozza, majd hunstem.index néven  elmenti
-       az aktuális könyvtárba.
+LEÃRÃS
+       A  makedb  parancs az aktuÃ¡lis kÃ¶nyvtÃ¡r Ã©s alkÃ¶nyvtÃ¡rainak
+       txt, htm vagy html  kiterjesztÃ©sÅ±  Ã¡llomÃ¡nyait  a  Hunstem
+       segÃ­tsÃ©gÃ©vel  indexeli,  Ã©s annak kimenetÃ©t a Lookdb Ã¡ltal
+       kereshetÅ‘ formÃ¡ra hozza, majd hunstem.index nÃ©ven  elmenti
+       az aktuÃ¡lis kÃ¶nyvtÃ¡rba.
 
-KAPCSOLÓK
-       -d  könyvtár
-              Az   indexelni   kívánt  könyvtárrendszer  gyökere.
-              Alapesetben ez az aktuális könyvtár.
+KAPCSOLÃ“K
+       -d  kÃ¶nyvtÃ¡r
+              Az   indexelni   kÃ­vÃ¡nt  kÃ¶nyvtÃ¡rrendszer  gyÃ¶kere.
+              Alapesetben ez az aktuÃ¡lis kÃ¶nyvtÃ¡r.
 
-       -o  állomány
-              A program  kimeneti  állománya.  Alapesetben  ez  a
+       -o  Ã¡llomÃ¡ny
+              A program  kimeneti  Ã¡llomÃ¡nya.  Alapesetben  ez  a
               ./hunstem.index.
 
-       -r     A  kimenet relatív útvonalakat fog tartalmazni a -d
-              kapcsoló használata esetén is.
+       -r     A  kimenet relatÃ­v Ãºtvonalakat fog tartalmazni a -d
+              kapcsolÃ³ hasznÃ¡lata esetÃ©n is.
 
-PÉLDÁK
+PÃ‰LDÃK
        makedb -d /var/www -o /var/www/hunstem.index -r
 
-       A parancs egyenértékû a következõvel:
+       A parancs egyenÃ©rtÃ©kÅ± a kÃ¶vetkezÅ‘vel:
 
        cd /var/www; makedb
 
-LÁSD MÉG
-       lookdb  (1),  hunspell  (1).   A  makedb  rövid   és   jól
-       dokumentált   héjprogram,  ezért  érdemes  a  forrását  is
+LÃSD MÃ‰G
+       lookdb  (1),  hunspell  (1).   A  makedb  rÃ¶vid   Ã©s   jÃ³l
+       dokumentÃ¡lt   hÃ©jprogram,  ezÃ©rt  Ã©rdemes  a  forrÃ¡sÃ¡t  is
        megtekinteni.
 
 
 
-                         2003. június 13.               makedb(1)
+                         2003. jÃºnius 13.               makedb(1)

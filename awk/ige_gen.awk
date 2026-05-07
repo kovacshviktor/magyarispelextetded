@@ -1,5 +1,5 @@
 #
-# igék ragozási csoportba sorolása
+# igÃ©k ragozÃ¡si csoportba sorolÃ¡sa
 #
 BEGIN { 
     while ((getline var < "ige_mely.1") > 0) { mely[var]=1; }
@@ -8,21 +8,21 @@ BEGIN {
     while ((getline var < "ige_osszetett.1") > 0) { ossz[var]=1; }
 }
 
-# mély hangrendû igék + i
-/[uúoóaá][bcdfghjklmnpqrstvwxyz]*ik$/ || /[uúoóaá][bcdfghjklmnpqrstvwxyz]*ít$/ { 
+# mÃ©ly hangrendÅ± igÃ©k + i
+/[uÃºoÃ³aÃ¡][bcdfghjklmnpqrstvwxyz]*ik$/ || /[uÃºoÃ³aÃ¡][bcdfghjklmnpqrstvwxyz]*Ã­t$/ { 
     print "[vrb]" $0 "/O" o (koto[$1]?"":"X") (ossz[$1]?"y":""); next }
-/[uúoóaá][bcdfghjklmnpqrstvwxyz]*$/ { 
+/[uÃºoÃ³aÃ¡][bcdfghjklmnpqrstvwxyz]*$/ { 
     if (morfo[$0]==1) { print "[vrb]" $0 "/O" o "/d" m (koto[$1]?"":"X") (ossz[$1]?"y":"")} 
     else { print "[vrb]" $0 "/O" o (koto[$1]?"":"X") (ossz[$1]?"y":"")}
     next
 }
-# magas, ajakréses
-/-zik$/ || /[iíeëé][-bcdfghjklmnpqrstvwxyz]*ik$/ || /[iíeé][bcdfghjklmnpqrstvwxyz]*ít$/ { 
+# magas, ajakrÃ©ses
+/-zik$/ || /[iÃ­eÃ«Ã©][-bcdfghjklmnpqrstvwxyz]*ik$/ || /[iÃ­eÃ©][bcdfghjklmnpqrstvwxyz]*Ã­t$/ { 
     if (mely[$0]==1) { print "[vrb]" $0 "/O" o (koto[$1]?"":"X") (ossz[$1]?"y":"")} 
     else { print "[vrb]" $0 "/E" e (koto[$1]?"":"X") (ossz[$1]?"y":"")};
     next
 }
-/[iíeé][bcdfghjklmnpqrstvwxyz]*$/ && ! /ik$/ {
+/[iÃ­eÃ©][bcdfghjklmnpqrstvwxyz]*$/ && ! /ik$/ {
     if (mely[$0]==1) { print "[vrb]" $0 "/O" o (koto[$1]?"":"X") (ossz[$1]?"y":"")} 
     else { 
 		if (morfo[$0]==1) { print "[vrb]" $0 "/E" e "/d" m (koto[$1]?"":"X") (ossz[$1]?"y":"")} 
@@ -30,13 +30,13 @@ BEGIN {
     }
     next
 }
-# magas, ajakkerekítéses
-/[öõüû][-bcdfghjklmnpqrstvwxyz]*ik$/ { 
+# magas, ajakkerekÃ­tÃ©ses
+/[Ã¶Å‘Ã¼Å±][-bcdfghjklmnpqrstvwxyz]*ik$/ { 
     if (mely[$0]==1) { print "[vrb]" $0 "/O" o (koto[$1]?"":"X") (ossz[$1]?"y":"")} 
     else { print "[vrb]" $0 "/P" p (koto[$1]?"":"X") (ossz[$1]?"y":"")};
     next 
 }
-/[öõüû][bcdfghjklmnpqrstvwxyz]*$/ { 
+/[Ã¶Å‘Ã¼Å±][bcdfghjklmnpqrstvwxyz]*$/ { 
     if (mely[$0]==1) { print "[vrb]" $0 "/O" o (koto[$1]?"":"X") (ossz[$1]?"y":"")}
     else {     
     	if (morfo[$0]==1) { print "[vrb]" $0 "/P" p "/d" m (koto[$1]?"":"X") (ossz[$1]?"y":"")}

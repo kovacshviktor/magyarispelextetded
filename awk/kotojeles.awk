@@ -1,6 +1,6 @@
 #
-# kötõjeles toldalékkal ellátott névszók
-# (számok, mozaikszavak és idegen kiejtésû fõnevek)
+# kÃ¶tÅ‘jeles toldalÃ©kkal ellÃ¡tott nÃ©vszÃ³k
+# (szÃ¡mok, mozaikszavak Ã©s idegen kiejtÃ©sÅ± fÅ‘nevek)
 #
 BEGIN {
 	FS="\t"
@@ -8,15 +8,15 @@ BEGIN {
     while ((getline var < "kotojeles_osszetett.1") > 0) { ossz[var]=1; }
 }
 { pos="[noun]{+[NOM]}"; num=""; num2="" }
-/^[0-9][0-9]*	/ { num="/01q"; num2="/1" } # 115-féle
+/^[0-9][0-9]*	/ { num="/01q"; num2="/1" } # 115-fÃ©le
 /^[0-9]*[.%]	/ { num="/1q"; num2="/1" } # 115.-nek, 25%-hoz
-/^\&(deg|sect|permil);	/ { num="/1"; num2="/1" } # 15°-kal
+/^\&(deg|sect|permil);	/ { num="/1"; num2="/1" } # 15Â°-kal
 /^(\[[a-zA-Z0-9]*\])?[0-9][0-9]*	/ { pos="[adj_num]{+[NOM]}" }
 /^(\[[a-zA-Z0-9]*\])?[A-Z]/ { pos="[noun_prs]{+[NOM]}" }
 /^(\[[a-zA-Z0-9]*\])?[A-Z][A-Z]/ { pos="[abr]{+[NOM]}" }
 /^(\[[a-zA-Z0-9]*\])?.*[.]/ { pos="[abr]{+[NOM]}" }
 {
-if ($2) { # 2-höz, de 2-eshez miatt
+if ($2) { # 2-hÃ¶z, de 2-eshez miatt
 print $1 (ossz[$1]?"/x":"") num
 print $1 "\t" pos
 print $1 "-/" num2 (hangzo[$1]?V1:V2) (ossz[$1]?"Y":"") "&" # substandard root

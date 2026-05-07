@@ -1,5 +1,5 @@
 #
-# tövek felvétele a külön kezelt igék képzett alakjaihoz (egy 0-ban különbözök a tovek2.awk-tól)
+# tÃ¶vek felvÃ©tele a kÃ¼lÃ¶n kezelt igÃ©k kÃ©pzett alakjaihoz (egy 0-ban kÃ¼lÃ¶nbÃ¶zÃ¶k a tovek2.awk-tÃ³l)
 #
 /	/ {
     if ($2 != "") {

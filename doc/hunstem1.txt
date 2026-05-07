@@ -2,24 +2,24 @@ hunstem(1)                                             hunstem(1)
 
 
 
-NÉV
-       hunstem - szótövezõ program
+NÃ‰V
+       hunstem - szÃ³tÃ¶vezÅ‘ program
 
-ÁTTEKINTÉS
-       hunstem [Hunspell kapcsolók] [állomány(ok)]
+ÃTTEKINTÃ‰S
+       hunstem [Hunspell kapcsolÃ³k] [Ã¡llomÃ¡ny(ok)]
 
-LEÍRÁS
-       A   Hunstem  a  Hunspell  program  egyik  felülete,  amely
-       szótövezésre és állományok indexelésére szolgál. A hunstem
-       parancs megfelel a hunspell -s hívásnak.
+LEÃRÃS
+       A   Hunstem  a  Hunspell  program  egyik  felÃ¼lete,  amely
+       szÃ³tÃ¶vezÃ©sre Ã©s Ã¡llomÃ¡nyok indexelÃ©sÃ©re szolgÃ¡l. A hunstem
+       parancs megfelel a hunspell -s hÃ­vÃ¡snak.
 
-       A  Hunstem  egy  lehetséges felhasználására a makedb, és a
-       lookdb parancsok mutatnak példát.
+       A  Hunstem  egy  lehetsÃ©ges felhasznÃ¡lÃ¡sÃ¡ra a makedb, Ã©s a
+       lookdb parancsok mutatnak pÃ©ldÃ¡t.
 
-LÁSD MÉG
+LÃSD MÃ‰G
        hunspell  (1),  makedb  (1),  lookdb  (1),  Magyar  Ispell
-       dokumentáció.
+       dokumentÃ¡ciÃ³.
 
 
 
-                         2003. június 13.              hunstem(1)
+                         2003. jÃºnius 13.              hunstem(1)

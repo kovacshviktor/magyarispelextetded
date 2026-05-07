@@ -1,5 +1,5 @@
 #
-# tövek felvétele kivételekhez a kivetelek könyvtárból
+# tÃ¶vek felvÃ©tele kivÃ©telekhez a kivetelek kÃ¶nyvtÃ¡rbÃ³l
 #
 /	/ {
     c = index($1, "/");

@@ -1,9 +1,9 @@
 #
-# morfonetikus alternáns fõnevek ragozási csoportba sorolása
+# morfonetikus alternÃ¡ns fÅ‘nevek ragozÃ¡si csoportba sorolÃ¡sa
 #
-# improduktív toldalékolás
+# improduktÃ­v toldalÃ©kolÃ¡s
 #
-# külsõ változó: kulon_e (tulajdonnevek esetén kikapcs. szóösszetétel,
+# kÃ¼lsÅ‘ vÃ¡ltozÃ³: kulon_e (tulajdonnevek esetÃ©n kikapcs. szÃ³Ã¶sszetÃ©tel,
 # ha kulon_e==1)
 #
 BEGIN { 
@@ -14,10 +14,10 @@ BEGIN {
 function kulon() {
     s=""
     if (kulon_e==1) return ""
-    if (osszetett[$1]==1) s="/yÂâ"; else s = "/Ææ/º"
+    if (osszetett[$1]==1) s="/yÃ‚Ã¢"; else s = "/Ä†Ä‡/ÅŸ"
     if (RAG == "J") {
-        if (osszetett[$1]==1) s = s "/É/Ââ"
-        else s = s "/´"
+        if (osszetett[$1]==1) s = s "/Ã‰/Ã‚Ã¢"
+        else s = s "/Â´"
     }
     if (kulonszo[$1]!=1) {
 	return s "/x"
@@ -27,4 +27,4 @@ function kulon() {
     }
 }
 
-{ print "[nounmorfo]" $1 "/I/ó/Í/¾" RAG kulon(); }
+{ print "[nounmorfo]" $1 "/I/Ã³/Ã/Å¾" RAG kulon(); }

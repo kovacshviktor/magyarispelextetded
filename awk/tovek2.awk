@@ -1,5 +1,5 @@
 #
-# tövek felvétele kivételekhez a fonev_morfo állományokból
+# tÃ¶vek felvÃ©tele kivÃ©telekhez a fonev_morfo Ã¡llomÃ¡nyokbÃ³l
 #
 /	/ {
     if ($2 != "") {

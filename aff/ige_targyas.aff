@@ -1,7 +1,7 @@
 # 	
 #	magyar.aff/magyar.dict: Hungarian Ispell affix table and dictionary
 #
-#	Copyright (C) 1998-2003 L·szlÛ NÈmeth
+#	Copyright (C) 1998-2003 L√°szl√≥ N√©meth
 #
 #	This program is free software; you can redistribute it and/or modify
 #	it under the terms of the GNU General Public License as published by
@@ -18,72 +18,72 @@
 #	Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
 ############################################################
-# t·rgyas igeragoz·s
+# t√°rgyas igeragoz√°s
 ############################################################
 
 ############################################################
-# m4 makrÛ definÌciÛk
+# m4 makr√≥ defin√≠ci√≥k
 ############################################################
 
-# dˆngt->dˆnget
+# d√∂ngt->d√∂nget
 define(dup,[djlgnsrz] [dgtz])
 # mosdtok->mosdatok
-define(dupik,[bdgjklmnrtzy] [ldgrz] i k) # bomlana, f¸ggne/f¸ggene
+define(dupik,[bdgjklmnrtzy] [ldgrz] i k) # bomlana, f√ºggne/f√ºggene
 define(sdupik,[s] [ld] i k) # feslene
-define(majdnemdupik,[^bdgjkmrtzys] [ldrz] i k) # v·lna
-define(majdnemzdupik,[^bdgjkmrtzys] [ldr] i k) # v·lna
-define(majdnemsdupik,s z i k) # m·szna
-define(nemdupik,[^ldrz] i k) # b·nna
+define(majdnemdupik,[^bdgjkmrtzys] [ldrz] i k) # v√°lna
+define(majdnemzdupik,[^bdgjkmrtzys] [ldr] i k) # v√°lna
+define(majdnemsdupik,s z i k) # m√°szna
+define(nemdupik,[^ldrz] i k) # b√°nna
 define(nemdupikfelsz,[^ldgrszt] i k) # bomlj
-# nincs doh·nyzz, de rajzz igen
+# nincs doh√°nyzz, de rajzz igen
 define(nemdbzik,[^dsbkmnyzr] z i k)
-# m·rt -> m·rts mhsz 77-80
-define(ts,[^sz¸ˆieuoa]t)
-# fest -> fess (sz k¸lˆn kezelve)
-define(nemts,[¸ˆieuoa]t)
+# m√°rt -> m√°rts mhsz 77-80
+define(ts,[^sz√º√∂ieuoa]t)
+# fest -> fess (sz k√ºl√∂n kezelve)
+define(nemts,[√º√∂ieuoa]t)
 
 # elokepzos mult ideju t vegu igek
 
 
-# l·ts=/=l·tasz
-define(teloj,[·ÈÌÛ]t)
+# l√°ts=/=l√°tasz
+define(teloj,[√°√©√≠√≥]t)
 
-# csak elıkÈpzıs m˙lt idej˚ igeragok
-define(telom,[·ÈÌÛˆu¸]t)
+# csak el≈ëk√©pz≈ës m√∫lt idej≈± igeragok
+define(telom,[√°√©√≠√≥√∂u√º]t)
 
 
 #
-# speci·lis elıkÈpzıs esetek
+# speci√°lis el≈ëk√©pz≈ës esetek
 #
 
-# vÈl > vÈlsz
+# v√©l > v√©lsz
 define(eloJE2,[^stzk])
 # hisz > hiszel
 define(eloSZE2,[sz])
-# vÈl > vÈltek
+# v√©l > v√©ltek
 define(NeloT,[^tk])
 
-# GG f¸gg(e)sz		etek/tˆk	(e)nek		(ˆt)tÈl
-# NG kong(a)sz		(a)tok		(a)nak		(ot)t·l
-# LL vall(a)sz		(a)tok		(a)nak		(ot)t·l
-# NL aj·nl(a)sz		(a)tok		(a)nak		(ot)t·l
-# RR varr(a)sz		(a)tok		(a)nak		((ot))t·l
+# GG f√ºgg(e)sz		etek/t√∂k	(e)nek		(√∂t)t√©l
+# NG kong(a)sz		(a)tok		(a)nak		(ot)t√°l
+# LL vall(a)sz		(a)tok		(a)nak		(ot)t√°l
+# NL aj√°nl(a)sz		(a)tok		(a)nak		(ot)t√°l
+# RR varr(a)sz		(a)tok		(a)nak		((ot))t√°l
 define(eloG,[gn]g)
 define(eloL,[ln]l)
 define(eloRR,r r)
 
 
-# LD old(a)sz		old(a)tok	(a)nak		(ot)t·l k¸ldettÈl
-# ND mond(a)sz		mond(a)tok	(a)nak		(ot)t·l
-# RD hord(a)sz		(a)tok		(a)nak		((ot))t·l
-# ZD k¸zd(e)sz 		etek/tˆk	(e)nek		(ˆt)tÈl
+# LD old(a)sz		old(a)tok	(a)nak		(ot)t√°l k√ºldett√©l
+# ND mond(a)sz		mond(a)tok	(a)nak		(ot)t√°l
+# RD hord(a)sz		(a)tok		(a)nak		((ot))t√°l
+# ZD k√ºzd(e)sz 		etek/t√∂k	(e)nek		(√∂t)t√©l
 # ----------------------- [LNZ]D > asz ------------------------
 # ----------------------- D > sz ------------------------------
 define(eloD,[lnrz]d)
 
 # SZ hiszel
-# DZ edzesz		(e)tek		(e)nek		(et)tÈl	ett
-# NZ vonzasz		(a)tok		(a)nak  	(ot)t·l	ott
+# DZ edzesz		(e)tek		(e)nek		(et)t√©l	ett
+# NZ vonzasz		(a)tok		(a)nak  	(ot)t√°l	ott
 # [DN] z > asz		----------------[dn]z----------------
 # (Z > ol)
 # [^Z]> sz		------------------z------------------
@@ -91,49 +91,49 @@ define(eloD,[lnrz]d)
 define(eloZ,[jdmn]z)
 # eloJ
 
-# JT sÛhajt(a)sz?	atok		(a)nak		ottam
-# LT ˆlt(e)sz?		ˆtˆk		(e)nek		ˆttem
-# NT ˆnt(e)sz?		ˆtˆk		(e)nek		ˆttem
+# JT s√≥hajt(a)sz?	atok		(a)nak		ottam
+# LT √∂lt(e)sz?		√∂t√∂k		(e)nek		√∂ttem
+# NT √∂nt(e)sz?		√∂t√∂k		(e)nek		√∂ttem
 # RT tart(a)sz?		etek		(a)nak		ottam
 # ST festesz		etek		(e)nek		ettem
 # ZT eresztesz		etek		(e)nek		ettem
 # AT ugatsz		tok		nak		tam   kiv: hat
 #HAT hatsz		tok		nak		ottam
-# ¡T bocs·t(a)sz	(a)tok		(a)nak		ottam kiv.: l·t
-#L¡T l·tsz		tok		nak		tam
+# √ÅT bocs√°t(a)sz	(a)tok		(a)nak		ottam kiv.: l√°t
+#L√ÅT l√°tsz		tok		nak		tam
 # ET sietsz		tek		nek		tem kiv.: vet
-#VET vetsz		tek		nek 		ettem (vesz, vetet miatt kilıve)
-# …T vÈt(e)sz		etek		(e)nek		ettem
-# ÕT alapÌt(a)sz?	(a)tok		(a)nak		ottam
+#VET vetsz		tek		nek 		ettem (vesz, vetet miatt kil≈ëve)
+# √âT v√©t(e)sz		etek		(e)nek		ettem
+# √çT alap√≠t(a)sz?	(a)tok		(a)nak		ottam
 # OT alkotsz		tok		nak		tam
-# ”T lÛtsz		tok		nak		ottam
-# ÷T kˆtsz		tˆk		nek		ˆttem
+# √ìT l√≥tsz		tok		nak		ottam
+# √ñT k√∂tsz		t√∂k		nek		√∂ttem
 # UT futsz		tok		nak		ottam
-# ‹T ¸tsz		tˆk		nek		ˆttem
-# €T h˚t(e)sz		etek		(e)nek		ˆttem
-# [JLNRZ¡…Õ€]T > esz 	[jlnrsz·ÈÌ˚]t	[jlnrsz·ÈÌ˚]t	[jlnrsza·ÈiÛˆu¸˚]t # nem letezı form·k:
-# [^sZ]T > sz		[^jlnrszÈ˚]t	t		[^jlnrszÈÌÛˆu¸˚]t  # hallgatottam, l·tottam
-define(eloTJE2,[jlmnrz·ÈÌ˚]t)
+# √úT √ºtsz		t√∂k		nek		√∂ttem
+# ≈∞T h≈±t(e)sz		etek		(e)nek		√∂ttem
+# [JLNRZ√Å√â√ç≈∞]T > esz 	[jlnrsz√°√©√≠≈±]t	[jlnrsz√°√©√≠≈±]t	[jlnrsza√°√©i√≥√∂u√º≈±]t # nem letez≈ë form√°k:
+# [^sZ]T > sz		[^jlnrsz√©≈±]t	t		[^jlnrsz√©√≠√≥√∂u√º≈±]t  # hallgatottam, l√°tottam
+define(eloTJE2,[jlmnrz√°√©√≠≈±]t)
 define(NeloTJE2,[^sz]t)
-define(eloTJT2,[jlmnrsz·ÈÌ˚]t)
-define(NeloTJT2,[^jlmnrszÈ˚]t)
-define(eloTJT3,[jlmnrsz·ÈÌ˚]t)
-define(NeloTJT3,[aeioˆu¸]t)
-# define(eloTM,[JLNRSZA¡…”÷U‹€]T) define(NeloTM,[^JLNRSZ…Õ”÷U‹€]T)
-define(eloTM,[jlmnrsz·ÈiÌÛˆu¸˚]t)
-define(NeloTM,[^jlmnrsz·ÈiÌÛˆu¸˚]t)
+define(eloTJT2,[jlmnrsz√°√©√≠≈±]t)
+define(NeloTJT2,[^jlmnrsz√©≈±]t)
+define(eloTJT3,[jlmnrsz√°√©√≠≈±]t)
+define(NeloTJT3,[aeio√∂u√º]t)
+# define(eloTM,[JLNRSZA√Å√â√ì√ñU√ú≈∞]T) define(NeloTM,[^JLNRSZ√â√ç√ì√ñU√ú≈∞]T)
+define(eloTM,[jlmnrsz√°√©i√≠√≥√∂u√º≈±]t)
+define(NeloTM,[^jlmnrsz√°√©i√≠√≥√∂u√º≈±]t)
 
 ############################################################
-# mÈly hangrend˚ t·rgyas igeragoz·s
+# m√©ly hangrend≈± t√°rgyas igeragoz√°s
 ############################################################
 
 flag *o:
 
 # E/1.
-[^k]	>	om	+[PRES_INDIC_DEF_SG_1] # f˙r > f˙rok
+[^k]	>	om	+[PRES_INDIC_DEF_SG_1] # f√∫r > f√∫rok
 
 l l	>	-l,lak	+[PRES_INDIC_SG_1_OBJ_2] # hallak
-[^l] l	>	lak	+[PRES_INDIC_SG_1_OBJ_2] # aj·nllak
+[^l] l	>	lak	+[PRES_INDIC_SG_1_OBJ_2] # aj√°nllak
 [^lk]	>	lak	+[PRES_INDIC_SG_1_OBJ_2]
 eloG	>	alak	+[PRES_INDIC_SG_1_OBJ_2]
 #eloL	>	alak
@@ -143,7 +143,7 @@ eloTJT3	>	alak	+[PRES_INDIC_SG_1_OBJ_2]
 eloZ	>	alak	+[PRES_INDIC_SG_1_OBJ_2]
 # NeloTJT3	>	lak  [^l] miatt
 
-define(NeloTO,[^tÛ˙ı˚])
+define(NeloTO,[^t√≥√∫≈ë≈±])
 
 # E/2
 [^k]	>	od	+[PRES_INDIC_DEF_SG_2]
@@ -166,20 +166,20 @@ s z	>	-z,szuk	+[PRES_INDIC_DEF_PL_1]
 
 # T/2.
 
-[^szk]	>	j·tok	+[PRES_INDIC_DEF_PL_2]
-s	>	s·tok	+[PRES_INDIC_DEF_PL_2]
-[^s] z	>	z·tok	+[PRES_INDIC_DEF_PL_2]
-s z	>	-z,sz·tok	+[PRES_INDIC_DEF_PL_2]
+[^szk]	>	j√°tok	+[PRES_INDIC_DEF_PL_2]
+s	>	s√°tok	+[PRES_INDIC_DEF_PL_2]
+[^s] z	>	z√°tok	+[PRES_INDIC_DEF_PL_2]
+s z	>	-z,sz√°tok	+[PRES_INDIC_DEF_PL_2]
 
 # T/3.
 
-[^szk]	>	j·k	+[PRES_INDIC_DEF_PL_3]
-s	>	s·k	+[PRES_INDIC_DEF_PL_3]
-[^s] z	>	z·k	+[PRES_INDIC_DEF_PL_3]
-s z	>	-z,sz·k	+[PRES_INDIC_DEF_PL_3]
+[^szk]	>	j√°k	+[PRES_INDIC_DEF_PL_3]
+s	>	s√°k	+[PRES_INDIC_DEF_PL_3]
+[^s] z	>	z√°k	+[PRES_INDIC_DEF_PL_3]
+s z	>	-z,sz√°k	+[PRES_INDIC_DEF_PL_3]
 
 
-# m˙lt idı
+# m√∫lt id≈ë
 
 # E/1
 NeloTO	>	tam	+[PAST_INDIC_DEF_SG_1]
@@ -210,7 +210,7 @@ NeloTM	>	tad	+[PAST_INDIC_DEF_SG_2]
 
 
 define(eloME3,[bdgkmpstvzy])
-define(NeloME3,[^Û˙ı˚bgkmpstvzyd])
+define(NeloME3,[^√≥√∫≈ë≈±bgkmpstvzyd])
 # spec: D, ad adott, de hasad hasadt szed szedett
 
 NeloTO	>	ta	+[PAST_INDIC_DEF_SG_3]
@@ -235,101 +235,101 @@ NeloTM	>	tuk	+[PAST_INDIC_DEF_PL_1]
 
 # T/2.
 
-NeloTO	>	t·tok	+[PAST_INDIC_DEF_PL_2]
-eloG	>	ott·tok	+[PAST_INDIC_DEF_PL_2]
-eloL	>	ott·tok	+[PAST_INDIC_DEF_PL_2]
-eloRR	>	ott·tok	+[PAST_INDIC_DEF_PL_2]
-eloD	>	ott·tok	+[PAST_INDIC_DEF_PL_2]
-eloTM	>	ott·tok	+[PAST_INDIC_DEF_PL_2]
-eloZ	>	ott·tok	+[PAST_INDIC_DEF_PL_2]
-NeloTM	>	t·tok	+[PAST_INDIC_DEF_PL_2]
+NeloTO	>	t√°tok	+[PAST_INDIC_DEF_PL_2]
+eloG	>	ott√°tok	+[PAST_INDIC_DEF_PL_2]
+eloL	>	ott√°tok	+[PAST_INDIC_DEF_PL_2]
+eloRR	>	ott√°tok	+[PAST_INDIC_DEF_PL_2]
+eloD	>	ott√°tok	+[PAST_INDIC_DEF_PL_2]
+eloTM	>	ott√°tok	+[PAST_INDIC_DEF_PL_2]
+eloZ	>	ott√°tok	+[PAST_INDIC_DEF_PL_2]
+NeloTM	>	t√°tok	+[PAST_INDIC_DEF_PL_2]
 
 # T/3.
 
-NeloTO	>	t·k	+[PAST_INDIC_DEF_PL_3]
-eloG	>	ott·k	+[PAST_INDIC_DEF_PL_3]
-eloL	>	ott·k	+[PAST_INDIC_DEF_PL_3]
-eloRR	>	ott·k	+[PAST_INDIC_DEF_PL_3]
-eloD	>	ott·k	+[PAST_INDIC_DEF_PL_3]
-eloTM	>	ott·k	+[PAST_INDIC_DEF_PL_3]
-eloZ	>	ott·k	+[PAST_INDIC_DEF_PL_3]
-NeloTM	>	t·k	+[PAST_INDIC_DEF_PL_3]
+NeloTO	>	t√°k	+[PAST_INDIC_DEF_PL_3]
+eloG	>	ott√°k	+[PAST_INDIC_DEF_PL_3]
+eloL	>	ott√°k	+[PAST_INDIC_DEF_PL_3]
+eloRR	>	ott√°k	+[PAST_INDIC_DEF_PL_3]
+eloD	>	ott√°k	+[PAST_INDIC_DEF_PL_3]
+eloTM	>	ott√°k	+[PAST_INDIC_DEF_PL_3]
+eloZ	>	ott√°k	+[PAST_INDIC_DEF_PL_3]
+NeloTM	>	t√°k	+[PAST_INDIC_DEF_PL_3]
 
-# feltÈteles mÛd
+# felt√©teles m√≥d
 
-NeloT	>	n·m	+[PRES_COND_DEF_SG_1]
-eloG	>	an·m	+[PRES_COND_DEF_SG_1]
-eloL	>	an·m	+[PRES_COND_DEF_SG_1]
-eloRR	>	an·m	+[PRES_COND_DEF_SG_1]
-eloD	>	an·m	+[PRES_COND_DEF_SG_1]
-eloTJT3	>	an·m	+[PRES_COND_DEF_SG_1]
-eloZ	>	an·m	+[PRES_COND_DEF_SG_1]
-NeloTJT3	>	n·m	+[PRES_COND_DEF_SG_1]
+NeloT	>	n√°m	+[PRES_COND_DEF_SG_1]
+eloG	>	an√°m	+[PRES_COND_DEF_SG_1]
+eloL	>	an√°m	+[PRES_COND_DEF_SG_1]
+eloRR	>	an√°m	+[PRES_COND_DEF_SG_1]
+eloD	>	an√°m	+[PRES_COND_DEF_SG_1]
+eloTJT3	>	an√°m	+[PRES_COND_DEF_SG_1]
+eloZ	>	an√°m	+[PRES_COND_DEF_SG_1]
+NeloTJT3	>	n√°m	+[PRES_COND_DEF_SG_1]
 
-NeloT	>	n·lak	+[PRES_COND_SG_1_OBJ_2]
-eloG	>	an·lak	+[PRES_COND_SG_1_OBJ_2]
-eloL	>	an·lak	+[PRES_COND_SG_1_OBJ_2]
-eloRR	>	an·lak	+[PRES_COND_SG_1_OBJ_2]
-eloD	>	an·lak	+[PRES_COND_SG_1_OBJ_2]
-eloTJT3	>	an·lak	+[PRES_COND_SG_1_OBJ_2]
-eloZ	>	an·lak	+[PRES_COND_SG_1_OBJ_2]
-NeloTJT3	>	n·lak	+[PRES_COND_SG_1_OBJ_2]
+NeloT	>	n√°lak	+[PRES_COND_SG_1_OBJ_2]
+eloG	>	an√°lak	+[PRES_COND_SG_1_OBJ_2]
+eloL	>	an√°lak	+[PRES_COND_SG_1_OBJ_2]
+eloRR	>	an√°lak	+[PRES_COND_SG_1_OBJ_2]
+eloD	>	an√°lak	+[PRES_COND_SG_1_OBJ_2]
+eloTJT3	>	an√°lak	+[PRES_COND_SG_1_OBJ_2]
+eloZ	>	an√°lak	+[PRES_COND_SG_1_OBJ_2]
+NeloTJT3	>	n√°lak	+[PRES_COND_SG_1_OBJ_2]
 
-NeloT	>	n·d	+[PRES_COND_DEF_SG_2]
-eloG	>	an·d	+[PRES_COND_DEF_SG_2]
-eloL	>	an·d	+[PRES_COND_DEF_SG_2]
-eloRR	>	an·d	+[PRES_COND_DEF_SG_2]
-eloD	>	an·d	+[PRES_COND_DEF_SG_2]
-eloTJT3	>	an·d	+[PRES_COND_DEF_SG_2]
-eloZ	>	an·d	+[PRES_COND_DEF_SG_2]
-NeloTJT3	>	n·d	+[PRES_COND_DEF_SG_2]
+NeloT	>	n√°d	+[PRES_COND_DEF_SG_2]
+eloG	>	an√°d	+[PRES_COND_DEF_SG_2]
+eloL	>	an√°d	+[PRES_COND_DEF_SG_2]
+eloRR	>	an√°d	+[PRES_COND_DEF_SG_2]
+eloD	>	an√°d	+[PRES_COND_DEF_SG_2]
+eloTJT3	>	an√°d	+[PRES_COND_DEF_SG_2]
+eloZ	>	an√°d	+[PRES_COND_DEF_SG_2]
+NeloTJT3	>	n√°d	+[PRES_COND_DEF_SG_2]
 
-NeloT	>	n·	+[PRES_COND_DEF_SG_3]
-eloG	>	an·	+[PRES_COND_DEF_SG_3]
-eloL	>	an·	+[PRES_COND_DEF_SG_3]
-eloRR	>	an·	+[PRES_COND_DEF_SG_3]
-eloD	>	an·	+[PRES_COND_DEF_SG_3]
-eloTJT3	>	an·	+[PRES_COND_DEF_SG_3]
-eloZ	>	an·	+[PRES_COND_DEF_SG_3]
-NeloTJT3	>	n·	+[PRES_COND_DEF_SG_3]
+NeloT	>	n√°	+[PRES_COND_DEF_SG_3]
+eloG	>	an√°	+[PRES_COND_DEF_SG_3]
+eloL	>	an√°	+[PRES_COND_DEF_SG_3]
+eloRR	>	an√°	+[PRES_COND_DEF_SG_3]
+eloD	>	an√°	+[PRES_COND_DEF_SG_3]
+eloTJT3	>	an√°	+[PRES_COND_DEF_SG_3]
+eloZ	>	an√°	+[PRES_COND_DEF_SG_3]
+NeloTJT3	>	n√°	+[PRES_COND_DEF_SG_3]
 
-NeloT	>	n·nk +[PRES_COND_DEF_PL_1]
-eloG	>	an·nk +[PRES_COND_DEF_PL_1]
-eloL	>	an·nk +[PRES_COND_DEF_PL_1]
-eloRR	>	an·nk +[PRES_COND_DEF_PL_1]
-eloD	>	an·nk +[PRES_COND_DEF_PL_1]
-eloTJT3	>	an·nk +[PRES_COND_DEF_PL_1]
-eloZ	>	an·nk +[PRES_COND_DEF_PL_1]
-NeloTJT3	>	n·nk +[PRES_COND_DEF_PL_1]
+NeloT	>	n√°nk +[PRES_COND_DEF_PL_1]
+eloG	>	an√°nk +[PRES_COND_DEF_PL_1]
+eloL	>	an√°nk +[PRES_COND_DEF_PL_1]
+eloRR	>	an√°nk +[PRES_COND_DEF_PL_1]
+eloD	>	an√°nk +[PRES_COND_DEF_PL_1]
+eloTJT3	>	an√°nk +[PRES_COND_DEF_PL_1]
+eloZ	>	an√°nk +[PRES_COND_DEF_PL_1]
+NeloTJT3	>	n√°nk +[PRES_COND_DEF_PL_1]
 
-NeloT	>	nÛk +[PRES_COND_DEF_PL_1]	&
-eloG	>	anÛk +[PRES_COND_DEF_PL_1]	&
-eloL	>	anÛk +[PRES_COND_DEF_PL_1]	&
-eloRR	>	anÛk +[PRES_COND_DEF_PL_1]	&
-eloD	>	anÛk +[PRES_COND_DEF_PL_1]	&
-eloTJT3	>	anÛk +[PRES_COND_DEF_PL_1]	&
-eloZ	>	anÛk +[PRES_COND_DEF_PL_1]	&
-NeloTJT3	>	nÛk +[PRES_COND_DEF_PL_1]	&
+NeloT	>	n√≥k +[PRES_COND_DEF_PL_1]	&
+eloG	>	an√≥k +[PRES_COND_DEF_PL_1]	&
+eloL	>	an√≥k +[PRES_COND_DEF_PL_1]	&
+eloRR	>	an√≥k +[PRES_COND_DEF_PL_1]	&
+eloD	>	an√≥k +[PRES_COND_DEF_PL_1]	&
+eloTJT3	>	an√≥k +[PRES_COND_DEF_PL_1]	&
+eloZ	>	an√≥k +[PRES_COND_DEF_PL_1]	&
+NeloTJT3	>	n√≥k +[PRES_COND_DEF_PL_1]	&
 
-NeloT	>	n·tok +[PRES_COND_DEF_PL_2]
-eloG	>	an·tok +[PRES_COND_DEF_PL_2]
-eloL	>	an·tok +[PRES_COND_DEF_PL_2]
-eloRR	>	an·tok +[PRES_COND_DEF_PL_2]
-eloD	>	an·tok +[PRES_COND_DEF_PL_2]
-eloTJT3	>	an·tok +[PRES_COND_DEF_PL_2]
-eloZ	>	an·tok +[PRES_COND_DEF_PL_2]
-NeloTJT3	>	n·tok +[PRES_COND_DEF_PL_2]
+NeloT	>	n√°tok +[PRES_COND_DEF_PL_2]
+eloG	>	an√°tok +[PRES_COND_DEF_PL_2]
+eloL	>	an√°tok +[PRES_COND_DEF_PL_2]
+eloRR	>	an√°tok +[PRES_COND_DEF_PL_2]
+eloD	>	an√°tok +[PRES_COND_DEF_PL_2]
+eloTJT3	>	an√°tok +[PRES_COND_DEF_PL_2]
+eloZ	>	an√°tok +[PRES_COND_DEF_PL_2]
+NeloTJT3	>	n√°tok +[PRES_COND_DEF_PL_2]
 
-NeloT	>	n·k	+[PRES_COND_DEF_PL_3]
-eloG	>	an·k	+[PRES_COND_DEF_PL_3]
-eloL	>	an·k	+[PRES_COND_DEF_PL_3]
-eloRR	>	an·k	+[PRES_COND_DEF_PL_3]
-eloD	>	an·k	+[PRES_COND_DEF_PL_3]
-eloTJT3	>	an·k	+[PRES_COND_DEF_PL_3]
-eloZ	>	an·k	+[PRES_COND_DEF_PL_3]
-NeloTJT3	>	n·k	+[PRES_COND_DEF_PL_3]
+NeloT	>	n√°k	+[PRES_COND_DEF_PL_3]
+eloG	>	an√°k	+[PRES_COND_DEF_PL_3]
+eloL	>	an√°k	+[PRES_COND_DEF_PL_3]
+eloRR	>	an√°k	+[PRES_COND_DEF_PL_3]
+eloD	>	an√°k	+[PRES_COND_DEF_PL_3]
+eloTJT3	>	an√°k	+[PRES_COND_DEF_PL_3]
+eloZ	>	an√°k	+[PRES_COND_DEF_PL_3]
+NeloTJT3	>	n√°k	+[PRES_COND_DEF_PL_3]
 
-# felszÛlÌtÛ mÛd
+# felsz√≥l√≠t√≥ m√≥d
 [^sztk]	>	jam	+[SUBJ/IMPER_DEF_SG_1]
 s	>	sam	+[SUBJ/IMPER_DEF_SG_1]
 [^ds] z	>	zam	+[SUBJ/IMPER_DEF_SG_1]
@@ -348,13 +348,13 @@ ts 	>	salak	+[SUBJ/IMPER_SG_1_OBJ_2]
 nemts	>	-t,ssalak	+[SUBJ/IMPER_SG_1_OBJ_2]
 s z t	>	-zt,szalak	+[SUBJ/IMPER_SG_1_OBJ_2]
 
-NeloT  	>       d	+[SUBJ/IMPER_DEF_SG_2] # mondd, szagl·szd, de! teszd, viszd, hiszd
+NeloT  	>       d	+[SUBJ/IMPER_DEF_SG_2] # mondd, szagl√°szd, de! teszd, viszd, hiszd
 [^sztk]  >       jad	+[SUBJ/IMPER_DEF_SG_2] # mondjad
-s       >       sad	+[SUBJ/IMPER_DEF_SG_2] # ·ssad
-[zd]    >       d	+[SUBJ/IMPER_DEF_SG_2] # mondd, z˙zd, edzd, metszd
-# d z   >       -z,dzed # nincs ilyenbıl mÈly!
+s       >       sad	+[SUBJ/IMPER_DEF_SG_2] # √°ssad
+[zd]    >       d	+[SUBJ/IMPER_DEF_SG_2] # mondd, z√∫zd, edzd, metszd
+# d z   >       -z,dzed # nincs ilyenb≈ël m√©ly!
 [^s] z	>	zad	+[SUBJ/IMPER_DEF_SG_2]
-s z     >       -z,szad	+[SUBJ/IMPER_DEF_SG_2] # nincs sok pÈlda r·
+s z     >       -z,szad	+[SUBJ/IMPER_DEF_SG_2] # nincs sok p√©lda r√°
 ts      >       sd		+[SUBJ/IMPER_DEF_SG_2]
 ts      >       sad		+[SUBJ/IMPER_DEF_SG_2]
 nemts   >       -t,sd		+[SUBJ/IMPER_DEF_SG_2]
@@ -380,23 +380,23 @@ ts 	>	suk	+[SUBJ/IMPER_DEF_PL_1]
 nemts	>	-t,ssuk	+[SUBJ/IMPER_DEF_PL_1]
 s z t	>	-zt,szuk	+[SUBJ/IMPER_DEF_PL_1]
 
-[^sztk]	>	j·tok	+[SUBJ/IMPER_DEF_PL_2]
-s	>	s·tok	+[SUBJ/IMPER_DEF_PL_2]
-[^ds] z	>	z·tok	+[SUBJ/IMPER_DEF_PL_2]
-ts 	>	s·tok	+[SUBJ/IMPER_DEF_PL_2]
-nemts	>	-t,ss·tok	+[SUBJ/IMPER_DEF_PL_2]
-s z t	>	-zt,sz·tok	+[SUBJ/IMPER_DEF_PL_2]
+[^sztk]	>	j√°tok	+[SUBJ/IMPER_DEF_PL_2]
+s	>	s√°tok	+[SUBJ/IMPER_DEF_PL_2]
+[^ds] z	>	z√°tok	+[SUBJ/IMPER_DEF_PL_2]
+ts 	>	s√°tok	+[SUBJ/IMPER_DEF_PL_2]
+nemts	>	-t,ss√°tok	+[SUBJ/IMPER_DEF_PL_2]
+s z t	>	-zt,sz√°tok	+[SUBJ/IMPER_DEF_PL_2]
 
-[^sztk]	>	j·k	+[SUBJ/IMPER_DEF_PL_3]
-s	>	s·k	+[SUBJ/IMPER_DEF_PL_3]
-[^ds] z	>	z·k	+[SUBJ/IMPER_DEF_PL_3]
-d z	>	-z,dz·k	+[SUBJ/IMPER_DEF_PL_3]
-s z	>	-z,sz·k	+[SUBJ/IMPER_DEF_PL_3]
-ts 	>	s·k	+[SUBJ/IMPER_DEF_PL_3]
-nemts	>	-t,ss·k	+[SUBJ/IMPER_DEF_PL_3]
-s z t	>	-zt,sz·k	+[SUBJ/IMPER_DEF_PL_3]
+[^sztk]	>	j√°k	+[SUBJ/IMPER_DEF_PL_3]
+s	>	s√°k	+[SUBJ/IMPER_DEF_PL_3]
+[^ds] z	>	z√°k	+[SUBJ/IMPER_DEF_PL_3]
+d z	>	-z,dz√°k	+[SUBJ/IMPER_DEF_PL_3]
+s z	>	-z,sz√°k	+[SUBJ/IMPER_DEF_PL_3]
+ts 	>	s√°k	+[SUBJ/IMPER_DEF_PL_3]
+nemts	>	-t,ss√°k	+[SUBJ/IMPER_DEF_PL_3]
+s z t	>	-zt,sz√°k	+[SUBJ/IMPER_DEF_PL_3]
 
-# ikes t·rgyas
+# ikes t√°rgyas
 
 # E/1.
 
@@ -438,29 +438,29 @@ s z t i k	>	-ztik,szuk	+[PRES_INDIC_DEF_PL_1]
 
 # T/2.
 
-nemdupikfelsz	>	-ik,j·tok	+[PRES_INDIC_DEF_PL_2]
-majdnemzdupik	>	-ik,j·tok	+[PRES_INDIC_DEF_PL_2]
-s i k	>	-ik,s·tok	+[PRES_INDIC_DEF_PL_2]
-nemdbzik	>	-ik,z·tok	+[PRES_INDIC_DEF_PL_2]
-d z i k	>	-zik,dz·tok	+[PRES_INDIC_DEF_PL_2]
-s z i k	>	-zik,sz·tok	+[PRES_INDIC_DEF_PL_2]
-ts i k 	>	-ik,s·tok	+[PRES_INDIC_DEF_PL_2]
-nemts i k	>	-tik,ss·tok	+[PRES_INDIC_DEF_PL_2]
-s z t i k	>	-ztik,sz·tok	+[PRES_INDIC_DEF_PL_2]
+nemdupikfelsz	>	-ik,j√°tok	+[PRES_INDIC_DEF_PL_2]
+majdnemzdupik	>	-ik,j√°tok	+[PRES_INDIC_DEF_PL_2]
+s i k	>	-ik,s√°tok	+[PRES_INDIC_DEF_PL_2]
+nemdbzik	>	-ik,z√°tok	+[PRES_INDIC_DEF_PL_2]
+d z i k	>	-zik,dz√°tok	+[PRES_INDIC_DEF_PL_2]
+s z i k	>	-zik,sz√°tok	+[PRES_INDIC_DEF_PL_2]
+ts i k 	>	-ik,s√°tok	+[PRES_INDIC_DEF_PL_2]
+nemts i k	>	-tik,ss√°tok	+[PRES_INDIC_DEF_PL_2]
+s z t i k	>	-ztik,sz√°tok	+[PRES_INDIC_DEF_PL_2]
 
 # T/3.
 
-nemdupikfelsz	>	-ik,j·k	+[PRES_INDIC_DEF_PL_3]
-majdnemzdupik	>	-ik,j·k	+[PRES_INDIC_DEF_PL_3]
-s i k	>	-ik,s·k	+[PRES_INDIC_DEF_PL_3]
-nemdbzik	>	-ik,z·k	+[PRES_INDIC_DEF_PL_3]
-d z i k	>	-zik,dz·k	+[PRES_INDIC_DEF_PL_3]
-s z i k	>	-zik,sz·k	+[PRES_INDIC_DEF_PL_3]
-ts i k 	>	-ik,s·k	+[PRES_INDIC_DEF_PL_3]
-nemts i k	>	-tik,ss·k	+[PRES_INDIC_DEF_PL_3]
-s z t i k	>	-ztik,sz·k	+[PRES_INDIC_DEF_PL_3]
+nemdupikfelsz	>	-ik,j√°k	+[PRES_INDIC_DEF_PL_3]
+majdnemzdupik	>	-ik,j√°k	+[PRES_INDIC_DEF_PL_3]
+s i k	>	-ik,s√°k	+[PRES_INDIC_DEF_PL_3]
+nemdbzik	>	-ik,z√°k	+[PRES_INDIC_DEF_PL_3]
+d z i k	>	-zik,dz√°k	+[PRES_INDIC_DEF_PL_3]
+s z i k	>	-zik,sz√°k	+[PRES_INDIC_DEF_PL_3]
+ts i k 	>	-ik,s√°k	+[PRES_INDIC_DEF_PL_3]
+nemts i k	>	-tik,ss√°k	+[PRES_INDIC_DEF_PL_3]
+s z t i k	>	-ztik,sz√°k	+[PRES_INDIC_DEF_PL_3]
 
-# ikes m˙lt
+# ikes m√∫lt
 
 # E/1.
 
@@ -502,83 +502,83 @@ nemdupik	>	-ik,tuk	+[PAST_INDIC_DEF_PL_1]
 
 # T/2.
 
-dupik	>	-ik,ott·tok	+[PAST_INDIC_DEF_PL_2]
-sdupik	>	-ik,ott·tok	+[PAST_INDIC_DEF_PL_2]
-majdnemdupik	>	-ik,t·tok	+[PAST_INDIC_DEF_PL_2]
-majdnemsdupik	>	-ik,t·tok	+[PAST_INDIC_DEF_PL_2]
-nemdupik	>	-ik,t·tok	+[PAST_INDIC_DEF_PL_2]
+dupik	>	-ik,ott√°tok	+[PAST_INDIC_DEF_PL_2]
+sdupik	>	-ik,ott√°tok	+[PAST_INDIC_DEF_PL_2]
+majdnemdupik	>	-ik,t√°tok	+[PAST_INDIC_DEF_PL_2]
+majdnemsdupik	>	-ik,t√°tok	+[PAST_INDIC_DEF_PL_2]
+nemdupik	>	-ik,t√°tok	+[PAST_INDIC_DEF_PL_2]
 
 # T/3.
 
-dupik	>	-ik,ott·k	+[PAST_INDIC_DEF_PL_3]
-sdupik	>	-ik,ott·k	+[PAST_INDIC_DEF_PL_3]
-majdnemdupik	>	-ik,t·k	+[PAST_INDIC_DEF_PL_3]
-majdnemsdupik	>	-ik,t·k	+[PAST_INDIC_DEF_PL_3]
-nemdupik	>	-ik,t·k	+[PAST_INDIC_DEF_PL_3]
+dupik	>	-ik,ott√°k	+[PAST_INDIC_DEF_PL_3]
+sdupik	>	-ik,ott√°k	+[PAST_INDIC_DEF_PL_3]
+majdnemdupik	>	-ik,t√°k	+[PAST_INDIC_DEF_PL_3]
+majdnemsdupik	>	-ik,t√°k	+[PAST_INDIC_DEF_PL_3]
+nemdupik	>	-ik,t√°k	+[PAST_INDIC_DEF_PL_3]
 
-# feltÈteles mÛd
+# felt√©teles m√≥d
 
 # E/1.
 
-dupik	>	-ik,an·m	+[PRES_COND_DEF_SG_1]
-sdupik	>	-ik,an·m	+[PRES_COND_DEF_SG_1]
-majdnemdupik	>	-ik,n·m	+[PRES_COND_DEF_SG_1]
-majdnemsdupik	>	-ik,n·m	+[PRES_COND_DEF_SG_1]
-nemdupik	>	-ik,n·m	+[PRES_COND_DEF_SG_1]
+dupik	>	-ik,an√°m	+[PRES_COND_DEF_SG_1]
+sdupik	>	-ik,an√°m	+[PRES_COND_DEF_SG_1]
+majdnemdupik	>	-ik,n√°m	+[PRES_COND_DEF_SG_1]
+majdnemsdupik	>	-ik,n√°m	+[PRES_COND_DEF_SG_1]
+nemdupik	>	-ik,n√°m	+[PRES_COND_DEF_SG_1]
 
-dupik	>	-ik,an·lak	+[PRES_COND_SG_1_OBJ_2]
-sdupik	>	-ik,an·lak	+[PRES_COND_SG_1_OBJ_2]
-majdnemdupik	>	-ik,n·lak	+[PRES_COND_SG_1_OBJ_2]
-majdnemsdupik	>	-ik,n·lak	+[PRES_COND_SG_1_OBJ_2]
-nemdupik	>	-ik,n·lak	+[PRES_COND_SG_1_OBJ_2]
+dupik	>	-ik,an√°lak	+[PRES_COND_SG_1_OBJ_2]
+sdupik	>	-ik,an√°lak	+[PRES_COND_SG_1_OBJ_2]
+majdnemdupik	>	-ik,n√°lak	+[PRES_COND_SG_1_OBJ_2]
+majdnemsdupik	>	-ik,n√°lak	+[PRES_COND_SG_1_OBJ_2]
+nemdupik	>	-ik,n√°lak	+[PRES_COND_SG_1_OBJ_2]
 
 # E/2.
 
-dupik	>	-ik,an·d	+[PRES_COND_DEF_SG_2]
-sdupik	>	-ik,an·d	+[PRES_COND_DEF_SG_2]
-majdnemdupik	>	-ik,n·d	+[PRES_COND_DEF_SG_2]
-majdnemsdupik	>	-ik,n·d	+[PRES_COND_DEF_SG_2]
-nemdupik	>	-ik,n·d	+[PRES_COND_DEF_SG_2]
+dupik	>	-ik,an√°d	+[PRES_COND_DEF_SG_2]
+sdupik	>	-ik,an√°d	+[PRES_COND_DEF_SG_2]
+majdnemdupik	>	-ik,n√°d	+[PRES_COND_DEF_SG_2]
+majdnemsdupik	>	-ik,n√°d	+[PRES_COND_DEF_SG_2]
+nemdupik	>	-ik,n√°d	+[PRES_COND_DEF_SG_2]
 
 # E/3.
 
-dupik	>	-ik,an·	+[PRES_COND_DEF_SG_3]
-sdupik	>	-ik,an·	+[PRES_COND_DEF_SG_3]
-majdnemdupik	>	-ik,n·	+[PRES_COND_DEF_SG_3]
-majdnemsdupik	>	-ik,n·	+[PRES_COND_DEF_SG_3]
-nemdupik	>	-ik,n·	+[PRES_COND_DEF_SG_3]
+dupik	>	-ik,an√°	+[PRES_COND_DEF_SG_3]
+sdupik	>	-ik,an√°	+[PRES_COND_DEF_SG_3]
+majdnemdupik	>	-ik,n√°	+[PRES_COND_DEF_SG_3]
+majdnemsdupik	>	-ik,n√°	+[PRES_COND_DEF_SG_3]
+nemdupik	>	-ik,n√°	+[PRES_COND_DEF_SG_3]
 
 # T/1.
 
-dupik	>	-ik,an·nk	+[PRES_COND_DEF_PL_1]
-sdupik	>	-ik,an·nk	+[PRES_COND_DEF_PL_1]
-majdnemdupik	>	-ik,n·nk	+[PRES_COND_DEF_PL_1]
-majdnemsdupik	>	-ik,n·nk	+[PRES_COND_DEF_PL_1]
-nemdupik	>	-ik,n·nk	+[PRES_COND_DEF_PL_1]
+dupik	>	-ik,an√°nk	+[PRES_COND_DEF_PL_1]
+sdupik	>	-ik,an√°nk	+[PRES_COND_DEF_PL_1]
+majdnemdupik	>	-ik,n√°nk	+[PRES_COND_DEF_PL_1]
+majdnemsdupik	>	-ik,n√°nk	+[PRES_COND_DEF_PL_1]
+nemdupik	>	-ik,n√°nk	+[PRES_COND_DEF_PL_1]
 
-dupik	>	-ik,anÛk	+[PRES_COND_DEF_PL_1]	&
-sdupik	>	-ik,anÛk	+[PRES_COND_DEF_PL_1]	&
-majdnemdupik	>	-ik,nÛk	+[PRES_COND_DEF_PL_1]	&
-majdnemsdupik	>	-ik,nÛk	+[PRES_COND_DEF_PL_1]	&
-nemdupik	>	-ik,nÛk	+[PRES_COND_DEF_PL_1]	&
+dupik	>	-ik,an√≥k	+[PRES_COND_DEF_PL_1]	&
+sdupik	>	-ik,an√≥k	+[PRES_COND_DEF_PL_1]	&
+majdnemdupik	>	-ik,n√≥k	+[PRES_COND_DEF_PL_1]	&
+majdnemsdupik	>	-ik,n√≥k	+[PRES_COND_DEF_PL_1]	&
+nemdupik	>	-ik,n√≥k	+[PRES_COND_DEF_PL_1]	&
 
 # T/2.
 
-dupik	>	-ik,an·tok	+[PRES_COND_DEF_PL_2]
-sdupik	>	-ik,an·tok	+[PRES_COND_DEF_PL_2]
-majdnemdupik	>	-ik,n·tok	+[PRES_COND_DEF_PL_2]
-majdnemsdupik	>	-ik,n·tok	+[PRES_COND_DEF_PL_2]
-nemdupik	>	-ik,n·tok	+[PRES_COND_DEF_PL_2]
+dupik	>	-ik,an√°tok	+[PRES_COND_DEF_PL_2]
+sdupik	>	-ik,an√°tok	+[PRES_COND_DEF_PL_2]
+majdnemdupik	>	-ik,n√°tok	+[PRES_COND_DEF_PL_2]
+majdnemsdupik	>	-ik,n√°tok	+[PRES_COND_DEF_PL_2]
+nemdupik	>	-ik,n√°tok	+[PRES_COND_DEF_PL_2]
 
 # T/3.
 
-dupik	>	-ik,an·k	+[PRES_COND_DEF_PL_3]
-sdupik	>	-ik,an·k	+[PRES_COND_DEF_PL_3]
-majdnemdupik	>	-ik,n·k	+[PRES_COND_DEF_PL_3]
-majdnemsdupik	>	-ik,n·k	+[PRES_COND_DEF_PL_3]
-nemdupik	>	-ik,n·k	+[PRES_COND_DEF_PL_3]
+dupik	>	-ik,an√°k	+[PRES_COND_DEF_PL_3]
+sdupik	>	-ik,an√°k	+[PRES_COND_DEF_PL_3]
+majdnemdupik	>	-ik,n√°k	+[PRES_COND_DEF_PL_3]
+majdnemsdupik	>	-ik,n√°k	+[PRES_COND_DEF_PL_3]
+nemdupik	>	-ik,n√°k	+[PRES_COND_DEF_PL_3]
 
-# felszÛlÌtÛ mÛd
+# felsz√≥l√≠t√≥ m√≥d
 
 # E/1.
 
@@ -586,17 +586,17 @@ nemdupikfelsz	>	-ik,jam	+[SUBJ/IMPER_DEF_SG_1]
 majdnemzdupik	>	-ik,jam	+[SUBJ/IMPER_DEF_SG_1]
 s i k 	>	-ik,sam	+[SUBJ/IMPER_DEF_SG_1]
 # [^s] z i k >	-ik,zam
-nemdbzik	>	-ik,zam	+[SUBJ/IMPER_DEF_SG_1]  # h˙gyozzad
-# d z i k	>	-zik,dzlak # csak nedvedzik, ez se t·rgyas!
-s z i k	>	-zik,szam	+[SUBJ/IMPER_DEF_SG_1] # m·sszad
+nemdbzik	>	-ik,zam	+[SUBJ/IMPER_DEF_SG_1]  # h√∫gyozzad
+# d z i k	>	-zik,dzlak # csak nedvedzik, ez se t√°rgyas!
+s z i k	>	-zik,szam	+[SUBJ/IMPER_DEF_SG_1] # m√°sszad
 
 nemdupikfelsz	>	-ik,jalak	+[SUBJ/IMPER_SG_1_OBJ_2]
 majdnemzdupik	>	-ik,jalak	+[SUBJ/IMPER_SG_1_OBJ_2]
 s i k 	>	-ik,salak	+[SUBJ/IMPER_SG_1_OBJ_2]
 # [^s] z i k >	-ik,zalak
-nemdbzik	>	-ik,zalak	+[SUBJ/IMPER_SG_1_OBJ_2]  # h˙gyozzad
-# d z i k	>	-zik,dzlak # csak nedvedzik, ez se t·rgyas!
-s z i k	>	-zik,szalak	+[SUBJ/IMPER_SG_1_OBJ_2] # m·sszad
+nemdbzik	>	-ik,zalak	+[SUBJ/IMPER_SG_1_OBJ_2]  # h√∫gyozzad
+# d z i k	>	-zik,dzlak # csak nedvedzik, ez se t√°rgyas!
+s z i k	>	-zik,szalak	+[SUBJ/IMPER_SG_1_OBJ_2] # m√°sszad
 
 # E/2.
 
@@ -607,14 +607,14 @@ majdnemzdupik	>	-ik,jad	+[SUBJ/IMPER_DEF_SG_2]
 s i k 	>	-ik,d	+[SUBJ/IMPER_DEF_SG_2] # fosd
 s i k 	>	-ik,sad	+[SUBJ/IMPER_DEF_SG_2]
 # [^s] z i k >	-ik,zad
-nemdbzik	>	-ik,zad	+[SUBJ/IMPER_DEF_SG_2]  # h˙gyozzad
-# d z i k	>	-zik,dzd # csak nedvedzik, ez se t·rgyas!
-s z i k	>	-ik,d	+[SUBJ/IMPER_DEF_SG_2] # m·szd
-s z i k	>	-zik,szad	+[SUBJ/IMPER_DEF_SG_2] # m·sszad
+nemdbzik	>	-ik,zad	+[SUBJ/IMPER_DEF_SG_2]  # h√∫gyozzad
+# d z i k	>	-zik,dzd # csak nedvedzik, ez se t√°rgyas!
+s z i k	>	-ik,d	+[SUBJ/IMPER_DEF_SG_2] # m√°szd
+s z i k	>	-zik,szad	+[SUBJ/IMPER_DEF_SG_2] # m√°sszad
 
 # E/3.
 
-# tik vÈg˚ t·rgyas nincs
+# tik v√©g≈± t√°rgyas nincs
 
 nemdupikfelsz	>	-ik,ja	+[SUBJ/IMPER_DEF_SG_3]
 majdnemzdupik	>	-ik,ja	+[SUBJ/IMPER_DEF_SG_3]
@@ -635,32 +635,32 @@ s z t i k	>	-ztik,szuk	+[SUBJ/IMPER_DEF_PL_1]
 
 # T/2.
 
-nemdupikfelsz	>	-ik,j·tok	+[SUBJ/IMPER_DEF_PL_2]
-majdnemzdupik	>	-ik,j·tok	+[SUBJ/IMPER_DEF_PL_2]
-s i k	>	-ik,s·tok	+[SUBJ/IMPER_DEF_PL_2]
-nemdbzik	>	-ik,z·tok	+[SUBJ/IMPER_DEF_PL_2]
-s z t i k	>	-ztik,sz·tok	+[SUBJ/IMPER_DEF_PL_2]
+nemdupikfelsz	>	-ik,j√°tok	+[SUBJ/IMPER_DEF_PL_2]
+majdnemzdupik	>	-ik,j√°tok	+[SUBJ/IMPER_DEF_PL_2]
+s i k	>	-ik,s√°tok	+[SUBJ/IMPER_DEF_PL_2]
+nemdbzik	>	-ik,z√°tok	+[SUBJ/IMPER_DEF_PL_2]
+s z t i k	>	-ztik,sz√°tok	+[SUBJ/IMPER_DEF_PL_2]
 
 # T/3.
 
-nemdupikfelsz	>	-ik,j·k	+[SUBJ/IMPER_DEF_PL_3]
-majdnemzdupik	>	-ik,j·k	+[SUBJ/IMPER_DEF_PL_3]
-s i k	>	-ik,s·k	+[SUBJ/IMPER_DEF_PL_3]
-nemdbzik	>	-ik,z·k	+[SUBJ/IMPER_DEF_PL_3]
-d z i k	>	-zik,dz·k	+[SUBJ/IMPER_DEF_PL_3]
-s z i k	>	-zik,sz·k	+[SUBJ/IMPER_DEF_PL_3]
-s z t i k	>	-ztik,sz·k	+[SUBJ/IMPER_DEF_PL_3]
+nemdupikfelsz	>	-ik,j√°k	+[SUBJ/IMPER_DEF_PL_3]
+majdnemzdupik	>	-ik,j√°k	+[SUBJ/IMPER_DEF_PL_3]
+s i k	>	-ik,s√°k	+[SUBJ/IMPER_DEF_PL_3]
+nemdbzik	>	-ik,z√°k	+[SUBJ/IMPER_DEF_PL_3]
+d z i k	>	-zik,dz√°k	+[SUBJ/IMPER_DEF_PL_3]
+s z i k	>	-zik,sz√°k	+[SUBJ/IMPER_DEF_PL_3]
+s z t i k	>	-ztik,sz√°k	+[SUBJ/IMPER_DEF_PL_3]
 
 ############################################################
-# magas ajakrÈses t·rgyas igeragoz·s
+# magas ajakr√©ses t√°rgyas igeragoz√°s
 ############################################################
 
 flag *e:
 
 # E/1.
 [^k]	>	em	+[PRES_INDIC_DEF_SG_1] # mer > merem  (ik!!!!)
-l l	>	-l,lek	+[PRES_INDIC_SG_1_OBJ_2] # szÈgyellek = alanyi e/1
-[^l] l	>	lek	+[PRES_INDIC_SG_1_OBJ_2] # aj·nllak
+l l	>	-l,lek	+[PRES_INDIC_SG_1_OBJ_2] # sz√©gyellek = alanyi e/1
+[^l] l	>	lek	+[PRES_INDIC_SG_1_OBJ_2] # aj√°nllak
 [^lk]	>	lek	+[PRES_INDIC_SG_1_OBJ_2]
 eloG	>	elek	+[PRES_INDIC_SG_1_OBJ_2]
 #eloL	>	elek
@@ -680,9 +680,9 @@ eloTJT3	>	elek	+[PRES_INDIC_SG_1_OBJ_2]
 
 # T/1.
 
-[^szk]	>	j¸k	+[PRES_INDIC_DEF_PL_1]
-s	>	s¸k	+[PRES_INDIC_DEF_PL_1]
-z	>	z¸k	+[PRES_INDIC_DEF_PL_1]
+[^szk]	>	j√ºk	+[PRES_INDIC_DEF_PL_1]
+s	>	s√ºk	+[PRES_INDIC_DEF_PL_1]
+z	>	z√ºk	+[PRES_INDIC_DEF_PL_1]
 
 # T/2.
 
@@ -692,7 +692,7 @@ z	>	z¸k	+[PRES_INDIC_DEF_PL_1]
 
 [^k]	>	ik	+[PRES_INDIC_DEF_PL_3]
 
-# m˙lt idı
+# m√∫lt id≈ë
 
 
 # E/1
@@ -730,101 +730,101 @@ NeloTM	>	te	+[PAST_INDIC_DEF_SG_3]
 
 # T/1.
 
-NeloTO	>	t¸k	+[PAST_INDIC_DEF_PL_1]
-#eloG	>	ett¸k
-eloL	>	ett¸k	+[PAST_INDIC_DEF_PL_1]
-#eloRR	>	ett¸k
-eloD	>	ett¸k	+[PAST_INDIC_DEF_PL_1]
-eloTM	>	ett¸k	+[PAST_INDIC_DEF_PL_1]
-NeloTM	>	t¸k	+[PAST_INDIC_DEF_PL_1]
+NeloTO	>	t√ºk	+[PAST_INDIC_DEF_PL_1]
+#eloG	>	ett√ºk
+eloL	>	ett√ºk	+[PAST_INDIC_DEF_PL_1]
+#eloRR	>	ett√ºk
+eloD	>	ett√ºk	+[PAST_INDIC_DEF_PL_1]
+eloTM	>	ett√ºk	+[PAST_INDIC_DEF_PL_1]
+NeloTM	>	t√ºk	+[PAST_INDIC_DEF_PL_1]
 
 # T/2.
 
-NeloT	>	tÈtek	+[PAST_INDIC_DEF_PL_2]
-eloG	>	ettÈtek	+[PAST_INDIC_DEF_PL_2]
-eloL	>	ettÈtek	+[PAST_INDIC_DEF_PL_2]
-eloRR	>	ettÈtek	+[PAST_INDIC_DEF_PL_2]
-eloD	>	ettÈtek	+[PAST_INDIC_DEF_PL_2]
-eloTM	>	ettÈtek	+[PAST_INDIC_DEF_PL_2]
-NeloTM	>	tÈtek	+[PAST_INDIC_DEF_PL_2]
+NeloT	>	t√©tek	+[PAST_INDIC_DEF_PL_2]
+eloG	>	ett√©tek	+[PAST_INDIC_DEF_PL_2]
+eloL	>	ett√©tek	+[PAST_INDIC_DEF_PL_2]
+eloRR	>	ett√©tek	+[PAST_INDIC_DEF_PL_2]
+eloD	>	ett√©tek	+[PAST_INDIC_DEF_PL_2]
+eloTM	>	ett√©tek	+[PAST_INDIC_DEF_PL_2]
+NeloTM	>	t√©tek	+[PAST_INDIC_DEF_PL_2]
 
 # T/3.
 
-NeloT	>	tÈk	+[PAST_INDIC_DEF_PL_3]
-#eloG	>	ettÈk
-eloL	>	ettÈk	+[PAST_INDIC_DEF_PL_3]
-#eloRR	>	ettÈk
-eloD	>	ettÈk	+[PAST_INDIC_DEF_PL_3]
-eloTM	>	ettÈk	+[PAST_INDIC_DEF_PL_3]
-NeloTM	>	tÈk	+[PAST_INDIC_DEF_PL_3]
+NeloT	>	t√©k	+[PAST_INDIC_DEF_PL_3]
+#eloG	>	ett√©k
+eloL	>	ett√©k	+[PAST_INDIC_DEF_PL_3]
+#eloRR	>	ett√©k
+eloD	>	ett√©k	+[PAST_INDIC_DEF_PL_3]
+eloTM	>	ett√©k	+[PAST_INDIC_DEF_PL_3]
+NeloTM	>	t√©k	+[PAST_INDIC_DEF_PL_3]
 
-# feltÈteles mÛd
+# felt√©teles m√≥d
 
-NeloT	>	nÈm	+[PRES_COND_DEF_SG_1]
-#eloG	>	enÈm
-eloL	>	enÈm	+[PRES_COND_DEF_SG_1]
-#eloRR	>	enÈm
-eloD	>	enÈm	+[PRES_COND_DEF_SG_1]
-eloTJT3	>	enÈm	+[PRES_COND_DEF_SG_1]
-NeloTJT3	>	nÈm	+[PRES_COND_DEF_SG_1]
+NeloT	>	n√©m	+[PRES_COND_DEF_SG_1]
+#eloG	>	en√©m
+eloL	>	en√©m	+[PRES_COND_DEF_SG_1]
+#eloRR	>	en√©m
+eloD	>	en√©m	+[PRES_COND_DEF_SG_1]
+eloTJT3	>	en√©m	+[PRES_COND_DEF_SG_1]
+NeloTJT3	>	n√©m	+[PRES_COND_DEF_SG_1]
 
-NeloT	>	nÈlek	+[PRES_COND_SG_1_OBJ_2]
-#eloG	>	enÈlek
-eloL	>	enÈlek	+[PRES_COND_SG_1_OBJ_2]
-#eloRR	>	enÈlek
-eloD	>	enÈlek	+[PRES_COND_SG_1_OBJ_2]
-eloTJT3	>	enÈlek	+[PRES_COND_SG_1_OBJ_2]
-NeloTJT3	>	nÈlek	+[PRES_COND_SG_1_OBJ_2]
+NeloT	>	n√©lek	+[PRES_COND_SG_1_OBJ_2]
+#eloG	>	en√©lek
+eloL	>	en√©lek	+[PRES_COND_SG_1_OBJ_2]
+#eloRR	>	en√©lek
+eloD	>	en√©lek	+[PRES_COND_SG_1_OBJ_2]
+eloTJT3	>	en√©lek	+[PRES_COND_SG_1_OBJ_2]
+NeloTJT3	>	n√©lek	+[PRES_COND_SG_1_OBJ_2]
 
-NeloT	>	nÈd	+[PRES_COND_DEF_SG_2]
-#eloG	>	enÈd
-eloL	>	enÈd	+[PRES_COND_DEF_SG_2]
-#eloRR	>	enÈd
-eloD	>	enÈd	+[PRES_COND_DEF_SG_2]
-eloTJT3	>	enÈd	+[PRES_COND_DEF_SG_2]
-NeloTJT3	>	nÈd	+[PRES_COND_DEF_SG_2]
+NeloT	>	n√©d	+[PRES_COND_DEF_SG_2]
+#eloG	>	en√©d
+eloL	>	en√©d	+[PRES_COND_DEF_SG_2]
+#eloRR	>	en√©d
+eloD	>	en√©d	+[PRES_COND_DEF_SG_2]
+eloTJT3	>	en√©d	+[PRES_COND_DEF_SG_2]
+NeloTJT3	>	n√©d	+[PRES_COND_DEF_SG_2]
 
-NeloT	>	nÈ	+[PRES_COND_DEF_SG_3]
-#eloG	>	enÈ
-eloL	>	enÈ	+[PRES_COND_DEF_SG_3]
-#eloRR	>	enÈ
-eloD	>	enÈ	+[PRES_COND_DEF_SG_3]
-eloTJT3	>	enÈ	+[PRES_COND_DEF_SG_3]
-NeloTJT3	>	nÈ	+[PRES_COND_DEF_SG_3]
+NeloT	>	n√©	+[PRES_COND_DEF_SG_3]
+#eloG	>	en√©
+eloL	>	en√©	+[PRES_COND_DEF_SG_3]
+#eloRR	>	en√©
+eloD	>	en√©	+[PRES_COND_DEF_SG_3]
+eloTJT3	>	en√©	+[PRES_COND_DEF_SG_3]
+NeloTJT3	>	n√©	+[PRES_COND_DEF_SG_3]
 
-NeloT	>	nÈnk	+[PRES_COND_DEF_PL_1]
-#eloG	>	enÈnk
-eloL	>	enÈnk	+[PRES_COND_DEF_PL_1]
-#eloRR	>	enÈnk
-eloD	>	enÈnk	+[PRES_COND_DEF_PL_1]
-eloTJT3	>	enÈnk	+[PRES_COND_DEF_PL_1]
-NeloTJT3	>	nÈnk	+[PRES_COND_DEF_PL_1]
+NeloT	>	n√©nk	+[PRES_COND_DEF_PL_1]
+#eloG	>	en√©nk
+eloL	>	en√©nk	+[PRES_COND_DEF_PL_1]
+#eloRR	>	en√©nk
+eloD	>	en√©nk	+[PRES_COND_DEF_PL_1]
+eloTJT3	>	en√©nk	+[PRES_COND_DEF_PL_1]
+NeloTJT3	>	n√©nk	+[PRES_COND_DEF_PL_1]
 
-NeloT	>	nık	+[PRES_COND_DEF_PL_1]	&
-#eloG	>	enık	&
-eloL	>	enık	+[PRES_COND_DEF_PL_1]	&
-#eloRR	>	enık	&
-eloD	>	enık	+[PRES_COND_DEF_PL_1]	&
-eloTJT3	>	enık	+[PRES_COND_DEF_PL_1]	&
-NeloTJT3	>	nık	+[PRES_COND_DEF_PL_1]	&
+NeloT	>	n≈ëk	+[PRES_COND_DEF_PL_1]	&
+#eloG	>	en≈ëk	&
+eloL	>	en≈ëk	+[PRES_COND_DEF_PL_1]	&
+#eloRR	>	en≈ëk	&
+eloD	>	en≈ëk	+[PRES_COND_DEF_PL_1]	&
+eloTJT3	>	en≈ëk	+[PRES_COND_DEF_PL_1]	&
+NeloTJT3	>	n≈ëk	+[PRES_COND_DEF_PL_1]	&
 
-NeloT	>	nÈtek	+[PRES_COND_DEF_PL_2]
-#eloG	>	enÈtek
-eloL	>	enÈtek	+[PRES_COND_DEF_PL_2]
-#eloRR	>	enÈtek
-eloD	>	enÈtek	+[PRES_COND_DEF_PL_2]
-eloTJT3	>	enÈtek	+[PRES_COND_DEF_PL_2]
-NeloTJT3	>	nÈtek	+[PRES_COND_DEF_PL_2]
+NeloT	>	n√©tek	+[PRES_COND_DEF_PL_2]
+#eloG	>	en√©tek
+eloL	>	en√©tek	+[PRES_COND_DEF_PL_2]
+#eloRR	>	en√©tek
+eloD	>	en√©tek	+[PRES_COND_DEF_PL_2]
+eloTJT3	>	en√©tek	+[PRES_COND_DEF_PL_2]
+NeloTJT3	>	n√©tek	+[PRES_COND_DEF_PL_2]
 
-NeloT	>	nÈk	+[PRES_COND_DEF_PL_3]
-#eloG	>	enÈk
-eloL	>	enÈk	+[PRES_COND_DEF_PL_3]
-#eloRR	>	enÈk
-eloD	>	enÈk	+[PRES_COND_DEF_PL_3]
-eloTJT3	>	enÈk	+[PRES_COND_DEF_PL_3]
-NeloTJT3	>	nÈk	+[PRES_COND_DEF_PL_3]
+NeloT	>	n√©k	+[PRES_COND_DEF_PL_3]
+#eloG	>	en√©k
+eloL	>	en√©k	+[PRES_COND_DEF_PL_3]
+#eloRR	>	en√©k
+eloD	>	en√©k	+[PRES_COND_DEF_PL_3]
+eloTJT3	>	en√©k	+[PRES_COND_DEF_PL_3]
+NeloTJT3	>	n√©k	+[PRES_COND_DEF_PL_3]
 
-# felszÛlÌtÛ mÛd
+# felsz√≥l√≠t√≥ m√≥d
 
 [^sztk]	>	jem	+[SUBJ/IMPER_DEF_SG_1]
 s	>	sem	+[SUBJ/IMPER_DEF_SG_1]
@@ -844,10 +844,10 @@ s z t	>	-zt,szelek	+[SUBJ/IMPER_SG_1_OBJ_2]
 
 
 
-[^dtk]  	>       d	+[SUBJ/IMPER_DEF_SG_2] # mondd, szagl·szd, de! teszd, viszd, hiszd
+[^dtk]  	>       d	+[SUBJ/IMPER_DEF_SG_2] # mondd, szagl√°szd, de! teszd, viszd, hiszd
 [^sztk]  >       jed	+[SUBJ/IMPER_DEF_SG_2] # mondjad
-[^d] d    >       d	+[SUBJ/IMPER_DEF_SG_2] # mondd, vÈdd, de nincs feddd
-s       >       sed	+[SUBJ/IMPER_DEF_SG_2] # ·ssad
+[^d] d    >       d	+[SUBJ/IMPER_DEF_SG_2] # mondd, v√©dd, de nincs feddd
+s       >       sed	+[SUBJ/IMPER_DEF_SG_2] # √°ssad
 [^s] z	>	zed	+[SUBJ/IMPER_DEF_SG_2]
 s z	>	-z,szed	+[SUBJ/IMPER_DEF_SG_2]
 ts      >       sd			+[SUBJ/IMPER_DEF_SG_2]
@@ -865,31 +865,31 @@ ts 	>	se	+[SUBJ/IMPER_DEF_SG_3]
 nemts	>	-t,sse	+[SUBJ/IMPER_DEF_SG_3]
 s z t	>	-zt,sze	+[SUBJ/IMPER_DEF_SG_3]
 
-[^sztk]	>	j¸k	+[SUBJ/IMPER_DEF_PL_1]
-s	>	s¸k	+[SUBJ/IMPER_DEF_PL_1]
-[^s] z	>	z¸k	+[SUBJ/IMPER_DEF_PL_1]
-s z	>	-z,sz¸k	+[SUBJ/IMPER_DEF_PL_1]
-ts 	>	s¸k	+[SUBJ/IMPER_DEF_PL_1]
-nemts	>	-t,ss¸k	+[SUBJ/IMPER_DEF_PL_1]
-s z t	>	-zt,sz¸k	+[SUBJ/IMPER_DEF_PL_1]
+[^sztk]	>	j√ºk	+[SUBJ/IMPER_DEF_PL_1]
+s	>	s√ºk	+[SUBJ/IMPER_DEF_PL_1]
+[^s] z	>	z√ºk	+[SUBJ/IMPER_DEF_PL_1]
+s z	>	-z,sz√ºk	+[SUBJ/IMPER_DEF_PL_1]
+ts 	>	s√ºk	+[SUBJ/IMPER_DEF_PL_1]
+nemts	>	-t,ss√ºk	+[SUBJ/IMPER_DEF_PL_1]
+s z t	>	-zt,sz√ºk	+[SUBJ/IMPER_DEF_PL_1]
 
-[^sztk]	>	jÈtek	+[SUBJ/IMPER_DEF_PL_2]
-s	>	sÈtek	+[SUBJ/IMPER_DEF_PL_2]
-[^ds] z	>	zÈtek	+[SUBJ/IMPER_DEF_PL_2]
-s z	>	-z,szÈtek	+[SUBJ/IMPER_DEF_PL_2]
-ts 	>	sÈtek	+[SUBJ/IMPER_DEF_PL_2]
-nemts	>	-t,ssÈtek	+[SUBJ/IMPER_DEF_PL_2]
-s z t	>	-zt,szÈtek	+[SUBJ/IMPER_DEF_PL_2]
+[^sztk]	>	j√©tek	+[SUBJ/IMPER_DEF_PL_2]
+s	>	s√©tek	+[SUBJ/IMPER_DEF_PL_2]
+[^ds] z	>	z√©tek	+[SUBJ/IMPER_DEF_PL_2]
+s z	>	-z,sz√©tek	+[SUBJ/IMPER_DEF_PL_2]
+ts 	>	s√©tek	+[SUBJ/IMPER_DEF_PL_2]
+nemts	>	-t,ss√©tek	+[SUBJ/IMPER_DEF_PL_2]
+s z t	>	-zt,sz√©tek	+[SUBJ/IMPER_DEF_PL_2]
 
-[^sztk]	>	jÈk	+[SUBJ/IMPER_DEF_PL_3]
-s	>	sÈk	+[SUBJ/IMPER_DEF_PL_3]
-[^ds] z	>	zÈk	+[SUBJ/IMPER_DEF_PL_3]
-s z	>	-z,szÈk	+[SUBJ/IMPER_DEF_PL_3]
-d z	>	-z,dzÈk	+[SUBJ/IMPER_DEF_PL_3]
-s z	>	-z,szÈk	+[SUBJ/IMPER_DEF_PL_3]
-ts 	>	sÈk	+[SUBJ/IMPER_DEF_PL_3]
-nemts	>	-t,ssÈk	+[SUBJ/IMPER_DEF_PL_3]
-s z t	>	-zt,szÈk	+[SUBJ/IMPER_DEF_PL_3]
+[^sztk]	>	j√©k	+[SUBJ/IMPER_DEF_PL_3]
+s	>	s√©k	+[SUBJ/IMPER_DEF_PL_3]
+[^ds] z	>	z√©k	+[SUBJ/IMPER_DEF_PL_3]
+s z	>	-z,sz√©k	+[SUBJ/IMPER_DEF_PL_3]
+d z	>	-z,dz√©k	+[SUBJ/IMPER_DEF_PL_3]
+s z	>	-z,sz√©k	+[SUBJ/IMPER_DEF_PL_3]
+ts 	>	s√©k	+[SUBJ/IMPER_DEF_PL_3]
+nemts	>	-t,ss√©k	+[SUBJ/IMPER_DEF_PL_3]
+s z t	>	-zt,sz√©k	+[SUBJ/IMPER_DEF_PL_3]
 
 # ikes
 
@@ -911,39 +911,39 @@ i k	>	-ik,ed	+[PRES_INDIC_DEF_SG_2] #
 i k	>	-ik,i	+[PRES_INDIC_DEF_SG_3] # ereszti
 
 # T/1
-nemdupikfelsz	>	-ik,j¸k	+[PRES_INDIC_DEF_PL_1]
-majdnemzdupik	>	-ik,j¸k	+[PRES_INDIC_DEF_PL_1]
-s i k	>	-ik,s¸k	+[PRES_INDIC_DEF_PL_1]
-nemdbzik	>	-ik,z¸k	+[PRES_INDIC_DEF_PL_1]
-d z i k	>	-zik,dz¸k	+[PRES_INDIC_DEF_PL_1]
-s z i k	>	-zik,sz¸k	+[PRES_INDIC_DEF_PL_1]
-#ts i k 	>	-ik,s¸k	+[PRES_INDIC_DEF_PL_1]
-#nemts i k	>	-tik,ss¸k	+[PRES_INDIC_DEF_PL_1]
-#s z t i k	>	-ztik,sz¸k	+[PRES_INDIC_DEF_PL_1]
+nemdupikfelsz	>	-ik,j√ºk	+[PRES_INDIC_DEF_PL_1]
+majdnemzdupik	>	-ik,j√ºk	+[PRES_INDIC_DEF_PL_1]
+s i k	>	-ik,s√ºk	+[PRES_INDIC_DEF_PL_1]
+nemdbzik	>	-ik,z√ºk	+[PRES_INDIC_DEF_PL_1]
+d z i k	>	-zik,dz√ºk	+[PRES_INDIC_DEF_PL_1]
+s z i k	>	-zik,sz√ºk	+[PRES_INDIC_DEF_PL_1]
+#ts i k 	>	-ik,s√ºk	+[PRES_INDIC_DEF_PL_1]
+#nemts i k	>	-tik,ss√ºk	+[PRES_INDIC_DEF_PL_1]
+#s z t i k	>	-ztik,sz√ºk	+[PRES_INDIC_DEF_PL_1]
 
 # T/2
-nemdupikfelsz	>	-ik,jÈtek	+[PRES_INDIC_DEF_PL_2]
-majdnemzdupik	>	-ik,jÈtek	+[PRES_INDIC_DEF_PL_2]
+nemdupikfelsz	>	-ik,j√©tek	+[PRES_INDIC_DEF_PL_2]
+majdnemzdupik	>	-ik,j√©tek	+[PRES_INDIC_DEF_PL_2]
 s i k	>	-ik,itek	+[PRES_INDIC_DEF_PL_2]
 nemdbzik	>	-ik,itek	+[PRES_INDIC_DEF_PL_2]
 d z i k	>	-ik,itek	+[PRES_INDIC_DEF_PL_2]
 s z i k	>	-ik,itek	+[PRES_INDIC_DEF_PL_2]
 #ts i k 	>	-ik,itek	+[PRES_INDIC_DEF_PL_2]
-#nemts i k	>	-tik,ssÈtek	+[PRES_INDIC_DEF_PL_2]
-#s z t i k	>	-ztik,szÈtek	+[PRES_INDIC_DEF_PL_2]
+#nemts i k	>	-tik,ss√©tek	+[PRES_INDIC_DEF_PL_2]
+#s z t i k	>	-ztik,sz√©tek	+[PRES_INDIC_DEF_PL_2]
 
 # T/3
-nemdupikfelsz	>	-ik,jÈk	+[PRES_INDIC_DEF_PL_3]
-majdnemzdupik	>	-ik,jÈk	+[PRES_INDIC_DEF_PL_3]
-s i k	>	-ik,sÈk	+[PRES_INDIC_DEF_PL_3]
-nemdbzik	>	-ik,zÈk	+[PRES_INDIC_DEF_PL_3]
-d z i k	>	-zik,dzÈk	+[PRES_INDIC_DEF_PL_3]
-s z i k	>	-zik,szÈk	+[PRES_INDIC_DEF_PL_3]
-#ts i k 	>	-ik,sÈk	+[PRES_INDIC_DEF_PL_3]
-#nemts i k	>	-tik,ssÈk	+[PRES_INDIC_DEF_PL_3]
-#s z t i k	>	-ztik,szÈk	+[PRES_INDIC_DEF_PL_3]
+nemdupikfelsz	>	-ik,j√©k	+[PRES_INDIC_DEF_PL_3]
+majdnemzdupik	>	-ik,j√©k	+[PRES_INDIC_DEF_PL_3]
+s i k	>	-ik,s√©k	+[PRES_INDIC_DEF_PL_3]
+nemdbzik	>	-ik,z√©k	+[PRES_INDIC_DEF_PL_3]
+d z i k	>	-zik,dz√©k	+[PRES_INDIC_DEF_PL_3]
+s z i k	>	-zik,sz√©k	+[PRES_INDIC_DEF_PL_3]
+#ts i k 	>	-ik,s√©k	+[PRES_INDIC_DEF_PL_3]
+#nemts i k	>	-tik,ss√©k	+[PRES_INDIC_DEF_PL_3]
+#s z t i k	>	-ztik,sz√©k	+[PRES_INDIC_DEF_PL_3]
 
-# ikes m˙lt
+# ikes m√∫lt
 
 # E/1.
 dupik	>	-ik,ettem	+[PAST_INDIC_DEF_SG_1]
@@ -976,94 +976,94 @@ nemdupik	>	-ik,te	+[PAST_INDIC_DEF_SG_3]
 
 # T/1.
 
-dupik	>	-ik,ett¸k	+[PAST_INDIC_DEF_PL_1]
-sdupik	>	-ik,ett¸k	+[PAST_INDIC_DEF_PL_1]
-majdnemdupik	>	-ik,t¸k	+[PAST_INDIC_DEF_PL_1]
-majdnemsdupik	>	-ik,t¸k	+[PAST_INDIC_DEF_PL_1]
-nemdupik	>	-ik,t¸k	+[PAST_INDIC_DEF_PL_1]
+dupik	>	-ik,ett√ºk	+[PAST_INDIC_DEF_PL_1]
+sdupik	>	-ik,ett√ºk	+[PAST_INDIC_DEF_PL_1]
+majdnemdupik	>	-ik,t√ºk	+[PAST_INDIC_DEF_PL_1]
+majdnemsdupik	>	-ik,t√ºk	+[PAST_INDIC_DEF_PL_1]
+nemdupik	>	-ik,t√ºk	+[PAST_INDIC_DEF_PL_1]
 
 # T/2.
 
-dupik	>	-ik,ettÈtek	+[PAST_INDIC_DEF_PL_2]
-sdupik	>	-ik,ettÈtek	+[PAST_INDIC_DEF_PL_2]
-majdnemdupik	>	-ik,tÈtek	+[PAST_INDIC_DEF_PL_2]
-majdnemsdupik	>	-ik,tÈtek	+[PAST_INDIC_DEF_PL_2]
-nemdupik	>	-ik,tÈtek	+[PAST_INDIC_DEF_PL_2]
+dupik	>	-ik,ett√©tek	+[PAST_INDIC_DEF_PL_2]
+sdupik	>	-ik,ett√©tek	+[PAST_INDIC_DEF_PL_2]
+majdnemdupik	>	-ik,t√©tek	+[PAST_INDIC_DEF_PL_2]
+majdnemsdupik	>	-ik,t√©tek	+[PAST_INDIC_DEF_PL_2]
+nemdupik	>	-ik,t√©tek	+[PAST_INDIC_DEF_PL_2]
 
 # T/3.
 
-dupik	>	-ik,ettÈk	+[PAST_INDIC_DEF_PL_3]
-sdupik	>	-ik,ettÈk	+[PAST_INDIC_DEF_PL_3]
-majdnemdupik	>	-ik,tÈk	+[PAST_INDIC_DEF_PL_3]
-majdnemsdupik	>	-ik,tÈk	+[PAST_INDIC_DEF_PL_3]
-nemdupik	>	-ik,tÈk	+[PAST_INDIC_DEF_PL_3]
+dupik	>	-ik,ett√©k	+[PAST_INDIC_DEF_PL_3]
+sdupik	>	-ik,ett√©k	+[PAST_INDIC_DEF_PL_3]
+majdnemdupik	>	-ik,t√©k	+[PAST_INDIC_DEF_PL_3]
+majdnemsdupik	>	-ik,t√©k	+[PAST_INDIC_DEF_PL_3]
+nemdupik	>	-ik,t√©k	+[PAST_INDIC_DEF_PL_3]
 
 # 	i k	>	-ik,ni
 # dupik i k > -ik,ani
 
-# feltÈteles mÛd
+# felt√©teles m√≥d
 
 # E/1.
 
-dupik	>	-ik,enÈm	+[PRES_COND_DEF_SG_1]
-sdupik	>	-ik,enÈm	+[PRES_COND_DEF_SG_1]
-majdnemdupik	>	-ik,nÈm	+[PRES_COND_DEF_SG_1]
-majdnemsdupik	>	-ik,nÈm	+[PRES_COND_DEF_SG_1]
-nemdupik	>	-ik,nÈm	+[PRES_COND_DEF_SG_1]
+dupik	>	-ik,en√©m	+[PRES_COND_DEF_SG_1]
+sdupik	>	-ik,en√©m	+[PRES_COND_DEF_SG_1]
+majdnemdupik	>	-ik,n√©m	+[PRES_COND_DEF_SG_1]
+majdnemsdupik	>	-ik,n√©m	+[PRES_COND_DEF_SG_1]
+nemdupik	>	-ik,n√©m	+[PRES_COND_DEF_SG_1]
 
-dupik	>	-ik,enÈlek	+[PRES_COND_SG_1_OBJ_2]
-sdupik	>	-ik,enÈlek	+[PRES_COND_SG_1_OBJ_2]
-majdnemdupik	>	-ik,nÈlek	+[PRES_COND_SG_1_OBJ_2]
-majdnemsdupik	>	-ik,nÈlek	+[PRES_COND_SG_1_OBJ_2]
-nemdupik	>	-ik,nÈlek	+[PRES_COND_SG_1_OBJ_2]
+dupik	>	-ik,en√©lek	+[PRES_COND_SG_1_OBJ_2]
+sdupik	>	-ik,en√©lek	+[PRES_COND_SG_1_OBJ_2]
+majdnemdupik	>	-ik,n√©lek	+[PRES_COND_SG_1_OBJ_2]
+majdnemsdupik	>	-ik,n√©lek	+[PRES_COND_SG_1_OBJ_2]
+nemdupik	>	-ik,n√©lek	+[PRES_COND_SG_1_OBJ_2]
 
 # E/2.
 
-dupik	>	-ik,enÈd	+[PRES_COND_DEF_SG_2]
-sdupik	>	-ik,enÈd	+[PRES_COND_DEF_SG_2]
-majdnemdupik	>	-ik,nÈd	+[PRES_COND_DEF_SG_2]
-majdnemsdupik	>	-ik,nÈd	+[PRES_COND_DEF_SG_2]
-nemdupik	>	-ik,nÈd	+[PRES_COND_DEF_SG_2]
+dupik	>	-ik,en√©d	+[PRES_COND_DEF_SG_2]
+sdupik	>	-ik,en√©d	+[PRES_COND_DEF_SG_2]
+majdnemdupik	>	-ik,n√©d	+[PRES_COND_DEF_SG_2]
+majdnemsdupik	>	-ik,n√©d	+[PRES_COND_DEF_SG_2]
+nemdupik	>	-ik,n√©d	+[PRES_COND_DEF_SG_2]
 
 # E/3.
 
-dupik	>	-ik,enÈ	+[PRES_COND_DEF_SG_3]
-sdupik	>	-ik,enÈ	+[PRES_COND_DEF_SG_3]
-majdnemdupik	>	-ik,nÈ	+[PRES_COND_DEF_SG_3]
-majdnemsdupik	>	-ik,nÈ	+[PRES_COND_DEF_SG_3]
-nemdupik	>	-ik,nÈ	+[PRES_COND_DEF_SG_3]
+dupik	>	-ik,en√©	+[PRES_COND_DEF_SG_3]
+sdupik	>	-ik,en√©	+[PRES_COND_DEF_SG_3]
+majdnemdupik	>	-ik,n√©	+[PRES_COND_DEF_SG_3]
+majdnemsdupik	>	-ik,n√©	+[PRES_COND_DEF_SG_3]
+nemdupik	>	-ik,n√©	+[PRES_COND_DEF_SG_3]
 
 # T/1.
 
-dupik	>	-ik,enÈnk	+[PRES_COND_DEF_PL_1]
-sdupik	>	-ik,enÈnk	+[PRES_COND_DEF_PL_1]
-majdnemdupik	>	-ik,nÈnk	+[PRES_COND_DEF_PL_1]
-majdnemsdupik	>	-ik,nÈnk	+[PRES_COND_DEF_PL_1]
-nemdupik	>	-ik,nÈnk	+[PRES_COND_DEF_PL_1]
+dupik	>	-ik,en√©nk	+[PRES_COND_DEF_PL_1]
+sdupik	>	-ik,en√©nk	+[PRES_COND_DEF_PL_1]
+majdnemdupik	>	-ik,n√©nk	+[PRES_COND_DEF_PL_1]
+majdnemsdupik	>	-ik,n√©nk	+[PRES_COND_DEF_PL_1]
+nemdupik	>	-ik,n√©nk	+[PRES_COND_DEF_PL_1]
 
-dupik	>	-ik,enık	+[PRES_COND_DEF_PL_1]	&
-sdupik	>	-ik,enık	+[PRES_COND_DEF_PL_1]	&
-majdnemdupik	>	-ik,nık	+[PRES_COND_DEF_PL_1]	&
-majdnemsdupik	>	-ik,nık	+[PRES_COND_DEF_PL_1]	&
-nemdupik	>	-ik,nık	+[PRES_COND_DEF_PL_1]	&
+dupik	>	-ik,en≈ëk	+[PRES_COND_DEF_PL_1]	&
+sdupik	>	-ik,en≈ëk	+[PRES_COND_DEF_PL_1]	&
+majdnemdupik	>	-ik,n≈ëk	+[PRES_COND_DEF_PL_1]	&
+majdnemsdupik	>	-ik,n≈ëk	+[PRES_COND_DEF_PL_1]	&
+nemdupik	>	-ik,n≈ëk	+[PRES_COND_DEF_PL_1]	&
 
 # T/2.
 
-dupik	>	-ik,enÈtek	+[PRES_COND_DEF_PL_2]
-sdupik	>	-ik,enÈtek	+[PRES_COND_DEF_PL_2]
-majdnemdupik	>	-ik,nÈtek	+[PRES_COND_DEF_PL_2]
-majdnemsdupik	>	-ik,nÈtek	+[PRES_COND_DEF_PL_2]
-nemdupik	>	-ik,nÈtek	+[PRES_COND_DEF_PL_2]
+dupik	>	-ik,en√©tek	+[PRES_COND_DEF_PL_2]
+sdupik	>	-ik,en√©tek	+[PRES_COND_DEF_PL_2]
+majdnemdupik	>	-ik,n√©tek	+[PRES_COND_DEF_PL_2]
+majdnemsdupik	>	-ik,n√©tek	+[PRES_COND_DEF_PL_2]
+nemdupik	>	-ik,n√©tek	+[PRES_COND_DEF_PL_2]
 
 # T/3.
 
-dupik	>	-ik,enÈk	+[PRES_COND_DEF_PL_3]
-sdupik	>	-ik,enÈk	+[PRES_COND_DEF_PL_3]
-majdnemdupik	>	-ik,nÈk	+[PRES_COND_DEF_PL_3]
-majdnemsdupik	>	-ik,nÈk	+[PRES_COND_DEF_PL_3]
-nemdupik	>	-ik,nÈk	+[PRES_COND_DEF_PL_3]
+dupik	>	-ik,en√©k	+[PRES_COND_DEF_PL_3]
+sdupik	>	-ik,en√©k	+[PRES_COND_DEF_PL_3]
+majdnemdupik	>	-ik,n√©k	+[PRES_COND_DEF_PL_3]
+majdnemsdupik	>	-ik,n√©k	+[PRES_COND_DEF_PL_3]
+nemdupik	>	-ik,n√©k	+[PRES_COND_DEF_PL_3]
 
-# felszÛlÌtÛ mÛd
+# felsz√≥l√≠t√≥ m√≥d
 
 # E/1.
 nemdupikfelsz	>	-ik,jem	+[SUBJ/IMPER_DEF_SG_1]
@@ -1077,10 +1077,10 @@ nemdupikfelsz	>	-ik,jelek	+[SUBJ/IMPER_SG_1_OBJ_2]
 majdnemzdupik	>	-ik,jelek	+[SUBJ/IMPER_SG_1_OBJ_2]
 s i k 	>	-ik,selek	+[SUBJ/IMPER_SG_1_OBJ_2]
 # [^s] z i k >	-ik,zelek
-nemdbzik	>	-ik,zelek	+[SUBJ/IMPER_SG_1_OBJ_2]  # h˙gyozzad
-d z i k	>	-zik,dzlek	+[SUBJ/IMPER_SG_1_OBJ_2] # csak nedvedzik, ez se t·rgyas!
-s z i k	>	-zik,szelek	+[SUBJ/IMPER_SG_1_OBJ_2] # m·sszad
-# tik vÈg˚ t·rgyas nincs
+nemdbzik	>	-ik,zelek	+[SUBJ/IMPER_SG_1_OBJ_2]  # h√∫gyozzad
+d z i k	>	-zik,dzlek	+[SUBJ/IMPER_SG_1_OBJ_2] # csak nedvedzik, ez se t√°rgyas!
+s z i k	>	-zik,szelek	+[SUBJ/IMPER_SG_1_OBJ_2] # m√°sszad
+# tik v√©g≈± t√°rgyas nincs
 
 # E/2.
 
@@ -1088,14 +1088,14 @@ nemdupikfelsz	>	-ik,d	+[SUBJ/IMPER_DEF_SG_2]
 majdnemdupik	>	-ik,d	+[SUBJ/IMPER_DEF_SG_2]
 nemdupikfelsz	>	-ik,jed	+[SUBJ/IMPER_DEF_SG_2]
 majdnemzdupik	>	-ik,jed	+[SUBJ/IMPER_DEF_SG_2]
-s i k 	>	-ik,d	+[SUBJ/IMPER_DEF_SG_2] # kÈsd
+s i k 	>	-ik,d	+[SUBJ/IMPER_DEF_SG_2] # k√©sd
 s i k 	>	-ik,sed	+[SUBJ/IMPER_DEF_SG_2]
 # [^s] z i k >	-ik,zed
-nemdbzik	>	-ik,zed	+[SUBJ/IMPER_DEF_SG_2]  # h˙gyozzad
-d z i k	>	-zik,dzd	+[SUBJ/IMPER_DEF_SG_2] # csak nedvedzik, ez se t·rgyas!
-s z i k	>	-ik,d	+[SUBJ/IMPER_DEF_SG_2] # m·szd
-s z i k	>	-zik,szed	+[SUBJ/IMPER_DEF_SG_2] # m·sszad
-# tik vÈg˚ t·rgyas nincs
+nemdbzik	>	-ik,zed	+[SUBJ/IMPER_DEF_SG_2]  # h√∫gyozzad
+d z i k	>	-zik,dzd	+[SUBJ/IMPER_DEF_SG_2] # csak nedvedzik, ez se t√°rgyas!
+s z i k	>	-ik,d	+[SUBJ/IMPER_DEF_SG_2] # m√°szd
+s z i k	>	-zik,szed	+[SUBJ/IMPER_DEF_SG_2] # m√°sszad
+# tik v√©g≈± t√°rgyas nincs
 
 # E/3.
 
@@ -1108,42 +1108,42 @@ s z i k	>	-zik,sze	+[SUBJ/IMPER_DEF_SG_3]
 
 # T/1.
 
-nemdupikfelsz	>	-ik,j¸k	+[SUBJ/IMPER_DEF_PL_1]
-majdnemzdupik	>	-ik,j¸k	+[SUBJ/IMPER_DEF_PL_1]
-s i k	>	-ik,s¸k	+[SUBJ/IMPER_DEF_PL_1]
-nemdbzik	>	-ik,z¸k	+[SUBJ/IMPER_DEF_PL_1]
-d z i k	>	-zik,dz¸k	+[SUBJ/IMPER_DEF_PL_1]
-s z i k	>	-zik,sz¸k	+[SUBJ/IMPER_DEF_PL_1]
-s z t i k	>	-ztik,sz¸k	+[SUBJ/IMPER_DEF_PL_1]
+nemdupikfelsz	>	-ik,j√ºk	+[SUBJ/IMPER_DEF_PL_1]
+majdnemzdupik	>	-ik,j√ºk	+[SUBJ/IMPER_DEF_PL_1]
+s i k	>	-ik,s√ºk	+[SUBJ/IMPER_DEF_PL_1]
+nemdbzik	>	-ik,z√ºk	+[SUBJ/IMPER_DEF_PL_1]
+d z i k	>	-zik,dz√ºk	+[SUBJ/IMPER_DEF_PL_1]
+s z i k	>	-zik,sz√ºk	+[SUBJ/IMPER_DEF_PL_1]
+s z t i k	>	-ztik,sz√ºk	+[SUBJ/IMPER_DEF_PL_1]
 
 # T/2.
 
-nemdupikfelsz	>	-ik,jÈtek	+[SUBJ/IMPER_DEF_PL_2]
-majdnemzdupik	>	-ik,jÈtek	+[SUBJ/IMPER_DEF_PL_2]
-s i k	>	-ik,sÈtek	+[SUBJ/IMPER_DEF_PL_2]
-nemdbzik	>	-ik,zÈtek	+[SUBJ/IMPER_DEF_PL_2]
-s z t i k	>	-ztik,szÈtek	+[SUBJ/IMPER_DEF_PL_2]
+nemdupikfelsz	>	-ik,j√©tek	+[SUBJ/IMPER_DEF_PL_2]
+majdnemzdupik	>	-ik,j√©tek	+[SUBJ/IMPER_DEF_PL_2]
+s i k	>	-ik,s√©tek	+[SUBJ/IMPER_DEF_PL_2]
+nemdbzik	>	-ik,z√©tek	+[SUBJ/IMPER_DEF_PL_2]
+s z t i k	>	-ztik,sz√©tek	+[SUBJ/IMPER_DEF_PL_2]
 
 # T/3.
 
-nemdupikfelsz	>	-ik,jÈk	+[SUBJ/IMPER_DEF_PL_3]
-majdnemzdupik	>	-ik,jÈk	+[SUBJ/IMPER_DEF_PL_3]
-s i k	>	-ik,sÈk	+[SUBJ/IMPER_DEF_PL_3]
-nemdbzik	>	-ik,zÈk	+[SUBJ/IMPER_DEF_PL_3]
-d z i k	>	-zik,dzÈk	+[SUBJ/IMPER_DEF_PL_3]
-s z i k	>	-zik,szÈk	+[SUBJ/IMPER_DEF_PL_3]
-s z t i k	>	-ztik,szÈk	+[SUBJ/IMPER_DEF_PL_3]
+nemdupikfelsz	>	-ik,j√©k	+[SUBJ/IMPER_DEF_PL_3]
+majdnemzdupik	>	-ik,j√©k	+[SUBJ/IMPER_DEF_PL_3]
+s i k	>	-ik,s√©k	+[SUBJ/IMPER_DEF_PL_3]
+nemdbzik	>	-ik,z√©k	+[SUBJ/IMPER_DEF_PL_3]
+d z i k	>	-zik,dz√©k	+[SUBJ/IMPER_DEF_PL_3]
+s z i k	>	-zik,sz√©k	+[SUBJ/IMPER_DEF_PL_3]
+s z t i k	>	-ztik,sz√©k	+[SUBJ/IMPER_DEF_PL_3]
 
 ############################################################
-# magas ajakkerekÌtÈses t·rgyas igeragoz·s
+# magas ajakkerek√≠t√©ses t√°rgyas igeragoz√°s
 ############################################################
 
 flag *p:
 
 # E/1.
-[^k]	>	ˆm	+[PRES_INDIC_DEF_SG_1] # mer > merem  (ik!!!!)
-l l	>	-l,lek	+[PRES_INDIC_SG_1_OBJ_2] # szÈgyellek = alanyi e/1
-[^l] l	>	lek	+[PRES_INDIC_SG_1_OBJ_2] # aj·nllak
+[^k]	>	√∂m	+[PRES_INDIC_DEF_SG_1] # mer > merem  (ik!!!!)
+l l	>	-l,lek	+[PRES_INDIC_SG_1_OBJ_2] # sz√©gyellek = alanyi e/1
+[^l] l	>	lek	+[PRES_INDIC_SG_1_OBJ_2] # aj√°nllak
 [^lk]	>	lek	+[PRES_INDIC_SG_1_OBJ_2]
 eloG	>	elek	+[PRES_INDIC_SG_1_OBJ_2]
 #eloL	>	elek
@@ -1155,7 +1155,7 @@ eloTJT3	>	elek	+[PRES_INDIC_SG_1_OBJ_2]
 
 # E/2.
 
-[^k]	>	ˆd	+[PRES_INDIC_DEF_SG_2]
+[^k]	>	√∂d	+[PRES_INDIC_DEF_SG_2]
 
 # E/3
 
@@ -1164,9 +1164,9 @@ eloTJT3	>	elek	+[PRES_INDIC_SG_1_OBJ_2]
 
 # T/1.
 
-[^szk]	>	j¸k	+[PRES_INDIC_DEF_PL_1]
-s	>	s¸k	+[PRES_INDIC_DEF_PL_1]
-z	>	z¸k	+[PRES_INDIC_DEF_PL_1]
+[^szk]	>	j√ºk	+[PRES_INDIC_DEF_PL_1]
+s	>	s√ºk	+[PRES_INDIC_DEF_PL_1]
+z	>	z√ºk	+[PRES_INDIC_DEF_PL_1]
 
 # T/2.
 
@@ -1176,136 +1176,136 @@ z	>	z¸k	+[PRES_INDIC_DEF_PL_1]
 
 [^k]	>	ik	+[PRES_INDIC_DEF_PL_3]
 
-# m˙lt idı
+# m√∫lt id≈ë
 
-# kÈsıll
+# k√©s≈ëll
 
 # E/1
 NeloT	>	tem	+[PAST_INDIC_DEF_SG_1]
 #eloG	>	em
-eloL	>	ˆttem	+[PAST_INDIC_DEF_SG_1]
-#eloRR	>	ˆttem
-eloD	>	ˆttem	+[PAST_INDIC_DEF_SG_1]
-eloTM	>	ˆttem	+[PAST_INDIC_DEF_SG_1]
+eloL	>	√∂ttem	+[PAST_INDIC_DEF_SG_1]
+#eloRR	>	√∂ttem
+eloD	>	√∂ttem	+[PAST_INDIC_DEF_SG_1]
+eloTM	>	√∂ttem	+[PAST_INDIC_DEF_SG_1]
 NeloTM	>	tem	+[PAST_INDIC_DEF_SG_1]
 
 NeloT	>	telek	+[PAST_INDIC_SG_1_OBJ_2]
 #eloG	>	em
-eloL	>	ˆttelek	+[PAST_INDIC_SG_1_OBJ_2]
-#eloRR	>	ˆttelek
-eloD	>	ˆttelek	+[PAST_INDIC_SG_1_OBJ_2]
-eloTM	>	ˆttelek	+[PAST_INDIC_SG_1_OBJ_2]
+eloL	>	√∂ttelek	+[PAST_INDIC_SG_1_OBJ_2]
+#eloRR	>	√∂ttelek
+eloD	>	√∂ttelek	+[PAST_INDIC_SG_1_OBJ_2]
+eloTM	>	√∂ttelek	+[PAST_INDIC_SG_1_OBJ_2]
 NeloTM	>	telek	+[PAST_INDIC_SG_1_OBJ_2]
 
 # E/2.
 NeloT	>	ted	+[PAST_INDIC_DEF_SG_2]
 #eloG	>	ed
-eloL	>	ˆtted	+[PAST_INDIC_DEF_SG_2]
-#eloRR	>	ˆtted
-eloD	>	ˆtted	+[PAST_INDIC_DEF_SG_2]
-eloTM	>	ˆtted	+[PAST_INDIC_DEF_SG_2]
+eloL	>	√∂tted	+[PAST_INDIC_DEF_SG_2]
+#eloRR	>	√∂tted
+eloD	>	√∂tted	+[PAST_INDIC_DEF_SG_2]
+eloTM	>	√∂tted	+[PAST_INDIC_DEF_SG_2]
 NeloTM	>	ted	+[PAST_INDIC_DEF_SG_2]
 
 # E/3.
 
 NeloT	>	te	+[PAST_INDIC_DEF_SG_3]
-#eloG	>	ˆtte
-eloL	>	ˆtte	+[PAST_INDIC_DEF_SG_3]
-#eloRR	>	ˆtte
-eloD	>	ˆtte	+[PAST_INDIC_DEF_SG_3]
-eloTM	>	ˆtte	+[PAST_INDIC_DEF_SG_3]
+#eloG	>	√∂tte
+eloL	>	√∂tte	+[PAST_INDIC_DEF_SG_3]
+#eloRR	>	√∂tte
+eloD	>	√∂tte	+[PAST_INDIC_DEF_SG_3]
+eloTM	>	√∂tte	+[PAST_INDIC_DEF_SG_3]
 NeloTM	>	te	+[PAST_INDIC_DEF_SG_3]
 
 # T/1.
 
-NeloTO	>	t¸k	+[PAST_INDIC_DEF_PL_1]
-eloG	>	ˆtt¸k	+[PAST_INDIC_DEF_PL_1] # ˆntˆtt¸k
-eloL	>	ˆtt¸k	+[PAST_INDIC_DEF_PL_1]
-eloD	>	ˆtt¸k	+[PAST_INDIC_DEF_PL_1]
-eloTM	>	ˆtt¸k	+[PAST_INDIC_DEF_PL_1]
-NeloTM	>	t¸k	+[PAST_INDIC_DEF_PL_1]
+NeloTO	>	t√ºk	+[PAST_INDIC_DEF_PL_1]
+eloG	>	√∂tt√ºk	+[PAST_INDIC_DEF_PL_1] # √∂nt√∂tt√ºk
+eloL	>	√∂tt√ºk	+[PAST_INDIC_DEF_PL_1]
+eloD	>	√∂tt√ºk	+[PAST_INDIC_DEF_PL_1]
+eloTM	>	√∂tt√ºk	+[PAST_INDIC_DEF_PL_1]
+NeloTM	>	t√ºk	+[PAST_INDIC_DEF_PL_1]
 
 # T/2.
 
-NeloT	>	tÈtek	+[PAST_INDIC_DEF_PL_2]
-eloG	>	ˆttÈtek	+[PAST_INDIC_DEF_PL_2]
-eloL	>	ˆttÈtek	+[PAST_INDIC_DEF_PL_2]
-eloD	>	ˆttÈtek	+[PAST_INDIC_DEF_PL_2]
-eloTM	>	ˆttÈtek	+[PAST_INDIC_DEF_PL_2]
-NeloTM	>	tÈtek	+[PAST_INDIC_DEF_PL_2]
+NeloT	>	t√©tek	+[PAST_INDIC_DEF_PL_2]
+eloG	>	√∂tt√©tek	+[PAST_INDIC_DEF_PL_2]
+eloL	>	√∂tt√©tek	+[PAST_INDIC_DEF_PL_2]
+eloD	>	√∂tt√©tek	+[PAST_INDIC_DEF_PL_2]
+eloTM	>	√∂tt√©tek	+[PAST_INDIC_DEF_PL_2]
+NeloTM	>	t√©tek	+[PAST_INDIC_DEF_PL_2]
 
 # T/3.
 
-NeloT	>	tÈk	+[PAST_INDIC_DEF_PL_3]
-eloG	>	ˆttÈk	+[PAST_INDIC_DEF_PL_3]
-eloL	>	ˆttÈk	+[PAST_INDIC_DEF_PL_3]
-#eloRR	>	ˆttÈk
-eloD	>	ˆttÈk	+[PAST_INDIC_DEF_PL_3]
-eloTM	>	ˆttÈk	+[PAST_INDIC_DEF_PL_3]
-NeloTM	>	tÈk	+[PAST_INDIC_DEF_PL_3]
+NeloT	>	t√©k	+[PAST_INDIC_DEF_PL_3]
+eloG	>	√∂tt√©k	+[PAST_INDIC_DEF_PL_3]
+eloL	>	√∂tt√©k	+[PAST_INDIC_DEF_PL_3]
+#eloRR	>	√∂tt√©k
+eloD	>	√∂tt√©k	+[PAST_INDIC_DEF_PL_3]
+eloTM	>	√∂tt√©k	+[PAST_INDIC_DEF_PL_3]
+NeloTM	>	t√©k	+[PAST_INDIC_DEF_PL_3]
 
-# feltÈteles mÛd
+# felt√©teles m√≥d
 
-NeloT	>	nÈm	+[PRES_COND_DEF_SG_1]
-eloG	>	enÈm	+[PRES_COND_DEF_SG_1]
-eloL	>	enÈm	+[PRES_COND_DEF_SG_1]
-eloD	>	enÈm	+[PRES_COND_DEF_SG_1]
-eloTJT3	>	enÈm	+[PRES_COND_DEF_SG_1]
-NeloTJT3	>	nÈm	+[PRES_COND_DEF_SG_1]
+NeloT	>	n√©m	+[PRES_COND_DEF_SG_1]
+eloG	>	en√©m	+[PRES_COND_DEF_SG_1]
+eloL	>	en√©m	+[PRES_COND_DEF_SG_1]
+eloD	>	en√©m	+[PRES_COND_DEF_SG_1]
+eloTJT3	>	en√©m	+[PRES_COND_DEF_SG_1]
+NeloTJT3	>	n√©m	+[PRES_COND_DEF_SG_1]
 
-NeloT	>	nÈlek	+[PRES_COND_SG_1_OBJ_2]
-eloG	>	enÈlek	+[PRES_COND_SG_1_OBJ_2]
-eloL	>	enÈlek	+[PRES_COND_SG_1_OBJ_2]
-eloD	>	enÈlek	+[PRES_COND_SG_1_OBJ_2]
-eloTJT3	>	enÈlek	+[PRES_COND_SG_1_OBJ_2]
-NeloTJT3	>	nÈlek	+[PRES_COND_SG_1_OBJ_2]
+NeloT	>	n√©lek	+[PRES_COND_SG_1_OBJ_2]
+eloG	>	en√©lek	+[PRES_COND_SG_1_OBJ_2]
+eloL	>	en√©lek	+[PRES_COND_SG_1_OBJ_2]
+eloD	>	en√©lek	+[PRES_COND_SG_1_OBJ_2]
+eloTJT3	>	en√©lek	+[PRES_COND_SG_1_OBJ_2]
+NeloTJT3	>	n√©lek	+[PRES_COND_SG_1_OBJ_2]
 
-NeloT	>	nÈd	+[PRES_COND_DEF_SG_2]
-eloG	>	enÈd	+[PRES_COND_DEF_SG_2]
-eloL	>	enÈd	+[PRES_COND_DEF_SG_2]
-eloD	>	enÈd	+[PRES_COND_DEF_SG_2]
-eloTJT3	>	enÈd	+[PRES_COND_DEF_SG_2]
-NeloTJT3	>	nÈd	+[PRES_COND_DEF_SG_2]
+NeloT	>	n√©d	+[PRES_COND_DEF_SG_2]
+eloG	>	en√©d	+[PRES_COND_DEF_SG_2]
+eloL	>	en√©d	+[PRES_COND_DEF_SG_2]
+eloD	>	en√©d	+[PRES_COND_DEF_SG_2]
+eloTJT3	>	en√©d	+[PRES_COND_DEF_SG_2]
+NeloTJT3	>	n√©d	+[PRES_COND_DEF_SG_2]
 
-NeloT	>	nÈ	+[PRES_COND_DEF_SG_3]
-eloG	>	enÈ	+[PRES_COND_DEF_SG_3]
-eloL	>	enÈ	+[PRES_COND_DEF_SG_3]
-eloD	>	enÈ	+[PRES_COND_DEF_SG_3]
-eloTJT3	>	enÈ	+[PRES_COND_DEF_SG_3]
-NeloTJT3	>	nÈ	+[PRES_COND_DEF_SG_3]
+NeloT	>	n√©	+[PRES_COND_DEF_SG_3]
+eloG	>	en√©	+[PRES_COND_DEF_SG_3]
+eloL	>	en√©	+[PRES_COND_DEF_SG_3]
+eloD	>	en√©	+[PRES_COND_DEF_SG_3]
+eloTJT3	>	en√©	+[PRES_COND_DEF_SG_3]
+NeloTJT3	>	n√©	+[PRES_COND_DEF_SG_3]
 
-NeloT	>	nÈnk	+[PRES_COND_DEF_PL_1]
-eloG	>	enÈnk	+[PRES_COND_DEF_PL_1]
-eloL	>	enÈnk	+[PRES_COND_DEF_PL_1]
-#eloRR	>	enÈnk
-eloD	>	enÈnk	+[PRES_COND_DEF_PL_1]
-eloTJT3	>	enÈnk	+[PRES_COND_DEF_PL_1]
-NeloTJT3	>	nÈnk	+[PRES_COND_DEF_PL_1]
+NeloT	>	n√©nk	+[PRES_COND_DEF_PL_1]
+eloG	>	en√©nk	+[PRES_COND_DEF_PL_1]
+eloL	>	en√©nk	+[PRES_COND_DEF_PL_1]
+#eloRR	>	en√©nk
+eloD	>	en√©nk	+[PRES_COND_DEF_PL_1]
+eloTJT3	>	en√©nk	+[PRES_COND_DEF_PL_1]
+NeloTJT3	>	n√©nk	+[PRES_COND_DEF_PL_1]
 
-NeloT	>	nık	+[PRES_COND_DEF_PL_1]	&
-eloG	>	enık	+[PRES_COND_DEF_PL_1]	&
-eloL	>	enık	+[PRES_COND_DEF_PL_1]	&
-#eloRR	>	enık	&
-eloD	>	enık	+[PRES_COND_DEF_PL_1]	&
-eloTJT3	>	enık	+[PRES_COND_DEF_PL_1]	&
-NeloTJT3	>	nık	+[PRES_COND_DEF_PL_1]	&
+NeloT	>	n≈ëk	+[PRES_COND_DEF_PL_1]	&
+eloG	>	en≈ëk	+[PRES_COND_DEF_PL_1]	&
+eloL	>	en≈ëk	+[PRES_COND_DEF_PL_1]	&
+#eloRR	>	en≈ëk	&
+eloD	>	en≈ëk	+[PRES_COND_DEF_PL_1]	&
+eloTJT3	>	en≈ëk	+[PRES_COND_DEF_PL_1]	&
+NeloTJT3	>	n≈ëk	+[PRES_COND_DEF_PL_1]	&
 
-NeloT	>	nÈtek	+[PRES_COND_DEF_PL_2]
-eloG	>	enÈtek	+[PRES_COND_DEF_PL_1]
-eloL	>	enÈtek	+[PRES_COND_DEF_PL_2]
-#eloRR	>	enÈtek
-eloD	>	enÈtek	+[PRES_COND_DEF_PL_2]
-eloTJT3	>	enÈtek	+[PRES_COND_DEF_PL_2]
-NeloTJT3	>	nÈtek	+[PRES_COND_DEF_PL_2]
+NeloT	>	n√©tek	+[PRES_COND_DEF_PL_2]
+eloG	>	en√©tek	+[PRES_COND_DEF_PL_1]
+eloL	>	en√©tek	+[PRES_COND_DEF_PL_2]
+#eloRR	>	en√©tek
+eloD	>	en√©tek	+[PRES_COND_DEF_PL_2]
+eloTJT3	>	en√©tek	+[PRES_COND_DEF_PL_2]
+NeloTJT3	>	n√©tek	+[PRES_COND_DEF_PL_2]
 
-NeloT	>	nÈk	+[PRES_COND_DEF_PL_3]
-eloG	>	enÈk	+[PRES_COND_DEF_PL_3]
-eloL	>	enÈk	+[PRES_COND_DEF_PL_3]
-eloD	>	enÈk	+[PRES_COND_DEF_PL_3]
-eloTJT3	>	enÈk	+[PRES_COND_DEF_PL_3]
-NeloTJT3	>	nÈk	+[PRES_COND_DEF_PL_3]
+NeloT	>	n√©k	+[PRES_COND_DEF_PL_3]
+eloG	>	en√©k	+[PRES_COND_DEF_PL_3]
+eloL	>	en√©k	+[PRES_COND_DEF_PL_3]
+eloD	>	en√©k	+[PRES_COND_DEF_PL_3]
+eloTJT3	>	en√©k	+[PRES_COND_DEF_PL_3]
+NeloTJT3	>	n√©k	+[PRES_COND_DEF_PL_3]
 
-# felszÛlÌtÛ mÛd
+# felsz√≥l√≠t√≥ m√≥d
 
 [^sztk]	>	jem	+[SUBJ/IMPER_DEF_SG_1]
 s	>	sem	+[SUBJ/IMPER_DEF_SG_1]
@@ -1325,13 +1325,13 @@ ts 	>	selek	+[SUBJ/IMPER_SG_1_OBJ_2]
 nemts	>	-t,sselek	+[SUBJ/IMPER_SG_1_OBJ_2]
 s z t	>	-zt,szelek	+[SUBJ/IMPER_SG_1_OBJ_2]
 
-NeloT  	>       d	+[SUBJ/IMPER_DEF_SG_2] # mondd, szagl·szd, de! teszd, viszd, hiszd
+NeloT  	>       d	+[SUBJ/IMPER_DEF_SG_2] # mondd, szagl√°szd, de! teszd, viszd, hiszd
 [^sztk]  >       jed	+[SUBJ/IMPER_DEF_SG_2] # mondjad
-s       >       sed	+[SUBJ/IMPER_DEF_SG_2] # ·ssad
-[zd]    >       d	+[SUBJ/IMPER_DEF_SG_2] # mondd, z˙zd, edzd, metszd
-d z   >       -z,dzed	+[SUBJ/IMPER_DEF_SG_2] # nincs ilyenbıl mÈly!
+s       >       sed	+[SUBJ/IMPER_DEF_SG_2] # √°ssad
+[zd]    >       d	+[SUBJ/IMPER_DEF_SG_2] # mondd, z√∫zd, edzd, metszd
+d z   >       -z,dzed	+[SUBJ/IMPER_DEF_SG_2] # nincs ilyenb≈ël m√©ly!
 [^s] z	>	zed	+[SUBJ/IMPER_DEF_SG_2]
-s z     >       -z,szed	+[SUBJ/IMPER_DEF_SG_2] # nincs sok pÈlda r·
+s z     >       -z,szed	+[SUBJ/IMPER_DEF_SG_2] # nincs sok p√©lda r√°
 ts      >       sd			+[SUBJ/IMPER_DEF_SG_2]
 ts      >       sed			+[SUBJ/IMPER_DEF_SG_2]
 nemts   >       -t,sd			+[SUBJ/IMPER_DEF_SG_2]
@@ -1348,35 +1348,35 @@ ts 	>	se	+[SUBJ/IMPER_DEF_SG_3]
 nemts	>	-t,sse	+[SUBJ/IMPER_DEF_SG_3]
 s z t	>	-zt,sze	+[SUBJ/IMPER_DEF_SG_3]
 
-[^sztk]	>	j¸k	+[SUBJ/IMPER_DEF_PL_1]
-s	>	s¸k	+[SUBJ/IMPER_DEF_PL_1]
-[^ds] z	>	z¸k	+[SUBJ/IMPER_DEF_PL_1]
-d z	>	-z,dz¸k	+[SUBJ/IMPER_DEF_PL_1]
-s z	>	-z,sz¸k	+[SUBJ/IMPER_DEF_PL_1]
-ts 	>	s¸k	+[SUBJ/IMPER_DEF_PL_1]
-nemts	>	-t,ss¸k	+[SUBJ/IMPER_DEF_PL_1]
-s z t	>	-zt,sz¸k	+[SUBJ/IMPER_DEF_PL_1]
+[^sztk]	>	j√ºk	+[SUBJ/IMPER_DEF_PL_1]
+s	>	s√ºk	+[SUBJ/IMPER_DEF_PL_1]
+[^ds] z	>	z√ºk	+[SUBJ/IMPER_DEF_PL_1]
+d z	>	-z,dz√ºk	+[SUBJ/IMPER_DEF_PL_1]
+s z	>	-z,sz√ºk	+[SUBJ/IMPER_DEF_PL_1]
+ts 	>	s√ºk	+[SUBJ/IMPER_DEF_PL_1]
+nemts	>	-t,ss√ºk	+[SUBJ/IMPER_DEF_PL_1]
+s z t	>	-zt,sz√ºk	+[SUBJ/IMPER_DEF_PL_1]
 
-[^sztk]	>	jÈtek	+[SUBJ/IMPER_DEF_PL_2]
-s	>	sÈtek	+[SUBJ/IMPER_DEF_PL_2]
-[^ds] z	>	zÈtek	+[SUBJ/IMPER_DEF_PL_2]
-ts 	>	sÈtek	+[SUBJ/IMPER_DEF_PL_2]
-nemts	>	-t,ssÈtek	+[SUBJ/IMPER_DEF_PL_2]
-s z t	>	-zt,szÈtek	+[SUBJ/IMPER_DEF_PL_2]
+[^sztk]	>	j√©tek	+[SUBJ/IMPER_DEF_PL_2]
+s	>	s√©tek	+[SUBJ/IMPER_DEF_PL_2]
+[^ds] z	>	z√©tek	+[SUBJ/IMPER_DEF_PL_2]
+ts 	>	s√©tek	+[SUBJ/IMPER_DEF_PL_2]
+nemts	>	-t,ss√©tek	+[SUBJ/IMPER_DEF_PL_2]
+s z t	>	-zt,sz√©tek	+[SUBJ/IMPER_DEF_PL_2]
 
-[^sztk]	>	jÈk	+[SUBJ/IMPER_DEF_PL_3]
-s	>	sÈk	+[SUBJ/IMPER_DEF_PL_3]
-[^ds] z	>	zÈk	+[SUBJ/IMPER_DEF_PL_3]
-d z	>	-z,dzÈk	+[SUBJ/IMPER_DEF_PL_3]
-s z	>	-z,szÈk	+[SUBJ/IMPER_DEF_PL_3]
-ts 	>	sÈk	+[SUBJ/IMPER_DEF_PL_3]
-nemts	>	-t,ssÈk	+[SUBJ/IMPER_DEF_PL_3]
-s z t	>	-zt,szÈk	+[SUBJ/IMPER_DEF_PL_3]
+[^sztk]	>	j√©k	+[SUBJ/IMPER_DEF_PL_3]
+s	>	s√©k	+[SUBJ/IMPER_DEF_PL_3]
+[^ds] z	>	z√©k	+[SUBJ/IMPER_DEF_PL_3]
+d z	>	-z,dz√©k	+[SUBJ/IMPER_DEF_PL_3]
+s z	>	-z,sz√©k	+[SUBJ/IMPER_DEF_PL_3]
+ts 	>	s√©k	+[SUBJ/IMPER_DEF_PL_3]
+nemts	>	-t,ss√©k	+[SUBJ/IMPER_DEF_PL_3]
+s z t	>	-zt,sz√©k	+[SUBJ/IMPER_DEF_PL_3]
 
 # ikes
 
 # E/1
-i k	>	-ik,ˆm	+[PRES_INDIC_DEF_SG_1] #
+i k	>	-ik,√∂m	+[PRES_INDIC_DEF_SG_1] #
 
 dupik	>	-ik,elek	+[PRES_INDIC_SG_1_OBJ_2]
 sdupik	>	-ik,elek	+[PRES_INDIC_SG_1_OBJ_2]
@@ -1387,77 +1387,77 @@ nemdupik	>	-ik,lek	+[PRES_INDIC_SG_1_OBJ_2]
 
 # E/2
 
-i k	>	-ik,ˆd	+[PRES_INDIC_DEF_SG_2] #
+i k	>	-ik,√∂d	+[PRES_INDIC_DEF_SG_2] #
 
 # E/3
 i k	>	-ik,i	+[PRES_INDIC_DEF_SG_3] # ereszti
 
 # T/1
-[^szt] i k	>	-ik,j¸k	+[PRES_INDIC_DEF_PL_1]
-s i k	>	-ik,s¸k	+[PRES_INDIC_DEF_PL_1]
-nemdbzik	>	-ik,z¸k	+[PRES_INDIC_DEF_PL_1]
-d z i k	>	-zik,dz¸k	+[PRES_INDIC_DEF_PL_1]
-s z i k	>	-zik,sz¸k	+[PRES_INDIC_DEF_PL_1]
-ts i k 	>	-ik,s¸k	+[PRES_INDIC_DEF_PL_1]
-nemts i k	>	-tik,ss¸k	+[PRES_INDIC_DEF_PL_1]
-s z t i k	>	-ztik,sz¸k	+[PRES_INDIC_DEF_PL_1]
+[^szt] i k	>	-ik,j√ºk	+[PRES_INDIC_DEF_PL_1]
+s i k	>	-ik,s√ºk	+[PRES_INDIC_DEF_PL_1]
+nemdbzik	>	-ik,z√ºk	+[PRES_INDIC_DEF_PL_1]
+d z i k	>	-zik,dz√ºk	+[PRES_INDIC_DEF_PL_1]
+s z i k	>	-zik,sz√ºk	+[PRES_INDIC_DEF_PL_1]
+ts i k 	>	-ik,s√ºk	+[PRES_INDIC_DEF_PL_1]
+nemts i k	>	-tik,ss√ºk	+[PRES_INDIC_DEF_PL_1]
+s z t i k	>	-ztik,sz√ºk	+[PRES_INDIC_DEF_PL_1]
 
 # T/2
-[^szt] i k	>	-ik,jÈtek	+[PRES_INDIC_DEF_PL_2]
-s i k	>	-ik,sÈtek	+[PRES_INDIC_DEF_PL_2]
-nemdbzik	>	-ik,zÈtek	+[PRES_INDIC_DEF_PL_2]
-d z i k	>	-zik,dzÈtek	+[PRES_INDIC_DEF_PL_2]
-s z i k	>	-zik,szÈtek	+[PRES_INDIC_DEF_PL_2]
-ts i k 	>	-ik,sÈtek	+[PRES_INDIC_DEF_PL_2]
-nemts i k	>	-tik,ssÈtek	+[PRES_INDIC_DEF_PL_2]
-s z t i k	>	-ztik,szÈtek	+[PRES_INDIC_DEF_PL_2]
+[^szt] i k	>	-ik,j√©tek	+[PRES_INDIC_DEF_PL_2]
+s i k	>	-ik,s√©tek	+[PRES_INDIC_DEF_PL_2]
+nemdbzik	>	-ik,z√©tek	+[PRES_INDIC_DEF_PL_2]
+d z i k	>	-zik,dz√©tek	+[PRES_INDIC_DEF_PL_2]
+s z i k	>	-zik,sz√©tek	+[PRES_INDIC_DEF_PL_2]
+ts i k 	>	-ik,s√©tek	+[PRES_INDIC_DEF_PL_2]
+nemts i k	>	-tik,ss√©tek	+[PRES_INDIC_DEF_PL_2]
+s z t i k	>	-ztik,sz√©tek	+[PRES_INDIC_DEF_PL_2]
 
 # T/3
-[^szt] i k	>	-ik,jÈk	+[PRES_INDIC_DEF_PL_3]
-s i k	>	-ik,sÈk	+[PRES_INDIC_DEF_PL_3]
-nemdbzik	>	-ik,zÈk	+[PRES_INDIC_DEF_PL_3]
-d z i k	>	-zik,dzÈk	+[PRES_INDIC_DEF_PL_3]
-s z i k	>	-zik,szÈk	+[PRES_INDIC_DEF_PL_3]
-ts i k 	>	-ik,sÈk	+[PRES_INDIC_DEF_PL_3]
-nemts i k	>	-tik,ssÈk	+[PRES_INDIC_DEF_PL_3]
-s z t i k	>	-ztik,szÈk	+[PRES_INDIC_DEF_PL_3]
+[^szt] i k	>	-ik,j√©k	+[PRES_INDIC_DEF_PL_3]
+s i k	>	-ik,s√©k	+[PRES_INDIC_DEF_PL_3]
+nemdbzik	>	-ik,z√©k	+[PRES_INDIC_DEF_PL_3]
+d z i k	>	-zik,dz√©k	+[PRES_INDIC_DEF_PL_3]
+s z i k	>	-zik,sz√©k	+[PRES_INDIC_DEF_PL_3]
+ts i k 	>	-ik,s√©k	+[PRES_INDIC_DEF_PL_3]
+nemts i k	>	-tik,ss√©k	+[PRES_INDIC_DEF_PL_3]
+s z t i k	>	-ztik,sz√©k	+[PRES_INDIC_DEF_PL_3]
 
-# ikes m˙lt
+# ikes m√∫lt
 
 [^l] i k	>	-ik,tem	+[PAST_INDIC_DEF_SG_1]
 [^l] i k	>	-ik,telek	+[PAST_INDIC_SG_1_OBJ_2]
 [^l] i k	>	-ik,ted	+[PAST_INDIC_DEF_SG_2]
 [^l] i k	>	-ik,te	+[PAST_INDIC_DEF_SG_3]
-[^l] i k	>	-ik,t¸k	+[PAST_INDIC_DEF_PL_1]
-[^l] i k	>	-ik,tÈtek	+[PAST_INDIC_DEF_PL_2] # kÈstÈtek
-[^l] i k	>	-ik,tÈk	+[PAST_INDIC_DEF_PL_3]
+[^l] i k	>	-ik,t√ºk	+[PAST_INDIC_DEF_PL_1]
+[^l] i k	>	-ik,t√©tek	+[PAST_INDIC_DEF_PL_2] # k√©st√©tek
+[^l] i k	>	-ik,t√©k	+[PAST_INDIC_DEF_PL_3]
 
-# ˆzˆnlik
+# √∂z√∂nlik
 
-l i k	>	-ik,ˆttem	+[PAST_INDIC_DEF_SG_1]
-l i k	>	-ik,ˆttelek	+[PAST_INDIC_SG_1_OBJ_2]
-l i k	>	-ik,ˆtted	+[PAST_INDIC_DEF_SG_2]
-l i k	>	-ik,ˆtte	+[PAST_INDIC_DEF_SG_3]
-l i k	>	-ik,ˆtt¸k	+[PAST_INDIC_DEF_PL_1]
-l i k	>	-ik,ˆttÈtek	+[PAST_INDIC_DEF_PL_2] # kÈstÈtek
-l i k	>	-ik,ˆttÈk	+[PAST_INDIC_DEF_PL_3]
+l i k	>	-ik,√∂ttem	+[PAST_INDIC_DEF_SG_1]
+l i k	>	-ik,√∂ttelek	+[PAST_INDIC_SG_1_OBJ_2]
+l i k	>	-ik,√∂tted	+[PAST_INDIC_DEF_SG_2]
+l i k	>	-ik,√∂tte	+[PAST_INDIC_DEF_SG_3]
+l i k	>	-ik,√∂tt√ºk	+[PAST_INDIC_DEF_PL_1]
+l i k	>	-ik,√∂tt√©tek	+[PAST_INDIC_DEF_PL_2] # k√©st√©tek
+l i k	>	-ik,√∂tt√©k	+[PAST_INDIC_DEF_PL_3]
 
 # 	i k	>	-ik,ni
 # dupik i k > -ik,ani
 
-# feltÈteles mÛd
-. i k	>	-ik,nÈm	+[PRES_COND_DEF_SG_1]
-. i k	>	-ik,nÈlek	+[PRES_COND_SG_1_OBJ_2]
-. i k	>	-ik,nÈd	+[PRES_COND_DEF_SG_2]
-. i k	>	-ik,nÈ	+[PRES_COND_DEF_SG_3]
+# felt√©teles m√≥d
+. i k	>	-ik,n√©m	+[PRES_COND_DEF_SG_1]
+. i k	>	-ik,n√©lek	+[PRES_COND_SG_1_OBJ_2]
+. i k	>	-ik,n√©d	+[PRES_COND_DEF_SG_2]
+. i k	>	-ik,n√©	+[PRES_COND_DEF_SG_3]
 
-. i k	>	-ik,nÈnk	+[PRES_COND_DEF_PL_1]
-. i k	>	-ik,nık	+[PRES_COND_DEF_PL_1]	&
-. i k	>	-ik,nÈtek	+[PRES_COND_DEF_PL_2]
-. i k	>	-ik,nÈk	+[PRES_COND_DEF_PL_3]
+. i k	>	-ik,n√©nk	+[PRES_COND_DEF_PL_1]
+. i k	>	-ik,n≈ëk	+[PRES_COND_DEF_PL_1]	&
+. i k	>	-ik,n√©tek	+[PRES_COND_DEF_PL_2]
+. i k	>	-ik,n√©k	+[PRES_COND_DEF_PL_3]
 
 
-# felszÛlÌtÛ mÛd
+# felsz√≥l√≠t√≥ m√≥d
 [^szt] i k	>	-ik,jem	+[SUBJ/IMPER_DEF_SG_1]
 s i k	>	-ik,sem	+[SUBJ/IMPER_DEF_SG_1]
 [^ds] z	i k >	-ik,zem	+[SUBJ/IMPER_DEF_SG_1]
@@ -1468,19 +1468,19 @@ s z i k	>	-zik,szem	+[SUBJ/IMPER_DEF_SG_1]
 [^szt] i k	>	-ik,jed	+[SUBJ/IMPER_DEF_SG_2]
 s i k 	>	-ik,sed	+[SUBJ/IMPER_DEF_SG_2]
 # [^s] z i k >	-ik,zed
-nemdbzik	>	-ik,zed	+[SUBJ/IMPER_DEF_SG_2]  # h˙gyozzad
-d z i k	>	-zik,dzd	+[SUBJ/IMPER_DEF_SG_2] # csak nedvedzik, ez se t·rgyas!
-s z i k	>	-ik,d	+[SUBJ/IMPER_DEF_SG_2] # m·szd
-s z i k	>	-zik,szed	+[SUBJ/IMPER_DEF_SG_2] # m·sszad
-# tik vÈg˚ t·rgyas nincs
+nemdbzik	>	-ik,zed	+[SUBJ/IMPER_DEF_SG_2]  # h√∫gyozzad
+d z i k	>	-zik,dzd	+[SUBJ/IMPER_DEF_SG_2] # csak nedvedzik, ez se t√°rgyas!
+s z i k	>	-ik,d	+[SUBJ/IMPER_DEF_SG_2] # m√°szd
+s z i k	>	-zik,szed	+[SUBJ/IMPER_DEF_SG_2] # m√°sszad
+# tik v√©g≈± t√°rgyas nincs
 
 [^szt] i k	>	-ik,jelek	+[SUBJ/IMPER_SG_1_OBJ_2]
 s i k 	>	-ik,selek	+[SUBJ/IMPER_SG_1_OBJ_2]
 # [^s] z i k >	-ik,zelek
-nemdbzik	>	-ik,zelek	+[SUBJ/IMPER_SG_1_OBJ_2]  # h˙gyozzad
-d z i k	>	-zik,dzlek	+[SUBJ/IMPER_SG_1_OBJ_2] # csak nedvedzik, ez se t·rgyas!
+nemdbzik	>	-ik,zelek	+[SUBJ/IMPER_SG_1_OBJ_2]  # h√∫gyozzad
+d z i k	>	-zik,dzlek	+[SUBJ/IMPER_SG_1_OBJ_2] # csak nedvedzik, ez se t√°rgyas!
 s z i k	>	-zik,szelek	+[SUBJ/IMPER_SG_1_OBJ_2]
-# tik vÈg˚ t·rgyas nincs
+# tik v√©g≈± t√°rgyas nincs
 
 [^szt] i k	>	-ik,je	+[SUBJ/IMPER_DEF_SG_3]
 s i k	>	-ik,se	+[SUBJ/IMPER_DEF_SG_3]
@@ -1488,21 +1488,21 @@ s i k	>	-ik,se	+[SUBJ/IMPER_DEF_SG_3]
 d z i k	>	-zik,dze	+[SUBJ/IMPER_DEF_SG_3]
 s z i k	>	-zik,sze	+[SUBJ/IMPER_DEF_SG_3]
 
-[^szt] i k	>	-ik,j¸k	+[SUBJ/IMPER_DEF_PL_1]
-s i k	>	-ik,s¸k	+[SUBJ/IMPER_DEF_PL_1]
-nemdbzik	>	-ik,z¸k	+[SUBJ/IMPER_DEF_PL_1]
-d z i k	>	-zik,dz¸k	+[SUBJ/IMPER_DEF_PL_1]
-s z i k	>	-zik,sz¸k	+[SUBJ/IMPER_DEF_PL_1]
-s z t i k	>	-ztik,sz¸k	+[SUBJ/IMPER_DEF_PL_1]
+[^szt] i k	>	-ik,j√ºk	+[SUBJ/IMPER_DEF_PL_1]
+s i k	>	-ik,s√ºk	+[SUBJ/IMPER_DEF_PL_1]
+nemdbzik	>	-ik,z√ºk	+[SUBJ/IMPER_DEF_PL_1]
+d z i k	>	-zik,dz√ºk	+[SUBJ/IMPER_DEF_PL_1]
+s z i k	>	-zik,sz√ºk	+[SUBJ/IMPER_DEF_PL_1]
+s z t i k	>	-ztik,sz√ºk	+[SUBJ/IMPER_DEF_PL_1]
 
-[^szt] i k	>	-ik,jÈtek	+[SUBJ/IMPER_DEF_PL_2]
-s i k	>	-ik,sÈtek	+[SUBJ/IMPER_DEF_PL_2]
-nemdbzik	>	-ik,zÈtek	+[SUBJ/IMPER_DEF_PL_2]
-s z t i k	>	-ztik,szÈtek	+[SUBJ/IMPER_DEF_PL_2]
+[^szt] i k	>	-ik,j√©tek	+[SUBJ/IMPER_DEF_PL_2]
+s i k	>	-ik,s√©tek	+[SUBJ/IMPER_DEF_PL_2]
+nemdbzik	>	-ik,z√©tek	+[SUBJ/IMPER_DEF_PL_2]
+s z t i k	>	-ztik,sz√©tek	+[SUBJ/IMPER_DEF_PL_2]
 
-[^szt] i k	>	-ik,jÈk	+[SUBJ/IMPER_DEF_PL_3]
-s i k	>	-ik,sÈk	+[SUBJ/IMPER_DEF_PL_3]
-nemdbzik	>	-ik,zÈk	+[SUBJ/IMPER_DEF_PL_3]
-d z i k	>	-zik,dzÈk	+[SUBJ/IMPER_DEF_PL_3]
-s z i k	>	-zik,szÈk	+[SUBJ/IMPER_DEF_PL_3]
-s z t i k	>	-ztik,szÈk	+[SUBJ/IMPER_DEF_PL_3]
+[^szt] i k	>	-ik,j√©k	+[SUBJ/IMPER_DEF_PL_3]
+s i k	>	-ik,s√©k	+[SUBJ/IMPER_DEF_PL_3]
+nemdbzik	>	-ik,z√©k	+[SUBJ/IMPER_DEF_PL_3]
+d z i k	>	-zik,dz√©k	+[SUBJ/IMPER_DEF_PL_3]
+s z i k	>	-zik,sz√©k	+[SUBJ/IMPER_DEF_PL_3]
+s z t i k	>	-ztik,sz√©k	+[SUBJ/IMPER_DEF_PL_3]
