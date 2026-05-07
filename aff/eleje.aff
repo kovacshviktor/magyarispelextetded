@@ -1,0 +1,470 @@
+# 	
+#	magyar.aff/magyar.dict: Hungarian Ispell affix table and dictionary 
+#
+#	Copyright (C) 1998-2003 László Németh
+#
+#	This program is free software; you can redistribute it and/or modify
+#	it under the terms of the GNU General Public License as published by
+#	the Free Software Foundation; either version 2 of the License, or
+#	(at your option) any later version.
+#
+#	This program is distributed in the hope that it will be useful,
+#	but WITHOUT ANY WARRANTY; without even the implied warranty of
+#	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#	GNU General Public License for more details.
+#
+#	You should have received a copy of the GNU General Public License
+#	along with this program; if not, write to the Free Software
+#	Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+############################################################
+# Ispell parancsok (elavult)
+############################################################
+
+compoundwords controlled Y
+compoundmin  2
+
+defstringtype "nroff" "nroff" ".mm" ".ms" ".me" ".man" ".NeXT"
+
+boundarychars '
+wordchars [a-záéíóöõúüû] [A-ZÁÉÍÓÖÕÚÜÛ]
+
+############################################################
+# Toldalékosztályok rövid leírása (nem teljes)
+############################################################
+
+# -: speciális jelzés a Magyar Ispell keretrendszerben: az automatikusan hozzáadott
+#    kapcsolókat vehetjük el egy tõtõl, a ragozatlan szavak közötti felsorolással:
+#    pl.: erõ/-R (egyéb szófajoknál még az automatikus elõjel, pl. [vrb] hozzáadására
+#    is szükség van). Szintaxis: -k, ahol a k egy tetszõleges kapcsoló
+# A: személyragok (mély, magánhangzóra végzõdõ névszók)
+# B: személyragok (magas, ajakréses, magánhangzóra végzõdõ névszók)
+# C: személyragok (magas, ajakkerekítéses, magánhangzóra végzõdõ névszók)
+# D: leg, legesleg melléknév prefix
+# E: ige magas ajakréses
+# F: melléknév mély
+# G: melléknév magas ajakréses
+# H: melléknév magas ajakkerekítéses
+# I: névszó morfonetikus alternáció (morfo1+morfo2)
+# J: névszó spec. morfon. alt. (morfo1)
+# K: személyragok (mély, mássalhangzóra végzõdõ névszók)
+# L: személyragok (magas, ajakréses, mássalhangzóra végzõdõ névszók)
+# M: személyragok (magas, ajakkerekítéses, mássalhangzóra végzõdõ névszók)
+# N: névszó spec. morfon. alt. (höz ön)
+# O: ige mély
+# P: ige magas ajakkerekítéses
+# Q: -ja
+# R: -je
+# S: -a (birtoktöbbesítõ jel külön kezelve, l. s kapcsoló)
+# T: -e (birtoktöbbesítõ jel külön kezelve, l. s kapcsoló)
+# U: esetragok (mély)
+# V: esetragok (magas, ajakréses)
+# W: esetragok (magas, ajakkerekítéses)
+# X: igekötõk
+# Y: szóösszetételben szerepelhet
+# Z: idegen kiejtésû, vagy mozaikszavak kötõjeles raggal, kötõhangzó nélkül
+# a: számnevek prefix, tízesek
+# b: számnevek prefix, százasok
+# c: -szerû, -féle, -nemû, -beli
+# d: ige morf. alt. ragozás, alanyi
+# e: ige tárgyas magas ajakréses
+# f: idegen toldalékolású y végû fõnevek
+# g: tõ állítható elõ belõle
+# h: számnevek, ezeregyszáz stb. prefix
+# i: -nyi mély
+# j: -nyi magas
+# k: -ka kicsinyítõképzõ
+# l: -ke kicsinyítõképzõ
+# m: -val (mássalhangzó végûeknél) l. Ï
+# n: -vel (mássalhangzó végûeknél) l. Ð
+# o: ige tárgyas mély
+# p: ige tárgyas magas ajakkerekítéses
+# q: -féle toldalék a tulajdonnevekhez
+# r: leg + igekötõ
+# s: -ai (I/3 birtokos személyrag + birtoktöbbesítõ jel) L. S kapcsoló
+# t: -ei (I/3 birtokos személyrag + birtoktöbbesítõ jel) L. T kapcsoló
+# u: a w-vel együtt csak a tõt tiltja, a toldalékolt alakokat nem (ONLYROOT)
+# v: szerepelhet összetételekben elsõ szóként (COMPOUNDFIRST)
+# w: tiltott szavak kapcsolója (FORBIDDENWORD)
+# x: szerepelhet összetételekben utolsó szóként (COMPOUNDLAST)
+# y: összetett szó
+# z: sorszámnevek visszaható névmás ,,ragja''
+# 0: az alak nem valódi tõ (pl. MÁV-, füvek)
+# &: generálásnál nem kívánatos alak (elavult, szubstandard stb.)
+# (: generálásnál preferált alak
+# ': ige morf. alt. ragozás, tárgyas
+# ,: tulajdonnevek
+# u+9f: -i
+# stb.
+
+
+# m: -val (hasonuló), -hoz
+# n: -vel (hasonuló), -hez
+# Ý: -höz, hasonuló -val, -vel
+
+# Ï: -val, -hoz (magánhangzó végûeknél+y) l. Ï
+# Ð: -vel, -hez (magánhangzó végûeknél+y) l. Ï
+# Þ: -vel, -höz
+
+# Ñ -n (y végûekhez)
+# Ò -on (a, e, o, ö végûek is) 
+# Ó -en (a, e, o, ö végûek is)
+# Ô -ön (a, e, o, ö végûek is)
+
+# Õ -t (a, e, o, ö végûek is)
+# Ö -ot
+# × -et
+# Ø -öt
+# Ù -at
+
+# Ú: -szor
+# Û: -ször
+# Ü: -szer
+
+# ß: s_OCCUPATION_noun
+# à: s_OCCUPATION_noun
+# á: s_OCCUPATION_noun
+# â: s_OCCUPATION_noun, összetett szavaknál (119. szabály)
+
+# ã: s_ATTRIBUTE_noun
+# ä: s_ATTRIBUTE_noun
+# å: s_ATTRIBUTE_noun
+# æ: s_ATTRIBUTE_noun
+
+# ç: -nyi mély, 119-es szabállyal
+# è: -nyi magas, 119-es szabállyal
+
+# Î: -acska kicsinyít. képz.
+# Í: -ocska, -acska, -öcske, -ecske (morfo)
+# Ë: -ecske
+# Ê: -ocska
+
+# É: -i, morfo
+# È: -i
+# Ç: -i
+
+# Æ: -s, -ság/-ség (morfo)
+# Å: -s, -ság
+# Ä: -s, -ség
+# Ã: -s, -ság
+# Â: -s, -ság/-slg (morfo)
+# Á: -s, -ság
+# À: -s, -ség
+# ¿: -s, -ség
+# ¾: -s, -ség
+# ¼:
+# »:
+# º:
+# ¹:
+# ¸:
+# ·:
+# ¶:
+# µ:
+# ´: -i, -ileg (morfo)
+# ³: -i, -ileg
+# ²: -i, -ilag
+# ±: -ság
+# °: -
+# ¯: -telen
+# ®: -talan
+# ­: -tság (ikes)
+# ¬: -tség (ikes)
+# «: -tság (ikes)
+# ª:
+
+############################################################
+# prefixumok
+############################################################
+prefixes
+
+############################################################
+# X osztály: gyakoribb igekötõk
+#
+# Példa: abba-, agyon-, alá-, által- stb.
+#
+# XXX: Jelenleg az igék bármely itt felsorolt igekötõvel
+# elfogadásra kerülnek.
+#
+# Egy-két kivétel külön van feldolgozva.
+############################################################
+
+define(verb_prefixes,
+.	>	$1abba    $2abba[PREF]+ @
+.	>	$1agyon   $2agyon[PREF]+ @
+.	>	$1alá     $2alá[PREF]+ @
+.	>	$1által   $2által[PREF]+ @
+.	>	$1át      $2át[PREF]+ @
+.	>	$1be      $2be[PREF]+ @
+.	>	$1bele    $2bele[PREF]+ @
+[^n]	>	$1benn    $2benn[PREF]+ @
+n y	>	$1benn    $2benn[PREF]+ @
+n [^y]	>	$1benn-   $2benn-[PREF]+
+.	>	$1egybe   $2egybe[PREF]+ @
+#!.	>	$1együtt  $2együtt[PREF]+ @ # nem igekötõ! (csak együttmûködik)
+.	>	$1el      $2el[PREF]+ @
+	>	$1ellen   $2ellen[PREF]+ @
+.	>	$1elõ     $2elõ[PREF]+ @
+.	>	$1elõre	  $2elõre[PREF]+ @	# megy  > elõremegy
+.	>	$1fel	  $2fel[PREF]+ @	# megy  > felmegy
+.	>	$1föl	  $2föl[PREF]+ @	# megy  > fölmegy
+.	>	$1félbe	  $2félbe[PREF]+ @	# vág   > félbevág
+.	>	$1félre	  $2félre[PREF]+ @	# tesz  > félretesz
+.	>	$1felül	  $2felül[PREF]+ @	# múl   > felülmúl
+.	>	$1fölül	  $2fölül[PREF]+ @	# fölül > fölülmúl
+[^n]	>	$1fenn	  $2fenn[PREF]+ @	# marad > fennmarad
+[^n]	>	$1fönn	  $2fönn[PREF]+ @	# marad > fönnmarad
+n [^y]	>	$1fenn-   $2fenn-[PREF]+
+n y	>	$1fenn    $2fenn[PREF]+ @	# marad > fennmarad
+n y	>	$1fönn    $2fönn[PREF]+ @	# marad > fönnmarad
+n [^y]	>	$1fönn-   $2fönn-[PREF]+
+.	>	$1hátra   $2hátra[PREF]+ @	# néz   > hátranéz
+.	>	$1haza    $2haza[PREF]+ @	# megy  > hazamegy
+.	>	$1helyre  $2helyre[PREF]+ @	# tesz  > helyretesz
+.	>	$1hozzá   $2hozzá[PREF]+ @	# megy  > hozzámegy
+.	>	$1ide     $2ide[PREF]+ @	# jön   > idejön
+.	>	$1jóvá    $2jóvá[PREF]+ @	# tesz  > jóvátesz
+.	>	$1keresztül  $2keresztül[PREF]+ @	# megy  > keresztülmegy
+.	>	$1ketté	  $2ketté[PREF]+ @	# vág   > kettévág
+.	>	$1ki	  $2ki[PREF]+ @	# megy  > kimegy
+.	>	$1kölcsön $2kölcsön[PREF]+ @	# vesz  > kölcsönvesz
+.	>	$1körbe	  $2körbe[PREF]+ @	# megy  > körbemegy
+.	>	$1körül	  $2körül[PREF]+ @	# jár   > körüljár
+.	>	$1közbe	  $2közbe[PREF]+ @	# lép   > közbelép
+.	>	$1közre	  $2közre[PREF]+ @	# fog   > közrefog
+.	>	$1külön	  $2külön[PREF]+ @	# áll   > különáll
+.	>	$1le	  $2le[PREF]+ @	# megy  > lemegy
+.	>	$1meg	  $2meg[PREF]+ @	# tesz  > megtesz
+.	>	$1mellé	  $2mellé[PREF]+ @	# tesz  > mellétesz
+.	>	$1neki	  $2neki[PREF]+ @	# ad    > nekiad
+.	>	$1oda	  $2oda[PREF]+ @	# rak   > odarak
+.	>	$1össze	  $2össze[PREF]+ @	# rak   > összerak
+.	>	$1rá	  $2rá[PREF]+ @	# rak   > rárak
+.	>	$1rajta	  $2rajta[PREF]+ @	# üt    > rajtaüt
+.	>	$1széjjel $2széjjel[PREF]+ @	# szed  > széjjelszed
+.	>	$1szembe  $2szembe[PREF]+ @	# néz   > szembenéz
+.	>	$1szerte  $2szerte[PREF]+ @	# fut   > szertefut
+.	>	$1szét	  $2szét[PREF]+ @	# esik  > szétesik
+.	>	$1tele	  $2tele[PREF]+ @	# rak   > telerak
+.	>	$1tova	  $2tova[PREF]+ @	# tûnik > tovatûnik
+[^b]	>	$1tovább  $2tovább[PREF]+ @	# megy  > továbbmegy
+b	>	$1tovább-  $2tovább-[PREF]+	# megy  > továbbmegy
+.	>	$1túl	  $2túl[PREF]+ @	# tesz  > túltesz
+.	>	$1újjá	  $2újjá[PREF]+ @	# épít  > újjáépít
+.	>	$1újra	  $2újra[PREF]+ @	# olt   > újraolt
+.	>	$1utána	  $2utána[PREF]+ @	# néz   > utánanéz
+.	>	$1végbe	  $2végbe[PREF]+ @	# megy  > végbemegy
+.	>	$1végig	  $2végig[PREF]+ @	# néz   > végignéz
+.	>	$1vissza  $2vissza[PREF]+ @	# tesz  > visszatesz
+)
+
+flag *X:
+
+verb_prefixes()
+
+############################################################
+# r osztály: az igekötõs melléknévi igenevek fokozásához a
+# leg+igekötõ prefixumokat tartalmazza.
+#
+# Példa: legkivitelezhetõbb, legeslegmegoldhatatlanabb
+############################################################
+
+flag *r:
+
+verb_prefixes(leg,[leg_SUPERLATIVE_adj]+)
+verb_prefixes(legesleg,[legesleg_SUPERLATIVE_adj]+)
+verb_prefixes(legeslegesleg,[legeslegesleg_SUPERLATIVE_adj]+)
+
+############################################################
+# D osztály: leg-, legesleg-, legeslegesleg-
+#
+# Példa: legokosabb, legügyesebb
+#
+# XXX: A középfoktól egybeírt alakok kezelése külön megoldást
+# kíván: szívhez szóló, legszívhezszólóbb
+############################################################
+
+flag *D:
+[^AÁBCDEÉFGHIÍJKLMNOÓÖÕPQRSTUÚÜÛVWZ]	>	leg           [leg_SUPERLATIVE_adj]+
+[^AÁBCDEÉFGHIÍJKLMNOÓÖÕPQRSTUÚÜÛVWZ]	>	legesleg      [legesleg_SUPERLATIVE_adj]+
+[^AÁBCDEÉFGHIÍJKLMNOÓÖÕPQRSTUÚÜÛVWZ]	>	legeslegesleg [legeslegesleg_SUPERLATIVE_adj]+
+
+# ragok
+
+############################################################
+# a osztály: tizesek számnevekhez
+#
+# Példa: tizenötödszörre, hatvannégyes
+# 
+# XXX: számnevek kezelése javításra szorul, mivel a
+# ,,nagyobb számok'' nincsenek lekezelve. (Például
+# száztizenötödszörös nincs elfogadva helyes szónak.)
+############################################################
+
+
+flag *a:
+
+.	>	tizen     tizen[adj_num]+
+.	>	huszon    huszon[adj_num]+
+.	>	harminc   harminc[adj_num]+
+.	>	negyven   negyven[adj_num]+
+.	>	ötven     ötven[adj_num]+
+.	>	hatvan    hatvan[adj_num]+
+.	>	hetven    hetven[adj_num]+
+.	>	nyolcvan  nyolcvan[adj_num]+
+.	>	kilencven kilencven[adj_num]+
+
+############################################################
+# b osztály: százasok számnevekhez
+#
+# Példa: százhuszonkettõ, kilencszázkettõ
+############################################################
+
+flag *b:
+
+.	>	száz       száz[adj_num]+
+.	>	kétszáz    két|száz[adj_num]+
+.	>	háromszáz  három|száz[adj_num]+
+.	>	négyszáz   négy|száz[adj_num]+
+.	>	ötszáz     öt|száz[adj_num]+
+.	>	hatszáz    hat|száz[adj_num]+
+.	>	hétszáz    hét|száz[adj_num]+
+.	>	nyolcszáz  nyolc|száz[adj_num]+
+.	>	kilencszáz kilenc|száz[adj_num]+
+
+############################################################
+# h osztály: ezeregyszáz-, ezerkétszáz- számnevekhez, mivel
+# a számnevek 2000-ig egybeírandók, évszámként pedig mindig
+#
+# Példa: ezerkilencszázkilencvenkilenc, kétezeröt
+############################################################
+
+flag *h:
+
+.	>	ezer    ezer[adj_num]+
+.	>	ezerszáz    ezer|száz[adj_num]+
+.	>	ezeregyszáz    ezer|egy|száz[adj_num]+
+.	>	ezerkétszáz    ezer|két|száz[adj_num]+
+.	>	ezerháromszáz  ezer|három|száz[adj_num]+
+.	>	ezernégyszáz   ezer|négy|száz[adj_num]+
+.	>	ezerötszáz     ezer|öt|száz[adj_num]+
+.	>	ezerhatszáz    ezer|hat|száz[adj_num]+
+.	>	ezerhétszáz    ezer|hét|száz[adj_num]+
+.	>	ezernyolcszáz  ezer|nyolc|száz[adj_num]+
+.	>	ezerkilencszáz ezer|kilenc|száz[adj_num]+
+.	>	ezervalahányszáz ezer|valahány|száz[adj_num]+
+.	>	kétezer két|ezer[adj_num]+
+.	>	kettõezer kettõ|ezer[adj_num]+
+
+############################################################
+# ! osztály: a magyar helyesírás szabályai 119. pontjában
+# leírt egybeírási szabályhoz szükséges egyszerû számnevek
+#
+# Példa: sokajtós, kéthavi, kétfülû
+#
+# A % kapcsoló megakadályozza, hogy az ilyen (prefixumként)
+# megvalósított) összetett szavak összetett szavakban
+# szerepeljenek (tehát például nincs macskasokajtós).
+############################################################
+
+flag *!:
+
+.       >       sok       sok[adj_num]+     %
+[^b]    >       több      több[adj_num]+     %   # *többbázisú
+.       >       fél       fél[adj_num]+     %
+
+.       >       nulla     nulla[adj_num]+     %
+.       >       egy       egy[adj_num]+     %
+.       >       két       két[adj_num]+     %
+.       >       három     három[adj_num]+     %
+.       >       négy      négy[adj_num]+     %
+.       >       öt        öt[adj_num]+     %
+.       >       hat       hat[adj_num]+     %
+.       >       hét       hét[adj_num]+     %
+.       >       nyolc     nyolc[adj_num]+     %
+.       >       kilenc    kilenc[adj_num]+     %
+.       >       tíz       tíz[adj_num]+     %
+.       >       húsz      húsz[adj_num]+     %
+.       >       harminc   harminc[adj_num]+     %
+.       >       negyven   negyven[adj_num]+     %
+.       >       ötven     ötven[adj_num]+     %
+.       >       hatvan    hatvan[adj_num]+     %
+.       >       hetven    hetven[adj_num]+     %
+.       >       nyolcvan  nyolcvan[adj_num]+     %
+.       >       kilencven kilencven[adj_num]+     %
+.       >       száz      száz[adj_num]+     %
+.       >       ezer      ezer[adj_num]+     %
+.       >       millió    millió[adj_num]+     %
+.       >       milliárd  milliárd[adj_num]+     %
+.       >       billió    billió[adj_num]+     %
+.       >       trillió   trillió[adj_num]+     %
+
+############################################################
+# " osztály: nagy kezdõbetû kis kezdõbetûssé alakítása a
+# tulajdonnevek -i, -os, -izmus, -ista képzõs alakjainál
+#
+# Példa: budapesti, trabantos, tocsikizmus, freudista
+#
+# Megjegyzés: a két utolsó képzõ még nincs megvalósítva
+############################################################
+
+flag *":
+
+A > -A,a   {[lowercase]}
+Á > -Á,á   {[lowercase]}
+&Aring; > -&Aring;,&aring;   {[lowercase]}
+B > -B,b   {[lowercase]}
+C > -C,c   {[lowercase]}
+È > -È,è   {[lowercase]}
+D > -D,d   {[lowercase]}
+E > -E,e   {[lowercase]}
+É > -É,é   {[lowercase]}
+F > -F,f   {[lowercase]}
+G > -G,g   {[lowercase]}
+H > -H,h   {[lowercase]}
+I > -I,i   {[lowercase]}
+Í > -Í,í   {[lowercase]}
+J > -J,j   {[lowercase]}
+K > -K,k   {[lowercase]}
+L > -L,l   {[lowercase]}
+£ > -£,³   {[lowercase]}
+M > -M,m   {[lowercase]}
+N > -N,n   {[lowercase]}
+O > -O,o   {[lowercase]}
+Ó > -Ó,ó   {[lowercase]}
+Ö > -Ö,ö   {[lowercase]}
+Õ > -Õ,õ   {[lowercase]}
+P > -P,p   {[lowercase]}
+Q > -Q,q   {[lowercase]}
+R > -R,r   {[lowercase]}
+S > -S,s   {[lowercase]}
+© > -©,¹   {[lowercase]}
+T > -T,t   {[lowercase]}
+U > -U,u   {[lowercase]}
+Ú > -Ú,ú   {[lowercase]}
+Ü > -Ü,ü   {[lowercase]}
+Û > -Û,û   {[lowercase]}
+V > -V,v   {[lowercase]}
+W > -W,w   {[lowercase]}
+X > -X,x   {[lowercase]}
+Y > -Y,y   {[lowercase]}
+Z > -Z,z   {[lowercase]}
+
+############################################################
+# szuffixumok
+############################################################
+suffixes
+
+############################################################
+# z osztály: -d sorszámnévképzõs számnevek plusz visszaható
+# névmások képzése. (A magyar helyesírás szabályai 121.)
+#
+# Példa: másodmagammal, századmagával
+############################################################
+
+flag *z:
+d	>	magammal   [noun_ref_SG_1]+[INSTR]
+d	>	magaddal   [noun_ref_SG_2]+[INSTR]
+d	>	magával    [noun_ref_SG_3]+[INSTR]
+d	>	magunkkal  [noun_ref_PL_1]+[INSTR]
+d	>	magatokkal [noun_ref_PL_2]+[INSTR]
+d	>	magukkal   [noun_ref_PL_3]+[INSTR]
