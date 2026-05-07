@@ -17,14 +17,14 @@ def is_candidate_text_file(path: Path) -> bool:
     if path.suffix.lower() in SKIP_EXTENSIONS:
         return False
 
-    if path.suffix.lower() in TEXT_EXTENSIONS:
-        return True
+    #if path.suffix.lower() in TEXT_EXTENSIONS:
+    #    return True
 
-    if path.name in TEXT_FILENAMES:
-        return True
+    #if path.name in TEXT_FILENAMES:
+    #    return True
 
-    if path.suffix == "":
-        return True
+    #if path.suffix == ".7.0":
+    #    return True
 
     return True
 
