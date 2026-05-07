@@ -100,12 +100,12 @@ magyar4%.dict: $(WRKDIR)
 	@$(SH) bin/copydict $(WRKDIR) $(WRKDIR) $(*F)
 
 	# hy: összetétel
-	@cat  $(SZOTAR)/*/fonev_osszetett.1 $(SZOTAR)/*/melleknev_osszetett.1 | sed -n 's/	\(.*\)/[hy:\1]/p' | recode u8..l2 >>$(WRKDIR)/mezok.txt
+	@cat  $(SZOTAR)/*/fonev_osszetett.1 $(SZOTAR)/*/melleknev_osszetett.1 | sed -n 's/	\(.*\)/[hy:\1]/p'  >>$(WRKDIR)/mezok.txt
 	# HY: összetétel (^[con] stb. törlésével)
 	#@cat  $(SZOTAR)/kivetelek/* $(SZOTAR)/kivetelek/*/* $(WRKDIR)/*.modul/* | $(M4) | grep HY: | sed -n 's/^[\[][^]]*[]]//;s/^\([^	\/]*\)\/[^	]*/\1/;s/[ 	].*HY:\([^ 	]*\).*/[hy:\1]/p' | recode u8..l2 >>$(WRKDIR)/mezok.txt
 	@cat  $(SZOTAR)/kivetelek/* $(SZOTAR)/kivetelek/*/* $(WRKDIR)/*.modul/* | $(M4) | grep HY: | sed -n 's/[ 	].*HY:\([^ 	]*\).*/[hy:\1]/p' | recode u8..l2 >>$(WRKDIR)/mezok.txt
-	#@cat  $(WRKDIR)/*.modul/ragozatlan.2 | sed -n 's/ *#.*$//;s/	.*	\(.*\)/[hy:\1]/p' | recode u8..l2 >>$(WRKDIR)/mezok.txt
-	@cat  $(WRKDIR)/*.modul/ragozatlan.2 | sed -n 's/	.*	\(.*\)/[hy:\1]/p' | recode u8..l2 >>$(WRKDIR)/mezok.txt
+	#@cat  $(WRKDIR)/*.modul/ragozatlan.2 | sed -n 's/ *#.*$//;s/	.*	\(.*\)/[hy:\1]/p' >>$(WRKDIR)/mezok.txt
+	@cat  $(WRKDIR)/*.modul/ragozatlan.2 | sed -n 's/	.*	\(.*\)/[hy:\1]/p'  >>$(WRKDIR)/mezok.txt
 	@echo $(EN) ."$(EC)"
 
 	@echo "==> igéből képzett alakok előállítása" | $(CATUTF)
@@ -130,14 +130,14 @@ magyar4%.dict: $(WRKDIR)
 		| tr "\t" "\n" \
 		>> $(DICT)
 	@echo $(EN) ."$(EC)"
-	@cat $(SZOTAR)/kivetelek/ragozatlan/*.2* | recode u8..l2 | cat $(WRKDIR)/ragozatlan.2 /dev/stdin \
+	@cat $(SZOTAR)/kivetelek/ragozatlan/*.2* | cat $(WRKDIR)/ragozatlan.2 /dev/stdin \
 		| $(M4) | $(BINDIR)/field | LC_ALL=C grep -v ^# | LC_ALL=C grep -v "#[A-Z]" \
 		| LC_ALL=C sed 's/[	 ]*#.*$$//' \
 		| LC_ALL=C sed 's/\[[a-z][a-z]:[^\]*]//' \
 		| LC_ALL=C $(AWK) -f $(AWKDIR)/tovek.awk \
 		>> $(DICT)
 	@echo $(EN) ."$(EC)"
-	@cat  $(SZOTAR)/kivetelek/ragozatlan/*.2* | recode u8..l2 | cat $(WRKDIR)/ragozatlan.2 /dev/stdin \
+	@cat  $(SZOTAR)/kivetelek/ragozatlan/*.2* | cat $(WRKDIR)/ragozatlan.2 /dev/stdin \
 		| $(M4) | $(BINDIR)/field | LC_ALL=C grep -v ^# | LC_ALL=C grep -i "#$(*F)" | LC_ALL=C sed 's/[	 ]*#.*$$//' \
 		| LC_ALL=C sed 's/\[[a-z][a-z]:[^\]*]//' \
 		| LC_ALL=C $(AWK) -f $(AWKDIR)/tovek.awk \

@@ -37,13 +37,11 @@ for i in alap.modul/*; do
 	k=`basename $i | sed 's/^.*\(\..*\)$/\1/'`
 
 	cat *.modul/$j$k *.modul/$j-* 2> /dev/null | \
-	    recode u8..l2 | \
 	    grep -v '#[A-Z]' | \
 	    sed 's/[	 ]*#.*$//' | \
 	    grep -v '^$' >$WRKDIR/$j$k
 
 	cat *.modul/$j$k *.modul/$j-* 2> /dev/null | \
-	    recode u8..l2 | \
 	    grep -i "$SPELL" | \
 	    sed 's/[	 ]*#.*$//' | \
 	    grep -v '^$' >>$WRKDIR/$j$k
