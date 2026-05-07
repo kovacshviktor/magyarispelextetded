@@ -15,7 +15,7 @@ localdir="$(dirname $0)"
 paste <(sed 's#[\t/].*##' $i.dic | iconv -f ${charset} -t UTF-8) <(sed 's#^[^\t/]*##' $i.dic) |
 sed "s#`echo -e '\t'`/#/#" | sed -f "$localdir"/l1_u8.sed >$o.tmp
 
-paste <(sed 's#	.*##' $o.tmp) <(sed 's#^[^	]*##' $o.tmp | iconv -f ${charset} -t UTF-8) |
+paste <(sed 's#	.*##' $o.tmp) <(sed 's#^[^	]*##' $o.tmp  |
 sed "s#`echo -e '\t'`/#/#;s/		/	/" | sed -f "$localdir"/l1_u8.sed >$o.dic
 
 cat $i.aff | awk '

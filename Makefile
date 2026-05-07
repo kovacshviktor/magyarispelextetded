@@ -102,8 +102,7 @@ magyar4%.dict: $(WRKDIR)
 	# hy: összetétel
 	@cat  $(SZOTAR)/*/fonev_osszetett.1 $(SZOTAR)/*/melleknev_osszetett.1 | sed -n 's/	\(.*\)/[hy:\1]/p'  >>$(WRKDIR)/mezok.txt
 	# HY: összetétel (^[con] stb. törlésével)
-	#@cat  $(SZOTAR)/kivetelek/* $(SZOTAR)/kivetelek/*/* $(WRKDIR)/*.modul/* | $(M4) | grep HY: | sed -n 's/^[\[][^]]*[]]//;s/^\([^	\/]*\)\/[^	]*/\1/;s/[ 	].*HY:\([^ 	]*\).*/[hy:\1]/p' | recode u8..l2 >>$(WRKDIR)/mezok.txt
-	@cat  $(SZOTAR)/kivetelek/* $(SZOTAR)/kivetelek/*/* $(WRKDIR)/*.modul/* | $(M4) | grep HY: | sed -n 's/[ 	].*HY:\([^ 	]*\).*/[hy:\1]/p' | recode u8..l2 >>$(WRKDIR)/mezok.txt
+	@cat  $(SZOTAR)/kivetelek/* $(SZOTAR)/kivetelek/*/* $(WRKDIR)/*.modul/* | $(M4) | grep HY: | sed -n 's/[ 	].*HY:\([^ 	]*\).*/[hy:\1]/p'  >>$(WRKDIR)/mezok.txt
 	#@cat  $(WRKDIR)/*.modul/ragozatlan.2 | sed -n 's/ *#.*$//;s/	.*	\(.*\)/[hy:\1]/p' >>$(WRKDIR)/mezok.txt
 	@cat  $(WRKDIR)/*.modul/ragozatlan.2 | sed -n 's/	.*	\(.*\)/[hy:\1]/p'  >>$(WRKDIR)/mezok.txt
 	@echo $(EN) ."$(EC)"
@@ -116,16 +115,16 @@ magyar4%.dict: $(WRKDIR)
 
 # egyéb kivételek: az m4 miatt nem megy külön héjprogramba
 	@echo "==> kivételek" | $(CATUTF)
-	@cat $(SZOTAR)/kivetelek/igekotos/*.2* | recode u8..l2 \
+	@cat $(SZOTAR)/kivetelek/igekotos/*.2*  \
 		| LC_ALL=C grep -v ^# | $(M4) | LC_ALL=C $(AWK) -f $(AWKDIR)/tovek.awk -v param="/X" \
 		>> $(DICT)
 	@echo $(EN) ."$(EC)"
-	@cat $(SZOTAR)/kivetelek/ragozatlan/*.1* | recode u8..l2 \
+	@cat $(SZOTAR)/kivetelek/ragozatlan/*.1*  \
 		| $(M4) | LC_ALL=C grep -v ^# | LC_ALL=C grep -v "#[A-Z]" \
 		| LC_ALL=C sed 's/[	 ]*#.*$$//' | tr "\t" "\n" \
 		>> $(DICT)
 	@echo $(EN) ."$(EC)"
-	@cat $(SZOTAR)/kivetelek/ragozatlan/*.1* | recode u8..l2 \
+	@cat $(SZOTAR)/kivetelek/ragozatlan/*.1*  \
 		| $(M4) | LC_ALL=C grep -v ^# | LC_ALL=C grep -i "#$(*F)" | LC_ALL=C sed 's/[	 ]*#.*$$//' \
 		| tr "\t" "\n" \
 		>> $(DICT)

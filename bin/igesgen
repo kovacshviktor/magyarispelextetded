@@ -59,7 +59,7 @@ egrep '(l|z|zik)$' ige_alanyi.1 | \
     $AWK -v MELYRAG="§" -v MAGASRAG="¨" -f $AWKDIR/iges2.awk >>$DICT
 echo_n .
 
-cat $SZOTAR/kivetelek/ige_kepzos.11 | recode u8..l2 | sed 's/ *# \(HY:[^ ]*\)*.*$/	\1/' | grep -v '^[ 	]*$' >ige_kepzos.11
+cat $SZOTAR/kivetelek/ige_kepzos.11 | sed 's/ *# \(HY:[^ ]*\)*.*$/	\1/' | grep -v '^[ 	]*$' >ige_kepzos.11
 
 cut -sf 2 ige_kepzos.11 | grep -v '^[- 	]*$' >>ige_eas.1
 cat ige_eas.1 | sed 's#$#/X#' >>$DICT

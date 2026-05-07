@@ -70,7 +70,7 @@ cat ragozatlan.2 | field >/dev/null
 
 # -e végű mély hangrendűek:
 
-grep '^[a-zöüóőúéáűí].*/.*u' $ROOT/szotar/kivetelek/ragozatlan/pseudoroot.2 | sed 's#/.*##' | recode u8..l2 |
+grep '^[a-zöüóőúéáűí].*/.*u' $ROOT/szotar/kivetelek/ragozatlan/pseudoroot.2 | sed 's#/.*##'  |
 $AWK -f $AWKDIR/fonev_gen.awk >>$DICT
 
 echo_n .
@@ -87,13 +87,13 @@ echo_n .
 # tulajdonnév állomány feldolgozása
 
 # Ady Endré-s
-grep TÖBBTAGÚ $ROOT/szotar/*/tulajdonnev* | cat $ROOT/szotar/*/tulajdonnev-keresztnev.2 - | $AWK 'BEGIN{FS="[#\t[]"}{print$1}' | recode u8..l2 >tobbtagu.1
+grep TÖBBTAGÚ $ROOT/szotar/*/tulajdonnev* | cat $ROOT/szotar/*/tulajdonnev-keresztnev.2 - | $AWK 'BEGIN{FS="[#\t[]"}{print$1}'  >tobbtagu.1
 
 cat tulajdonnev*.2 | grep "^	" | cut -f 2 | field >>$DICT
 
 # -e végű mély hangrendűek:
 
-grep '^[A-ZÖÜÓŐÚÉÁŰÍ].*/.*u' $ROOT/szotar/kivetelek/ragozatlan/pseudoroot.2 | sed 's#/.*##' | recode u8..l2 >>tulajdonnev.2
+grep '^[A-ZÖÜÓŐÚÉÁŰÍ].*/.*u' $ROOT/szotar/kivetelek/ragozatlan/pseudoroot.2 | sed 's#/.*##'  >>tulajdonnev.2
 
 # tövek kinyerése
 ##cat tulajdonnev*.2 | $AWK -f $AWKDIR/tovek4.awk >>$DICT

@@ -24,14 +24,14 @@ if [ "$SPELL" = "myspell" ]; then
       $WRKDIR/*.modul/ige_alanyi.1 $WRKDIR/*.modul/ige_targy.1 \
       $WRKDIR/*.modul/tulajdonnev* $SZOTAR/*/*/* 2>/dev/null |
   grep '#MYSPELL TILTOTT' | cut -d '#' -f 1 |
-  tr '	 ' '\n\n' | grep -v ^$ | sed 's/$/\/w-Y/' | recode u8..l2 >>$DICT
+  tr '	 ' '\n\n' | grep -v ^$ | sed 's/$/\/w-Y/'  >>$DICT
 
   echo_n .
 
   cat $WRKDIR/*.modul/fonev.1 $WRKDIR/*.modul/ragozatlan* \
   $WRKDIR/*.modul/tulajdonnev* $SZOTAR/*/*/* 2>/dev/null |
   grep 'TÖBBTAGÚ' | cut -d '#' -f 1 | awk '{print$1}' |
-  tr '   ' '\n\n' | grep -v ^$ | sed 's/$/\/-ß-ż-ľ-ś-Ŕ-ŕ÷/' | recode u8..l2 >>$DICT
+  tr '   ' '\n\n' | grep -v ^$ | sed 's/$/\/-ß-ż-ľ-ś-Ŕ-ŕ÷/'  >>$DICT
 
 fi
 
@@ -40,21 +40,21 @@ echo_n .
 if [ "$SPELL" = "myspell" ]; then
   cat $WRKDIR/*.modul/melleknev* 2>/dev/null |
   grep '#MYSPELL TILTOTT' | cut -d '#' -f 1 |
-  tr '	 ' '\n\n' | grep -v ^$ | sed 's/\(^.*$\)/[adj]\1\/w-Y/' | recode u8..l2 >>$DICT
+  tr '	 ' '\n\n' | grep -v ^$ | sed 's/\(^.*$\)/[adj]\1\/w-Y/'  >>$DICT
 fi
 echo_n .
 
 if [ "$SPELL" = "myspell" ]; then
   cat $WRKDIR/*.modul/fonev_morfo* 2>/dev/null |
   grep '#MYSPELL TILTOTT' | cut -d '	' -f 1 |
-  grep -v ^$ | sed 's/$/\/w-Y/' | recode u8..l2 >>$DICT
+  grep -v ^$ | sed 's/$/\/w-Y/'  >>$DICT
 fi
 echo_n .
 
 if [ "$SPELL" = "myspell" ]; then
   cat $WRKDIR/*.modul/fonev_morfo* 2>/dev/null |
   grep '#MYSPELL TILTOTT' | sed 's/[	 ]*#.*$//' | cut -d '	' -f 2 |
-  grep -v ^$ | sed 's/\(^.*\)$/[nounmorfo]\1\/w-Y/' | recode u8..l2 >>$DICT
+  grep -v ^$ | sed 's/\(^.*\)$/[nounmorfo]\1\/w-Y/'  >>$DICT
 fi
 echo_n .
 
