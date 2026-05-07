@@ -2,7 +2,7 @@ from pathlib import Path
 
 TEXT_EXTENSIONS = {
     ".txt", ".aff", ".dic", ".awk", ".sh", ".mk", ".am", ".ac",
-    ".tex", ".bib", ".bbl", ".sed", ".bst", ".morph", ".7.0"
+    ".tex", ".bib", ".bbl", ".sed", ".bst", ".morph"
 }
 
 TEXT_FILENAMES = {
@@ -26,7 +26,7 @@ def is_candidate_text_file(path: Path) -> bool:
     if path.suffix == "":
         return True
 
-    return False
+    return True
 
 def is_utf8(path: Path) -> bool:
     try:
@@ -65,3 +65,4 @@ def main(root: str) -> None:
 
 if __name__ == "__main__":
     main(".")
+    
