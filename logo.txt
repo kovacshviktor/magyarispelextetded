@@ -7,9 +7,9 @@
 Morfológiai elemzéshez, tövezéshez a hu_HU_morph állományokra van szükség.
 
 Hunspell szótárállományok:
-hu_HU.* - ISO-8859-2-es szótárállományok
-hu_HU_gen.* - ISO-8859-2-es szótárállományok tövezéshez és toldalékoláshoz
-hu_HU_morph.* - ISO-8859-2-es szótárállományok morfológiai kódokkal
+hu_HU.* - UTF-8-as szótárállományok
+hu_HU_gen.* - UTF-8-as szótárállományok tövezéshez és toldalékoláshoz
+hu_HU_morph.* - UTF-8-as szótárállományok morfológiai kódokkal
 hu_HU_u8.* - UTF-8-as szótárállományok
 hu_HU_u8_alias.* - UTF-8-as tömörített szótárállományok kiejtési információval
 hu_HU_u8_gen.* - UTF-8-as szótárállományok tövezéshez és toldalékoláshoz

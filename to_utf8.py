@@ -2,7 +2,7 @@ from pathlib import Path
 
 TEXT_EXTENSIONS = {
     ".txt", ".aff", ".dic", ".awk", ".sh", ".mk", ".am", ".ac",
-    ".tex", ".bib", ".bbl", ".sed"
+    ".tex", ".bib", ".bbl", ".sed", ".bst", ".morph", ".7.0"
 }
 
 TEXT_FILENAMES = {

@@ -53,7 +53,7 @@ NAME Magyar Ispell helyesírási szótár
 LANG hu_HU
 HOME http://magyarispell.sourceforge.net
 VERSION Magyar 1.9.1
-SET ISO8859-2
+SET UTF-8
 KEY öüó|qwertzuiopőú|asdfghjkléáű|íyxcvbnm
 TRY íóútaeslzánorhgkiédmyőpvöbucfjüűxwq-.&agrave;
 COMPOUNDMIN 1
