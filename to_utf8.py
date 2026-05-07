@@ -20,6 +20,9 @@ def main(root: str) -> None:
     for path in root_path.rglob("*"):
         if not path.is_file():
             continue
+            
+        if ".git" in path.parts:
+        	continue
 
         if path.suffix.lower() not in EXTENSIONS:
             continue
