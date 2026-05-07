@@ -1,6 +1,32 @@
 from pathlib import Path
 
-EXTENSIONS = {".txt", ".aff", ".dic", ".awk", ".sh", ".mk", ".am", ".ac"}
+TEXT_EXTENSIONS = {
+    ".txt", ".aff", ".dic", ".awk", ".sh", ".mk", ".am", ".ac",
+    ".tex", ".bib", ".bbl", ".sed"
+}
+
+TEXT_FILENAMES = {
+    "Makefile", "makefile", "HUNSPELL_heading"
+}
+
+SKIP_EXTENSIONS = {
+    ".png", ".jpg", ".jpeg", ".gif", ".pdf", ".zip"
+}
+
+def is_candidate_text_file(path: Path) -> bool:
+    if path.suffix.lower() in SKIP_EXTENSIONS:
+        return False
+
+    if path.suffix.lower() in TEXT_EXTENSIONS:
+        return True
+
+    if path.name in TEXT_FILENAMES:
+        return True
+
+    if path.suffix == "":
+        return True
+
+    return False
 
 def is_utf8(path: Path) -> bool:
     try:
@@ -20,11 +46,8 @@ def main(root: str) -> None:
     for path in root_path.rglob("*"):
         if not path.is_file():
             continue
-            
-        if ".git" in path.parts:
-        	continue
 
-        if path.suffix.lower() not in EXTENSIONS:
+        if not is_candidate_text_file(path):
             continue
 
         if is_utf8(path):
