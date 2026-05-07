@@ -1,4 +1,4 @@
-# Kornai & Rebrus morfológiai kódolás prototípusa
+# Kornai & Rebrus morfolÃ³giai kÃ³dolÃ¡s prototÃ­pusa
 # teszt: bin/morph2
 
 WRKDIR=../tmp
@@ -7,7 +7,7 @@ all: h test
 
 test:
 	@#test -x hunmorph && ../hu_HU_morph2.aff ../hu_HU_morph2.dic test.txt >../tmp/test.out
-	@#test -x hunmorph && diff test.morph ../tmp/test.out && echo 'Elemzés ellenõrizve.' || echo 'Hiba!'
+	@#test -x hunmorph && diff test.morph ../tmp/test.out && echo 'ElemzÃ©s ellenÅ‘rizve.' || echo 'Hiba!'
 
 h: hu
 	@sed -f c1.sed $(WRKDIR)/hu.aff >../hu_HU_morph2.aff

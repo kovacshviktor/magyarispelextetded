@@ -1,145 +1,145 @@
-\chapter{A Magyar Ispell tesztelése}
+\chapter{A Magyar Ispell tesztelÃ©se}
 
 A tesztrendszer a \url{http://www.szofi.hu/gnu/magyarispell/magyarispell.zip}
-állományban található.
+Ã¡llomÃ¡nyban talÃ¡lhatÃ³.
 
-A Magyar Ispell mûködésének tesztelésére egy független szókincstár,
-a Huhyph 4.0 elválasztási szóadattár szolgált.
+A Magyar Ispell mÅ±kÃ¶dÃ©sÃ©nek tesztelÃ©sÃ©re egy fÃ¼ggetlen szÃ³kincstÃ¡r,
+a Huhyph 4.0 elvÃ¡lasztÃ¡si szÃ³adattÃ¡r szolgÃ¡lt.
 
-A tesztrendszer két tesztelést végez el: az elsõ
-a Huhyph szókincstár felismerését teszteli,
-a második a HuHyph-ból kinyert véletlen mintából
-különféle algoritmusokkal elõállított hibás
-alakok helyesként való elfogadását teszteli.
+A tesztrendszer kÃ©t tesztelÃ©st vÃ©gez el: az elsÅ‘
+a Huhyph szÃ³kincstÃ¡r felismerÃ©sÃ©t teszteli,
+a mÃ¡sodik a HuHyph-bÃ³l kinyert vÃ©letlen mintÃ¡bÃ³l
+kÃ¼lÃ¶nfÃ©le algoritmusokkal elÅ‘Ã¡llÃ­tott hibÃ¡s
+alakok helyeskÃ©nt valÃ³ elfogadÃ¡sÃ¡t teszteli.
 
-\section{A szókincs tesztelése}
+\section{A szÃ³kincs tesztelÃ©se}
 
 Csomagoljuk ki a \texttt{magyarispell-teszt.zip}
-állományt, és a könyvtárba lépve adjuk ki
+Ã¡llomÃ¡nyt, Ã©s a kÃ¶nyvtÃ¡rba lÃ©pve adjuk ki
 a \texttt{make teszt1} parancsot.
 
-A szóadat szavai kötõjellel jelölve tartalmazzák az
-elválasztási pontokat, valamint fordított perjellel
-bevezetve, és kapcsos zárójelpárral lezárva a kettõzött
-többjegyû mássalhangzókat. Ezeket a jeleket 
-az 1. teszt során töröljük, és a Magyar MySpell függvénykönyvtárat
-használó \texttt{badwords} programmal kiszûrjük az állományból
-a hibás szavakat.
+A szÃ³adat szavai kÃ¶tÅ‘jellel jelÃ¶lve tartalmazzÃ¡k az
+elvÃ¡lasztÃ¡si pontokat, valamint fordÃ­tott perjellel
+bevezetve, Ã©s kapcsos zÃ¡rÃ³jelpÃ¡rral lezÃ¡rva a kettÅ‘zÃ¶tt
+tÃ¶bbjegyÅ± mÃ¡ssalhangzÃ³kat. Ezeket a jeleket 
+az 1. teszt sorÃ¡n tÃ¶rÃ¶ljÃ¼k, Ã©s a Magyar MySpell fÃ¼ggvÃ©nykÃ¶nyvtÃ¡rat
+hasznÃ¡lÃ³ \texttt{badwords} programmal kiszÅ±rjÃ¼k az Ã¡llomÃ¡nybÃ³l
+a hibÃ¡s szavakat.
 
-Jelenleg (2002. július) a Magyar Ispell szótármodullal a \texttt{huwords.hyph}
-állomány 98,5\%-a helyesnek bizonyul.
+Jelenleg (2002. jÃºlius) a Magyar Ispell szÃ³tÃ¡rmodullal a \texttt{huwords.hyph}
+Ã¡llomÃ¡ny 98,5\%-a helyesnek bizonyul.
 
-A maradék részben (ami mintegy 900 szót jelent a huwords.hyph
-kb. 65\,000 szavából) még feldolgozás alatt álló, részben
-pedig idegen szavakat tartalmaz. Ha ezek elfogadását szeretnénk,
-az elsõ teszt futtatásánál kapott \texttt{GEN.nemismert}
-állományt vegyük fel a Magyar Ispellben új szótári modulként,
-\texttt{ragozatlan}-ra átkeresztelve az állományt.
+A maradÃ©k rÃ©szben (ami mintegy 900 szÃ³t jelent a huwords.hyph
+kb. 65\,000 szavÃ¡bÃ³l) mÃ©g feldolgozÃ¡s alatt Ã¡llÃ³, rÃ©szben
+pedig idegen szavakat tartalmaz. Ha ezek elfogadÃ¡sÃ¡t szeretnÃ©nk,
+az elsÅ‘ teszt futtatÃ¡sÃ¡nÃ¡l kapott \texttt{GEN.nemismert}
+Ã¡llomÃ¡nyt vegyÃ¼k fel a Magyar Ispellben Ãºj szÃ³tÃ¡ri modulkÃ©nt,
+\texttt{ragozatlan}-ra Ã¡tkeresztelve az Ã¡llomÃ¡nyt.
 
-\section{Tévesztések ellenõrzése}
+\section{TÃ©vesztÃ©sek ellenÅ‘rzÃ©se}
 
-A tesztelés megkezdése elõtt a \texttt{teszt.sh}
-állomány \texttt{JAVA\_PATH} változójának adjuk meg
-a \texttt{java} virtuális gép helyét, mivel a téves
-alakokat elõállító program (\texttt{MITest}) Java nyelvû.
+A tesztelÃ©s megkezdÃ©se elÅ‘tt a \texttt{teszt.sh}
+Ã¡llomÃ¡ny \texttt{JAVA\_PATH} vÃ¡ltozÃ³jÃ¡nak adjuk meg
+a \texttt{java} virtuÃ¡lis gÃ©p helyÃ©t, mivel a tÃ©ves
+alakokat elÅ‘Ã¡llÃ­tÃ³ program (\texttt{MITest}) Java nyelvÅ±.
 
-Adjuk ki a  \texttt{make teszt2} parancsot a tévesztések
-elfogadásának tesztelésére.
+Adjuk ki a  \texttt{make teszt2} parancsot a tÃ©vesztÃ©sek
+elfogadÃ¡sÃ¡nak tesztelÃ©sÃ©re.
 
-A tesztprogram a huwords.hyph szavaiból egy
-véletlen, 1000 szóból álló mintát vesz.
-Ebbõl a mintából a \texttt{MITest} program
-téves alakokat képez az alapvetõ Ispell
-javítási algoritmusokkal (betûkihagyás,
-betûbetoldás, betûcsere, szomszédos betûk
-felcserélése). 
+A tesztprogram a huwords.hyph szavaibÃ³l egy
+vÃ©letlen, 1000 szÃ³bÃ³l Ã¡llÃ³ mintÃ¡t vesz.
+EbbÅ‘l a mintÃ¡bÃ³l a \texttt{MITest} program
+tÃ©ves alakokat kÃ©pez az alapvetÅ‘ Ispell
+javÃ­tÃ¡si algoritmusokkal (betÅ±kihagyÃ¡s,
+betÅ±betoldÃ¡s, betÅ±csere, szomszÃ©dos betÅ±k
+felcserÃ©lÃ©se). 
 
-A teszt során három állomány keletkezik:
-A \texttt{GEN.osszes} állomány tartalmazza az összes
-elõállított téves alakot. Ez mintegy 750-szerese
-az eredetileg 1000 szavas véletlen mintának.
+A teszt sorÃ¡n hÃ¡rom Ã¡llomÃ¡ny keletkezik:
+A \texttt{GEN.osszes} Ã¡llomÃ¡ny tartalmazza az Ã¶sszes
+elÅ‘Ã¡llÃ­tott tÃ©ves alakot. Ez mintegy 750-szerese
+az eredetileg 1000 szavas vÃ©letlen mintÃ¡nak.
 
-A \texttt{GEN.osszes} állományból a \texttt{badwords}
-program kiszûri a helytelennek felismert szavakat,
-ez kerül a \texttt{GEN.hibas} állományba.
+A \texttt{GEN.osszes} Ã¡llomÃ¡nybÃ³l a \texttt{badwords}
+program kiszÅ±ri a helytelennek felismert szavakat,
+ez kerÃ¼l a \texttt{GEN.hibas} Ã¡llomÃ¡nyba.
 
-Végül ezeket a szavakat kivonjuk a \texttt{GEN.osszes} állományból,
-így kapjuk meg a \texttt{GEN.helyes} állományt.
+VÃ©gÃ¼l ezeket a szavakat kivonjuk a \texttt{GEN.osszes} Ã¡llomÃ¡nybÃ³l,
+Ã­gy kapjuk meg a \texttt{GEN.helyes} Ã¡llomÃ¡nyt.
 
-A \texttt{GEN.helyes} tartalmazza tehát 
-a \texttt{huwords.hyph}-ból nyert véletlen minta ,,elrontásából'' keletkezett,
-mégis helyesnek felismert szóalakokat.
+A \texttt{GEN.helyes} tartalmazza tehÃ¡t 
+a \texttt{huwords.hyph}-bÃ³l nyert vÃ©letlen minta ,,elrontÃ¡sÃ¡bÃ³l'' keletkezett,
+mÃ©gis helyesnek felismert szÃ³alakokat.
 
-\section{A tesztek értékelése}
+\section{A tesztek Ã©rtÃ©kelÃ©se}
 
-\subsection{Szókincs}
+\subsection{SzÃ³kincs}
 
-A \texttt{huwords.hyph} elsõ feldolgozása során
-az eredeti állomány mintegy 5\%-a,
-3700 szó nem került felismerésre.
+A \texttt{huwords.hyph} elsÅ‘ feldolgozÃ¡sa sorÃ¡n
+az eredeti Ã¡llomÃ¡ny mintegy 5\%-a,
+3700 szÃ³ nem kerÃ¼lt felismerÃ©sre.
 
-A listában az idegen, régies, ill. ritka szavak mellett a hiányzó
-tövek ragozott alakjai is elõfordultak, így mintegy 2000
-db. hiányzó tõrõl beszélhetünk, amely szám -- tekintve a
-szavak többnyire nem hétköznapi jellegét -- jónak mondható!
+A listÃ¡ban az idegen, rÃ©gies, ill. ritka szavak mellett a hiÃ¡nyzÃ³
+tÃ¶vek ragozott alakjai is elÅ‘fordultak, Ã­gy mintegy 2000
+db. hiÃ¡nyzÃ³ tÅ‘rÅ‘l beszÃ©lhetÃ¼nk, amely szÃ¡m -- tekintve a
+szavak tÃ¶bbnyire nem hÃ©tkÃ¶znapi jellegÃ©t -- jÃ³nak mondhatÃ³!
 
-A hiányzó szavak listája nagyrészt feldolgozásra került
-Bíró Árpád munkája révén, így sikerült az 5\%-ot
-jelentõsen lecsökkenteni.
+A hiÃ¡nyzÃ³ szavak listÃ¡ja nagyrÃ©szt feldolgozÃ¡sra kerÃ¼lt
+BÃ­rÃ³ ÃrpÃ¡d munkÃ¡ja rÃ©vÃ©n, Ã­gy sikerÃ¼lt az 5\%-ot
+jelentÅ‘sen lecsÃ¶kkenteni.
 
-\subsection{Tévesztések}
+\subsection{TÃ©vesztÃ©sek}
 
-A \texttt{GEN.helyes} szólista a többszörös tesztelések során átlagosan 16-szor
-bizonyult nagyobbnak, mint a véletlen minta.
+A \texttt{GEN.helyes} szÃ³lista a tÃ¶bbszÃ¶rÃ¶s tesztelÃ©sek sorÃ¡n Ã¡tlagosan 16-szor
+bizonyult nagyobbnak, mint a vÃ©letlen minta.
 
-Íme az ,,álomszerû'' szó téves alakjaiból elõállt helyes
+Ãme az ,,Ã¡lomszerÅ±'' szÃ³ tÃ©ves alakjaibÃ³l elÅ‘Ã¡llt helyes
 alakok:
 
 \begin{verbatim}
-álomászerû
-álomészerû
-álomízerû
-álomõszerû
-álomõzerû
-álomsíerû
-álomsóerû
-álomszedrû
-álomszegû
-álomszelû
-álomszemû
-álomszenû
-álomszer
-álomszerb
-álomszerbû
-álomszere
-álomszeré
-álomszerfû
-álomszeri
-álomszermû
-álomszert
-álomszertû
-alomszerû
-álomszerû
-álomszérû
-álomszerûr
-álomszerût
-álomszerv
-álomszervû
-álomszexû
-álomszírû
-álomszóerû
-álomszõrû
-álomszúerû
-álomszûrû
+Ã¡lomÃ¡szerÅ±
+Ã¡lomÃ©szerÅ±
+Ã¡lomÃ­zerÅ±
+Ã¡lomÅ‘szerÅ±
+Ã¡lomÅ‘zerÅ±
+Ã¡lomsÃ­erÅ±
+Ã¡lomsÃ³erÅ±
+Ã¡lomszedrÅ±
+Ã¡lomszegÅ±
+Ã¡lomszelÅ±
+Ã¡lomszemÅ±
+Ã¡lomszenÅ±
+Ã¡lomszer
+Ã¡lomszerb
+Ã¡lomszerbÅ±
+Ã¡lomszere
+Ã¡lomszerÃ©
+Ã¡lomszerfÅ±
+Ã¡lomszeri
+Ã¡lomszermÅ±
+Ã¡lomszert
+Ã¡lomszertÅ±
+alomszerÅ±
+Ã¡lomszerÅ±
+Ã¡lomszÃ©rÅ±
+Ã¡lomszerÅ±r
+Ã¡lomszerÅ±t
+Ã¡lomszerv
+Ã¡lomszervÅ±
+Ã¡lomszexÅ±
+Ã¡lomszÃ­rÅ±
+Ã¡lomszÃ³erÅ±
+Ã¡lomszÅ‘rÅ±
+Ã¡lomszÃºerÅ±
+Ã¡lomszÅ±rÅ±
 \end{verbatim}
 
-Látható, hogy a szavak nagy része szokatlan
-szóösszetételként került elfogadásra.
+LÃ¡thatÃ³, hogy a szavak nagy rÃ©sze szokatlan
+szÃ³Ã¶sszetÃ©telkÃ©nt kerÃ¼lt elfogadÃ¡sra.
 
-Az ilyen szóösszetételek a Magyar MySpell 0.4-es változatában
-részben már nem kerülnek elfogadásra. Szerencsére erre a legtipikusabb
-hibák esetében (pl. i/í, o/ó, u/ú, ü/û, j/l, j/ly, stb.)
-kerül sor, így a Magyar Ispell/MySpell már (ellentétben pl. a
-Helyes-e?-vel) nem fogadja el az ilyen típusú, tipikus és súlyos tévesztéseket
-(pl. szervíz, szeméj, súlytó, stb.).
+Az ilyen szÃ³Ã¶sszetÃ©telek a Magyar MySpell 0.4-es vÃ¡ltozatÃ¡ban
+rÃ©szben mÃ¡r nem kerÃ¼lnek elfogadÃ¡sra. SzerencsÃ©re erre a legtipikusabb
+hibÃ¡k esetÃ©ben (pl. i/Ã­, o/Ã³, u/Ãº, Ã¼/Å±, j/l, j/ly, stb.)
+kerÃ¼l sor, Ã­gy a Magyar Ispell/MySpell mÃ¡r (ellentÃ©tben pl. a
+Helyes-e?-vel) nem fogadja el az ilyen tÃ­pusÃº, tipikus Ã©s sÃºlyos tÃ©vesztÃ©seket
+(pl. szervÃ­z, szemÃ©j, sÃºlytÃ³, stb.).
 

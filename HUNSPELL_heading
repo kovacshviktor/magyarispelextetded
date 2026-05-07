@@ -2,7 +2,7 @@
 # This file is part of the LibreOffice project.
 #
 # This dictionary is based on the Hungarian wordlist and affixes created
-# by László Németh and Ferenc Godó, and it is covered by their original
+# by LÃ¡szlÃ³ NÃ©meth and Ferenc GodÃ³, and it is covered by their original
 # GPL/LGPL/MPL license as published by the FSF and Mozilla Foundation.
 #
 #
@@ -10,57 +10,57 @@
 #
 # Home page: http://magyarispell.sourceforge.net
 #
-# 2002-2026 (c) László Németh <nemeth@numbertext.org> and Ferenc Godó
+# 2002-2026 (c) LÃ¡szlÃ³ NÃ©meth <nemeth@numbertext.org> and Ferenc GodÃ³
 #
 # Thanks to
-# Tamás Szántó <tszanto@mol.hu>,
-# Árpád Bíró <biro_arpad@yahoo.com>,
+# TamÃ¡s SzÃ¡ntÃ³ <tszanto@mol.hu>,
+# ÃrpÃ¡d BÃ­rÃ³ <biro_arpad@yahoo.com>,
 # Marcel Hilzinger <hili@suselinux.hu>,
 # Egmont Koblinger <egmont@cs.bme.hu>,
-# Viktor Trón <tron@coli.uni-sb.de>,
+# Viktor TrÃ³n <tron@coli.uni-sb.de>,
 # Fransoa Holop <fred@francis.artia.sk>,
-# Eleonóra Goldmann <eleonora46@gmx.net>,
-# András Rung <rung@itm.bme.hu>
+# EleonÃ³ra Goldmann <eleonora46@gmx.net>,
+# AndrÃ¡s Rung <rung@itm.bme.hu>
 # and others for their assistance in making Hungarian
 # wordlist and affix table (see szotar/tamogatok in Magyar Ispell source).
 #
 # ----------------
 #
-# Ez a szótár azon a szólistán és ragozási szabálygyûjteményen alapul,
-# amelyet Németh László és Godó Ferenc készített, és a GPL/LGPL/MPL licenc
-# alatt közzétett a http://magyarispell.sourceforge.net oldalon.
+# Ez a szÃ³tÃ¡r azon a szÃ³listÃ¡n Ã©s ragozÃ¡si szabÃ¡lygyÅ±jtemÃ©nyen alapul,
+# amelyet NÃ©meth LÃ¡szlÃ³ Ã©s GodÃ³ Ferenc kÃ©szÃ­tett, Ã©s a GPL/LGPL/MPL licenc
+# alatt kÃ¶zzÃ©tett a http://magyarispell.sourceforge.net oldalon.
 #
 # Magyar Ispell 1.9.1, 2026-02
 #
-# Köszönet illeti a következõket:
+# KÃ¶szÃ¶net illeti a kÃ¶vetkezÅ‘ket:
 #
-# Szántó Tamás <tszanto@mol.hu>,
-# Bíró Árpád <biro_arpad@yahoo.com>,
+# SzÃ¡ntÃ³ TamÃ¡s <tszanto@mol.hu>,
+# BÃ­rÃ³ ÃrpÃ¡d <biro_arpad@yahoo.com>,
 # Hilzinger Marcel <hili@suselinux.hu>,
 # Koblinger Egmont <egmont@cs.bme.hu>,
-# Trón Viktor <tron@coli.uni-sb.de>
+# TrÃ³n Viktor <tron@coli.uni-sb.de>
 # Fransoa Holop <fred@francis.artia.sk>,
-# Goldmann Eleonóra <eleonora46@gmx.net>
-# Rung András <rung@itm.bme.hu>
-# és még sokakat a magyar szólista bõvítéséért, javításáért,
-# és a ragozási szabálygyûjtemény hibáinak és
-# hiányosságainak feltárásáért!
-# (Lásd még a szotar/tamogatok könyvtárat a forrásban.)
+# Goldmann EleonÃ³ra <eleonora46@gmx.net>
+# Rung AndrÃ¡s <rung@itm.bme.hu>
+# Ã©s mÃ©g sokakat a magyar szÃ³lista bÅ‘vÃ­tÃ©sÃ©Ã©rt, javÃ­tÃ¡sÃ¡Ã©rt,
+# Ã©s a ragozÃ¡si szabÃ¡lygyÅ±jtemÃ©ny hibÃ¡inak Ã©s
+# hiÃ¡nyossÃ¡gainak feltÃ¡rÃ¡sÃ¡Ã©rt!
+# (LÃ¡sd mÃ©g a szotar/tamogatok kÃ¶nyvtÃ¡rat a forrÃ¡sban.)
 # 
 # ----------------
 
-NAME Magyar Ispell helyesírási szótár
+NAME Magyar Ispell helyesÃ­rÃ¡si szÃ³tÃ¡r
 LANG hu_HU
 HOME http://magyarispell.sourceforge.net
 VERSION Magyar 1.9.1
 SET ISO8859-2
-KEY öüó|qwertzuiopõú|asdfghjkléáû|íyxcvbnm
-TRY íóútaeslzánorhgkiédmyõpvöbucfjüûxwq-.&agrave;
+KEY Ã¶Ã¼Ã³|qwertzuiopÅ‘Ãº|asdfghjklÃ©Ã¡Å±|Ã­yxcvbnm
+TRY Ã­Ã³ÃºtaeslzÃ¡norhgkiÃ©dmyÅ‘pvÃ¶bucfjÃ¼Å±xwq-.&agrave;
 COMPOUNDMIN 1
 COMPOUNDFLAG Y
 COMPOUNDFORBIDFLAG %
 COMPOUNDPERMITFLAG @
-COMPOUNDSYLLABLE 6 aáeéiíoóöõuúüû
+COMPOUNDSYLLABLE 6 aÃ¡eÃ©iÃ­oÃ³Ã¶Å‘uÃºÃ¼Å±
 SYLLABLENUM klmc
 
 NOSUGGEST =
@@ -95,7 +95,7 @@ CHECKCOMPOUNDPATTERN lly ly
 CHECKCOMPOUNDPATTERN nny ny
 CHECKCOMPOUNDPATTERN ssz sz
 CHECKCOMPOUNDPATTERN tty ty
-CHECKCOMPOUNDPATTERN sz szerû
+CHECKCOMPOUNDPATTERN sz szerÅ±
 
 FORBIDDENWORD w
 WORDCHARS -.&permil;&sect;%&deg;0123456789&ndash;&euro;'&apos;&ffi;&ffl;&ff;&fi;&fl;
@@ -105,11 +105,11 @@ GENERATE (
 LEMMA_PRESENT )
 
 MAP 5
-MAP aá
-MAP eé
-MAP ií
-MAP oóöõ
-MAP uúüû
+MAP aÃ¡
+MAP eÃ©
+MAP iÃ­
+MAP oÃ³Ã¶Å‘
+MAP uÃºÃ¼Å±
 
 BREAK 10
 BREAK &ndash;
@@ -117,16 +117,16 @@ BREAK -
 BREAK ^-
 BREAK -$
 BREAK -beli$
-BREAK -féle$
+BREAK -fÃ©le$
 BREAK "
 BREAK &rquo;
 BREAK ?
 BREAK !
 
-# számok
-# 0. osztály: számjegyek
-# 1. osztály: számjegyek, %, ezrelékjel, °, §, számjegyek + . és toldalékolt alakjaik
-# 2. osztály: tizedesvesszõ
+# szÃ¡mok
+# 0. osztÃ¡ly: szÃ¡mjegyek
+# 1. osztÃ¡ly: szÃ¡mjegyek, %, ezrelÃ©kjel, Â°, Â§, szÃ¡mjegyek + . Ã©s toldalÃ©kolt alakjaik
+# 2. osztÃ¡ly: tizedesvesszÅ‘
 
 COMPOUNDRULE 2
 COMPOUNDRULE 0*1
@@ -137,7 +137,7 @@ COMPOUNDRULE 00*20*1
 # https://bugs.documentfoundation.org/show_bug.cgi?id=116072
 IGNORE ()]
 
-# f-ligatúrák
+# f-ligatÃºrÃ¡k
 
 ICONV 5
 ICONV &ffi; ffi
@@ -158,37 +158,37 @@ ICONV &fl; fl
 # - well-sorted suggestions
 
 REP 172
-REP í i
-REP i í
-REP ó o
-REP o ó
-REP o õ
-REP ú u
-REP u ú
-REP u û
-REP û ü
-REP ü û
+REP Ã­ i
+REP i Ã­
+REP Ã³ o
+REP o Ã³
+REP o Å‘
+REP Ãº u
+REP u Ãº
+REP u Å±
+REP Å± Ã¼
+REP Ã¼ Å±
 REP j ly
 REP ly j
-REP õ ö
-REP a ä # Handel->Händel
-REP n ñ # Poznan->Poznañ
-REP S © # Skoda->©koda
-REP s ¹ # skodás->¹kodás
-REP r ø # Dvorák->Dvoøák
-REP ra øá # Dvorak->Dvoøák
-REP l ³ # zloty->z³oty
-REP Lódz £ód¼ # Lódz ->£ód¼
-REP lódz ³ód¼ # lódzi ->³ód¼i
-REP Lodz £ód¼ # Lodz ->£ód¼
-REP lodz ³ód¼ # lodzi ->³ód¼i
+REP Å‘ Ã¶
+REP a Ã¤ # Handel->HÃ¤ndel
+REP n Å„ # Poznan->PoznaÅ„
+REP S Å  # Skoda->Å koda
+REP s Å¡ # skodÃ¡s->Å¡kodÃ¡s
+REP r Å™ # DvorÃ¡k->DvoÅ™Ã¡k
+REP ra Å™Ã¡ # Dvorak->DvoÅ™Ã¡k
+REP l Å‚ # zloty->zÅ‚oty
+REP LÃ³dz ÅÃ³dÅº # LÃ³dz ->ÅÃ³dÅº
+REP lÃ³dz Å‚Ã³dÅº # lÃ³dzi ->Å‚Ã³dÅºi
+REP Lodz ÅÃ³dÅº # Lodz ->ÅÃ³dÅº
+REP lodz Å‚Ã³dÅº # lodzi ->Å‚Ã³dÅºi
 REP oliere oli&egrave;re # Moli&egrave;re
-REP Angström &Aring;ngström # &Aring;ngström
-REP angström &aring;ngström # &aring;ngström
-REP &Otilde; Õ # hullámvonalas O az Õ helyett
-REP &otilde; õ # hullámvonalas o az õ helyett
-REP &Ucirc; Û # kalapos U az Û helyett
-REP &ucirc; û # kalapos u az û helyett
+REP AngstrÃ¶m &Aring;ngstrÃ¶m # &Aring;ngstrÃ¶m
+REP angstrÃ¶m &aring;ngstrÃ¶m # &aring;ngstrÃ¶m
+REP &Otilde; Å # hullÃ¡mvonalas O az Å helyett
+REP &otilde; Å‘ # hullÃ¡mvonalas o az Å‘ helyett
+REP &Ucirc; Å° # kalapos U az Å° helyett
+REP &ucirc; Å± # kalapos u az Å± helyett
 REP - &ndash;
 REP jj lly
 REP jj llj
@@ -203,8 +203,8 @@ REP nny nj
 REP tty tyj
 REP tty tj
 REP ttsz tsz # tettszik->tetszik
-REP ttsz tssz # tettszék->tetsszék
-REP ck dzk # óckodik->ódzkodik
+REP ttsz tssz # tettszÃ©k->tetsszÃ©k
+REP ck dzk # Ã³ckodik->Ã³dzkodik
 REP cc tsz # maracc->maratsz
 REP cc dsz # maracc->maradsz
 REP cc gysz
@@ -213,43 +213,43 @@ REP cs ds
 REP ccs ts
 REP ccs ds
 REP ccs gys
-REP g kd # csug->csukd, bög->bökd
-REP öss õs # erössen->erõsen, elösször->elõször
-REP öll õl # szöllõ->szõlõ, elölle->elõle
-REP ütt ût # hüttõ->hûtõ
-REP ijj íj # dijját->díját, hijján->híján
+REP g kd # csug->csukd, bÃ¶g->bÃ¶kd
+REP Ã¶ss Å‘s # erÃ¶ssen->erÅ‘sen, elÃ¶sszÃ¶r->elÅ‘szÃ¶r
+REP Ã¶ll Å‘l # szÃ¶llÅ‘->szÅ‘lÅ‘, elÃ¶lle->elÅ‘le
+REP Ã¼tt Å±t # hÃ¼ttÅ‘->hÅ±tÅ‘
+REP ijj Ã­j # dijjÃ¡t->dÃ­jÃ¡t, hijjÃ¡n->hÃ­jÃ¡n
 REP x ksz # box->boksz
 REP ksz x # falanksz->falanx
-REP xx xsz # kódexxel->kódexszel
+REP xx xsz # kÃ³dexxel->kÃ³dexszel
 REP xx kssz # boxxal->boksszal
-REP x xsz # kódexel->kódexszel
+REP x xsz # kÃ³dexel->kÃ³dexszel
 REP x kssz # boxal->boksszal
 REP sz c # licensz->licenc
 REP szt cet # licenszt->licencet
 REP ssz cc # licensszel->licenccel
-REP jl lj # tejles->teljes, éjlen->éljen
+REP jl lj # tejles->teljes, Ã©jlen->Ã©ljen
 REP gg g # heggeszt->hegeszt
-REP file fájl # file->fájl
-REP file- fájl # file-lal->fájllal
+REP file fÃ¡jl # file->fÃ¡jl
+REP file- fÃ¡jl # file-lal->fÃ¡jllal
 REP floppy flopi # floppy->flopi
-REP bájt byte # bájt->byte
-REP bájt byte- # bájtos->byte-os
-REP chh chcs # Madáchhal->Madáchcsal
-REP ll l # vállfaj->válfaj
-REP ny nny # menyország->mennyország
+REP bÃ¡jt byte # bÃ¡jt->byte
+REP bÃ¡jt byte- # bÃ¡jtos->byte-os
+REP chh chcs # MadÃ¡chhal->MadÃ¡chcsal
+REP ll l # vÃ¡llfaj->vÃ¡lfaj
+REP ny nny # menyorszÃ¡g->mennyorszÃ¡g
 REP nny ny # mennyhal->menyhal
-REP ivess íves # szivessen->szívesen
+REP ivess Ã­ves # szivessen->szÃ­vesen
 REP -cel -szel # AIDS-cel->AIDS-szel
-REP -cé -szé # AIDS-cé->AIDS-szé
-REP õrö ölrõ # elõröl->elölrõl
-REP õr ölr # elõrõl->elölrõl
-REP ölr õr # elölre->elõre
-REP egyenlõre egyelõre
-REP kábé kb.
+REP -cÃ© -szÃ© # AIDS-cÃ©->AIDS-szÃ©
+REP Å‘rÃ¶ Ã¶lrÅ‘ # elÅ‘rÃ¶l->elÃ¶lrÅ‘l
+REP Å‘r Ã¶lr # elÅ‘rÅ‘l->elÃ¶lrÅ‘l
+REP Ã¶lr Å‘r # elÃ¶lre->elÅ‘re
+REP egyenlÅ‘re egyelÅ‘re
+REP kÃ¡bÃ© kb.
 REP ss ss-s # Barossal->Baross-sal
 REP ss ss-sz # Gaussal->Gauss-szal
 REP ssz ss-sz # Gausszal->Gauss-szal
-REP ll ll-l # Böllel->Böll-lel
+REP ll ll-l # BÃ¶llel->BÃ¶ll-lel
 REP nn nn-n # Mannal->Mann-nal
 REP mm mm-m # Grimmel->Grimm-mel
 REP tt tt-t # Beckettel->Beckett-tel
@@ -258,75 +258,75 @@ REP Nin Ni&ntilde;
 REP Sao S&atilde;o
 REP exo ex&oslash; # Nexo->Nex&oslash;
 REP Babes Babe&0219;
-REP Babeº Babe&0219;
-REP satöbbi s_a_többi
-REP helység helyiség
-REP helyiség helység
-REP kéz kész
-REP köd köt
-REP áfa- áfa
-REP s ss # felelõs+ég->felelõsség
-REP csakazértis csak_azért_is
-REP fõ fõ_
-REP papír papír_
-REP közben _közben
-REP jellegû _jellegû
-REP formájú _formájú
-REP nagyságú _nagyságú
-REP vég _vég
+REP BabeÅŸ Babe&0219;
+REP satÃ¶bbi s_a_tÃ¶bbi
+REP helysÃ©g helyisÃ©g
+REP helyisÃ©g helysÃ©g
+REP kÃ©z kÃ©sz
+REP kÃ¶d kÃ¶t
+REP Ã¡fa- Ã¡fa
+REP s ss # felelÅ‘s+Ã©g->felelÅ‘ssÃ©g
+REP csakazÃ©rtis csak_azÃ©rt_is
+REP fÅ‘ fÅ‘_
+REP papÃ­r papÃ­r_
+REP kÃ¶zben _kÃ¶zben
+REP jellegÅ± _jellegÅ±
+REP formÃ¡jÃº _formÃ¡jÃº
+REP nagysÃ¡gÃº _nagysÃ¡gÃº
+REP vÃ©g _vÃ©g
 REP be be_
-REP módra _módra
-REP ^nagy nagy_ #->nagyfokú->nagy fokú
-REP ^kis kis_ # kisfokú->kis fokú
-REP ^magas magas_ # magasfokú->magas fokú
-REP ^másfél másfél_ # másfélezer->másfél ezer
+REP mÃ³dra _mÃ³dra
+REP ^nagy nagy_ #->nagyfokÃº->nagy fokÃº
+REP ^kis kis_ # kisfokÃº->kis fokÃº
+REP ^magas magas_ # magasfokÃº->magas fokÃº
+REP ^mÃ¡sfÃ©l mÃ¡sfÃ©l_ # mÃ¡sfÃ©lezer->mÃ¡sfÃ©l ezer
 REP kor _kor
-REP ószer ó_szer # rovarirtószer->rovarirtó szer (ésszerû->és szerû miatt ószer)
-REP õszer õ_szer
+REP Ã³szer Ã³_szer # rovarirtÃ³szer->rovarirtÃ³ szer (Ã©sszerÅ±->Ã©s szerÅ± miatt Ã³szer)
+REP Å‘szer Å‘_szer
 REP pinyin pinjin
 REP alak _alak
-REP pár pár_
+REP pÃ¡r pÃ¡r_
 REP asszony _asszony
-REP úr _úr
+REP Ãºr _Ãºr
 REP urak _urak
 REP nimbusz imbusz
 REP asszem azt_hiszem
-REP oregánó szurokfû
+REP oregÃ¡nÃ³ szurokfÅ±
 REP &mu; &micro;
-REP uticél úti_cél
+REP uticÃ©l Ãºti_cÃ©l
 REP chips csipsz
-REP örökkön-örökké örökkön_örökké
-REP élethalálharc élet-halál_harc
-REP napéjegyenlõség nap-éj_egyenlõség
+REP Ã¶rÃ¶kkÃ¶n-Ã¶rÃ¶kkÃ© Ã¶rÃ¶kkÃ¶n_Ã¶rÃ¶kkÃ©
+REP Ã©lethalÃ¡lharc Ã©let-halÃ¡l_harc
+REP napÃ©jegyenlÅ‘sÃ©g nap-Ã©j_egyenlÅ‘sÃ©g
 REP piercing pirszing
-REP ^agyõ$ adieu
+REP ^agyÅ‘$ adieu
 REP etil etil-
 REP dioxid -dioxid
 REP monoxid -monoxid
 REP szallag szalag-
-REP ue ü # fondue->fondü, fonduet->fondüt
-REP ue- ü # fondue-t->fondüt
-REP ^rám rám_ # rámváró->rám váró
-REP ^rád rád_ # rádváró->rád váró
-REP ^hû hûe # hûn->hûen, hûk->hûek
-REP ^orr orv # orrvadász->orvvadász
+REP ue Ã¼ # fondue->fondÃ¼, fonduet->fondÃ¼t
+REP ue- Ã¼ # fondue-t->fondÃ¼t
+REP ^rÃ¡m rÃ¡m_ # rÃ¡mvÃ¡rÃ³->rÃ¡m vÃ¡rÃ³
+REP ^rÃ¡d rÃ¡d_ # rÃ¡dvÃ¡rÃ³->rÃ¡d vÃ¡rÃ³
+REP ^hÅ± hÅ±e # hÅ±n->hÅ±en, hÅ±k->hÅ±ek
+REP ^orr orv # orrvadÃ¡sz->orvvadÃ¡sz
 REP tejhatal teljhatal # tejhatalom->teljhatalom
 REP kissebb kisebb
-REP élõ élõ_
-REP belsõ belsõ_
-REP elõzõ elõzõ_
-REP következõ következõ_
+REP Ã©lÅ‘ Ã©lÅ‘_
+REP belsÅ‘ belsÅ‘_
+REP elÅ‘zÅ‘ elÅ‘zÅ‘_
+REP kÃ¶vetkezÅ‘ kÃ¶vetkezÅ‘_
 REP katolikus katolikus_
-REP hasonló hasonló_
-REP megfelelõ megfelelõ_
-REP tartozó tartozó_
-REP növekvõ növekvõ_
-REP csökkenõ csökkenõ_
-REP jól jól_
+REP hasonlÃ³ hasonlÃ³_
+REP megfelelÅ‘ megfelelÅ‘_
+REP tartozÃ³ tartozÃ³_
+REP nÃ¶vekvÅ‘ nÃ¶vekvÅ‘_
+REP csÃ¶kkenÅ‘ csÃ¶kkenÅ‘_
+REP jÃ³l jÃ³l_
 REP ssel$ sszel
 REP ssal$ sszal
-REP ssé$ sszé
-REP ssá$ sszá
+REP ssÃ©$ sszÃ©
+REP ssÃ¡$ sszÃ¡
 REP ^megfed megfedd
-REP lengépszer legnépszer REP # lengépszerûbb->legnépszerûbb
-REP ^végkép$ végképp
+REP lengÃ©pszer legnÃ©pszer REP # lengÃ©pszerÅ±bb->legnÃ©pszerÅ±bb
+REP ^vÃ©gkÃ©p$ vÃ©gkÃ©pp

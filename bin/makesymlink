@@ -1,10 +1,10 @@
 #!/bin/sh
-# szimbolikus kˆtÈsek lÈtrehoz·sa a szotar.konf alapj·n
+# szimbolikus k√∂t√©sek l√©trehoz√°sa a szotar.konf alapj√°n
 # make symlinks for setting dictionary modules
 # see dic.conf
 #
-# $1: a szÛt·r helye / dictionary location
-# $2: munkakˆnyvt·r / working directory (default: ./)
+# $1: a sz√≥t√°r helye / dictionary location
+# $2: munkak√∂nyvt√°r / working directory (default: ./)
 # $3: szotar.konf (default: szotar.konf)
 export LC_ALL=C
 . ./config
@@ -15,13 +15,13 @@ CATUTF="bin/catutf"
 if [ ! -d $WRKDIR ]; then
 	mkdir -p $WRKDIR
 	if [ $? -ne 0 ]; then
-		echo "nem siker¸lt kialakÌtani a munkateret" | $CATUTF
+		echo "nem siker√ºlt kialak√≠tani a munkateret" | $CATUTF
 		exit 1
 	fi
 fi
 
 if [ "$3" = "" ]; then
-	echo "konfigur·ciÛs ·llom·ny nincs megadva, alapÈrtelmezett a szotar.konf" | $CATUTF
+	echo "konfigur√°ci√≥s √°llom√°ny nincs megadva, alap√©rtelmezett a szotar.konf" | $CATUTF
 fi
 
 DICCONF=${2:-"szotar.konf"}

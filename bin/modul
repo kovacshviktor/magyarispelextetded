@@ -1,22 +1,22 @@
 #!/bin/sh
 # modul
-# modulv·laszt·si men¸ a Magyar Ispellhez
+# modulv√°laszt√°si men√º a Magyar Ispellhez
 # module selection menu for Magyar Ispell
 #
 #	Version 1.2 (2002.11.22.)
 #	Version 1.1 (2002.09.06.) 
 #	Version 1.0 (2002.07.30.) 
 #
-#	(c) Copyright 2002 L·szlÛ NÈmeth, All Rights Reserved
+#	(c) Copyright 2002 L√°szl√≥ N√©meth, All Rights Reserved
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the BSD License (see http://www.opensource.org)
 #
-# $1: a szÛt·r helye / dictionary location
+# $1: a sz√≥t√°r helye / dictionary location
 export LC_ALL=C
 
 if [ "$1" = "" ]; then
-	echo "A szÛt·r helyÈnek megad·sa kˆtelezı (pl. ./szotar)"
+	echo "A sz√≥t√°r hely√©nek megad√°sa k√∂telez≈ë (pl. ./szotar)"
 	exit 1
 fi
 
@@ -55,7 +55,7 @@ makemenu() {
 }
 
 if [ "$2" = "uj" ]; then
-	echo_n "⁄j modulkˆnyvt·r neve (kezdı al·h˙z·sjel nÈlk¸l): _"
+	echo_n "√öj modulk√∂nyvt√°r neve (kezd≈ë al√°h√∫z√°sjel n√©lk√ºl): _"
 	read D
 
 	if [ "$D" = "" ]; then
@@ -65,7 +65,7 @@ if [ "$2" = "uj" ]; then
 	mkdir "_$D"
 
 	if [ $? -ne 0 ]; then
-		echo "==> A kˆnyvt·r lÈtrehoz·sa nem siker¸lt."
+		echo "==> A k√∂nyvt√°r l√©trehoz√°sa nem siker√ºlt."
 		exit 1
 	fi
 
@@ -80,12 +80,12 @@ if [ "$2" = "uj" ]; then
 fi
 
 
-CANCEL="mÈgsem: kilÈpÈs - exit"
-OK="kÈsz: szÛt·rkÈszÌtÈs (make all)"
-HELP="segÌtsÈg - help"
-DESC="modulok leÌr·sa - about modules"
-TITLE1=" A nyÌllal jelˆlt modulok ker¸lnek be a szÛt·rba."
-TITLE2=" V·ltoztatni a megfelelı modul sz·m·nak megad·s·val lehet."
+CANCEL="m√©gsem: kil√©p√©s - exit"
+OK="k√©sz: sz√≥t√°rk√©sz√≠t√©s (make all)"
+HELP="seg√≠ts√©g - help"
+DESC="modulok le√≠r√°sa - about modules"
+TITLE1=" A ny√≠llal jel√∂lt modulok ker√ºlnek be a sz√≥t√°rba."
+TITLE2=" V√°ltoztatni a megfelel≈ë modul sz√°m√°nak megad√°s√°val lehet."
 
 # start of script
 
@@ -96,7 +96,7 @@ export LC_ALL
 
 clear
 echo
-echo "<<<< Magyar Ispell helyesÌr·si szÛt·r moduljainak kiv·laszt·sa >>>>"
+echo "<<<< Magyar Ispell helyes√≠r√°si sz√≥t√°r moduljainak kiv√°laszt√°sa >>>>"
 
 while true; do
 	echo
@@ -110,9 +110,9 @@ while true; do
 		echo "Kikapcsolom `nevelo $dirname` \"$dirname\" modult..."
 		rm -f `capitalize $dirname`
 		if [ $? -ne 0 ]; then
-			echo Nem siker¸lt.
+			echo Nem siker√ºlt.
 		else
-			echo KÈsz.
+			echo K√©sz.
 		fi
 		break
 		;;
@@ -122,7 +122,7 @@ while true; do
 		export LC_ALL
 		exit 1
 		;;
-	"$OK") # kilÈp
+	"$OK") # kil√©p
 		LC_ALL=$LC_SAVE
 		export LC_ALL
 		exit 0
@@ -139,12 +139,12 @@ while true; do
 			echo "Bekapcsolom `nevelo $i` \"$i\" modult..."
 			ln -s -f _$i `capitalize $i`
 			if [ $? -ne 0 ]; then
-				echo Nem siker¸lt.
+				echo Nem siker√ºlt.
 			else
-				echo KÈsz.
+				echo K√©sz.
 			fi
 		else
-			echo "Nincs ilyen men¸pont."
+			echo "Nincs ilyen men√ºpont."
 		fi
 		break
 		;;

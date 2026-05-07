@@ -1,5 +1,5 @@
 #!/bin/sh
-# sort by ends of words, Németh László <nemeth@gyorsposta.hu>
+# sort by ends of words, NÃ©meth LÃ¡szlÃ³ <nemeth@gyorsposta.hu>
 # Usage: tros < file >file.out
 reverse () {
     tac -r -s '[^\0]' |

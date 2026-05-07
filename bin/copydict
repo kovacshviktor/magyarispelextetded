@@ -1,14 +1,14 @@
 #!/bin/sh
 export LC_ALL=C
-# szÛt·rak egybem·sol·sa 0.1
+# sz√≥t√°rak egybem√°sol√°sa 0.1
 # merge dictionaries
 #
-# $1: a szÛt·r helye / dictionary location
-# $2: munkakˆnyvt·r / working directory (default: ./)
+# $1: a sz√≥t√°r helye / dictionary location
+# $2: munkak√∂nyvt√°r / working directory (default: ./)
 # $3: spellchecker (default: ISPELL)
 
 if [ "$1" = "" ]; then
-	echo "A szÛt·r helyÈnek megad·sa kˆtelezı (pl. ./szotar)"
+	echo "A sz√≥t√°r hely√©nek megad√°sa k√∂telez≈ë (pl. ./szotar)"
 	exit 1
 fi
 
@@ -21,13 +21,13 @@ WRKDIR=${2:-"./"}
 if [ ! -d $WRKDIR ]; then
 	mkdir -p $WRKDIR
 	if [ $? -ne 0 ]; then
-		echo "nem siker¸lt kialakÌtani a munkateret"
+		echo "nem siker√ºlt kialak√≠tani a munkateret"
 		exit 1
 	fi
 fi
 
 if [ "$3" = "" ]; then
-	echo "szÛt·rtÌpus nincs megadva, default: ISPELL"
+	echo "sz√≥t√°rt√≠pus nincs megadva, default: ISPELL"
 fi
 
 SPELL=${3:-"ISPELL"}

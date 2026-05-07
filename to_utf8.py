@@ -44,6 +44,9 @@ def main(root: str) -> None:
     root_path = Path(root)
 
     for path in root_path.rglob("*"):
+        if ".git" in path.parts:
+            continue
+
         if not path.is_file():
             continue
 
@@ -57,6 +60,8 @@ def main(root: str) -> None:
             convert_iso_8859_2_to_utf8(path)
         except UnicodeDecodeError:
             print(f"Nem ISO-8859-2 vagy hibás fájl: {path}")
+        except PermissionError:
+            print(f"Nincs jogosultság: {path}")
 
 if __name__ == "__main__":
     main(".")

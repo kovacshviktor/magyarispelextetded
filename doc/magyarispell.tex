@@ -1,7 +1,7 @@
 %& --translate-file=cp8bit.tcx
-% papírméret és alapértelmezett betûméret:
+% papÃ­rmÃ©ret Ã©s alapÃ©rtelmezett betÅ±mÃ©ret:
 \documentclass[12pt, hungarian, a4paper, oneside]{book}
-% magyar nyelvi támogatás:
+% magyar nyelvi tÃ¡mogatÃ¡s:
 \usepackage[latin2]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[magyar]{babel}
@@ -12,7 +12,7 @@
 \usepackage{multicol}
 \usepackage{url}
 %\usepackage[dvipdf]{graphicx}
-% fejléc és lábléc támogatás:
+% fejlÃ©c Ã©s lÃ¡blÃ©c tÃ¡mogatÃ¡s:
 \usepackage{fancyhdr}
 \usepackage[normalem]{ulem}
 \usepackage{color}
@@ -30,7 +30,7 @@
 \begin{tabular}{p{17.5cc}p{17.5cc}}#1&#2\end{tabular}
 }
 
-% alapértelmezett betûtípusok beállítása:
+% alapÃ©rtelmezett betÅ±tÃ­pusok beÃ¡llÃ­tÃ¡sa:
 %\usepackage{mathptm}
 %\renewcommand{\rmdefault}{phv}
 %\renewcommand{\ttdefault}{pcr}
@@ -57,12 +57,12 @@
 
 \begin{document}
 
-\hyphenation{open-of-fice vas-árú}
+\hyphenation{open-of-fice vas-Ã¡rÃº}
 
-% oldalbeállítás:
-% fejléc és lábléc beállítása:
+% oldalbeÃ¡llÃ­tÃ¡s:
+% fejlÃ©c Ã©s lÃ¡blÃ©c beÃ¡llÃ­tÃ¡sa:
 \pagestyle{fancy}
-\lhead{Magyar Ispell dokumentáció \ \ \the\year. \the\month. \the\day.}
+\lhead{Magyar Ispell dokumentÃ¡ciÃ³ \ \ \the\year. \the\month. \the\day.}
 \rhead{}
 \renewcommand{\headrulewidth}{0.4dd}
 \lfoot{}
@@ -70,21 +70,21 @@
 \cfoot{\thepage}
 \renewcommand{\footrulewidth}{0.4dd}
 
-% címoldal:
-\title{Magyar Ispell dokumentáció}
-\author{Németh László}
+% cÃ­moldal:
+\title{Magyar Ispell dokumentÃ¡ciÃ³}
+\author{NÃ©meth LÃ¡szlÃ³}
 \date{2003. november}
 \maketitle
 
-% tartalomjegyzék:
+% tartalomjegyzÃ©k:
 %\pagenumbering{roman}
-\stepcounter{page} % így egyszerûbb a lapra ugrás xdviben
+\stepcounter{page} % Ã­gy egyszerÅ±bb a lapra ugrÃ¡s xdviben
 \thispagestyle{fancy}
 \tableofcontents
 \thispagestyle{fancy}
 \newpage
 
-% törzsszöveg:
+% tÃ¶rzsszÃ¶veg:
 % ------------
 %\pagenumbering{arabic}
 \parskip=6dd
@@ -107,7 +107,7 @@
 \nocite{manispell}
 \nocite{papp}
 \nocite{jakab}
-\addcontentsline{toc}{chapter}{Irodalomjegyzék}
+\addcontentsline{toc}{chapter}{IrodalomjegyzÃ©k}
 \bibliography{hu}
 \bibliographystyle{hplain}
 

@@ -2,7 +2,7 @@
 # fonevek 0.1
 # nouns
 #
-# $1: a Magyar Ispell gyökérkönyvtára / Magyar Ispell root directory
+# $1: a Magyar Ispell gyÃ¶kÃ©rkÃ¶nyvtÃ¡ra / Magyar Ispell root directory
 # $2: spellchecker
 export LC_ALL=C
 
@@ -18,16 +18,16 @@ SPELL=${2:-"ISPELL"}
 
 cd $WRKDIR || exit 1
 
-# fõnevek
+# fÅ‘nevek
 cat fonev.1 | rmfld | awk 'length()>0{print $0 "\t[noun]{+[NOM]}"}' >>$DICT
 cut -f 1 fonev_morfo.2 | rmfld | awk 'length()>0{print $0 "\t[noun]{+[NOM]}"}' >>$DICT
 cut -f 1 fonev_morfo2.2 | rmfld | awk 'length()>0{print $0 "\t[noun]{+[NOM]}"}' >>$DICT
 
-# melléknevek
+# mellÃ©knevek
 cat melleknev.1 | rmfld | awk 'length()>0{print "[adj]" $0 "\t[adj]{+[NOM]}"}' >>$DICT
 
 # tulajdonnevek
 cut -f 1 tulajdonnev.2 tulajdonnev_geo.2 | rmfld | awk 'length()>0{print $0 "\t[noun_prs]{+[NOM]}"}' >>$DICT
 
-# igék
+# igÃ©k
 cat ige_alanyi.1 ige_targy.1 | rmfld | awk 'length()>0{print "[vrb]" $0 "\t[vrb]{+[PRES_INDIC_INDEF_SG_3]}"}' >>$DICT
