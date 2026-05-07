@@ -1,36 +1,36 @@
 > kutya
 kutya<NOUN>
-> kutyÃ¡ink
+> kutyÄ‚Ä„ink
 kutya<NOUN<PLUR><POSS<1><PLUR>>>
-> kutyÃ¡i
+> kutyÄ‚Ä„i
 kutya<NOUN<ANP<PLUR>>>
-> kutyáikéit
+> kutyÃ¡ikÃ©it
 kutya<NOUN<PLUR><POSS<PLUR>><ANP<PLUR>><CAS<ACC>>>
-> kutyáznátok
-kutyázik<VERB<COND><PERS<2>><PLUR>>
+> kutyÃ¡znÃ¡tok
+kutyÃ¡zik<VERB<COND><PERS<2>><PLUR>>
 kutya<NOUN[z]VERB<COND><PERS<2>><PLUR>>
 kutya<NOUN[z]VERB<COND><PERS<2>><PLUR><DEF>>
-> mászik
-mászik<VERB>
-> mászom
-mászik<VERB<PERS<1>>>
-mászik<VERB<PERS<1>><DEF>>
-> mászhatnának
-mászik<VERB<MODAL><COND><PLUR>>
-> megmászniok
-meg<PREF>mászik<VERB<INF><PERS><PLUR>>
+> mÃ¡szik
+mÃ¡szik<VERB>
+> mÃ¡szom
+mÃ¡szik<VERB<PERS<1>>>
+mÃ¡szik<VERB<PERS<1>><DEF>>
+> mÃ¡szhatnÃ¡nak
+mÃ¡szik<VERB<MODAL><COND><PLUR>>
+> megmÃ¡szniok
+meg<PREF>mÃ¡szik<VERB<INF><PERS><PLUR>>
 > embereinket
 ember<NOUN<PLUR><POSS<1><PLUR>><CAS<ACC>>>
-> anyámékéról
+> anyÃ¡mÃ©kÃ©rÃ³l
 anya<NOUN<POSS<1>><PLUR<FAM>><ANP><CAS<DEL>>>
-> jókat
-jó<ADJ<PLUR><CAS<ACC>>>
+> jÃ³kat
+jÃ³<ADJ<PLUR><CAS<ACC>>>
 > pirosakat
 piros<ADJ<PLUR><CAS<ACC>>>
-> pirosról
+> pirosrÃ³l
 piros<ADJ<CAS<DEL>>>
-> éve
+> Ã©ve
 eszik<VERB[vA]ADV>
-év<NOUN<POSS>>
-> csináltakat
-csinál<VERB[tt]ADJ<PLUR><CAS<ACC>>>
+Ã©v<NOUN<POSS>>
+> csinÃ¡ltakat
+csinÃ¡l<VERB[tt]ADJ<PLUR><CAS<ACC>>>
