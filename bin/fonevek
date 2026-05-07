@@ -249,7 +249,7 @@ awk 'match($0, /hy:([^ \t]*)\|[^ \t]*/,m) && m[0]!~/\|.*\|/ && m[0]!~/[-.=]/ && 
 # also -sz -> -s, -zs -> s, z (é=thosszal -> hy:é=thos -> é=thosz-szal
 match($0, /hy:([^ \t]*)([ae]|sz|zs)([^ \t]*)/,m) && length(m[3])==0{$0=gensub("hy:[^ \t]*", "hy:"m[1] ((length(m[2])>1)?substr(m[2],1,1):""), 1)}
 {print}' | sed 's/ *#.*$//' >mezok2.txt
-cat mezok2.txt | iconv -f latin2 -t utf-8 | sed -f $BINDIR/l1_u8.sed >mezok_utf.txt
+cat mezok2.txt | sed -f $BINDIR/l1_u8.sed >mezok_utf.txt
 echo_n .
 
 echo " Rendben."

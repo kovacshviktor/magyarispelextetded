@@ -12,7 +12,7 @@ o=$2
 charset=$3
 localdir="$(dirname $0)"
 
-paste <(sed 's#[\t/].*##' $i.dic | iconv -f ${charset} -t UTF-8) <(sed 's#^[^\t/]*##' $i.dic) |
+paste <(sed 's#[\t/].*##' $i.dic ) <(sed 's#^[^\t/]*##' $i.dic) |
 sed "s#`echo -e '\t'`/#/#" | sed -f "$localdir"/l1_u8.sed >$o.tmp
 
 paste <(sed 's#	.*##' $o.tmp) <(sed 's#^[^	]*##' $o.tmp  |
