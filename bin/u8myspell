@@ -15,9 +15,11 @@ localdir="$(dirname $0)"
 paste <(sed 's#[\t/].*##' $i.dic ) <(sed 's#^[^\t/]*##' $i.dic) |
 sed "s#`echo -e '\t'`/#/#" | sed -f "$localdir"/l1_u8.sed >$o.tmp
 
-paste <(sed 's#	.*##' $o.tmp) <(sed 's#^[^	]*##' $o.tmp  |
-sed "s#`echo -e '\t'`/#/#;s/		/	/" | sed -f "$localdir"/l1_u8.sed >$o.dic
-
+paste <(sed 's#	.*##' "$o.tmp") \
+      <(sed 's#^[^	]*##' "$o.tmp" |
+        sed "s#$(printf '\t')/#/#;s/		/	/" |
+        sed -f "$localdir/l1_u8.sed") \
+      > "$o.dic"
 cat $i.aff | awk '
 /^SET/{
 print "SET UTF-8" >"u8.beg"
@@ -49,9 +51,9 @@ print"" >"u8.cont";
 print"" >"u8.mid2";
 print"" >"u8.morph";
 print"" >"u8.end"}'
-iconv -f ${charset} -t UTF-8 u8.mid >u8.mid3
-iconv -f ${charset} -t UTF-8 u8.mid2 >u8.mid4
-iconv -f ${charset} -t UTF-8 u8.morph >u8.morph2
+cp u8.mid u8.mid3
+cp u8.mid2 u8.mid4
+cp u8.morph u8.morph2
 paste u8.{beg,mid3,cont,mid4,morph2,end} | sed 's#/	/#/#' | tr '\t' ' ' |
 sed -f "$localdir"/l1_u8.sed >$o.aff
 rm u8.{beg,mid,cont,mid2,morph,end,mid3,mid4,morph2} $o.tmp
