@@ -71,6 +71,7 @@ CATUTF="cat"
 default: myspell
 	@cat $(ROOTDIR)/logo.txt | $(CATUTF)
 
+
 # modulválasztós, menüs interfész
 menu:
 	@vi szotar.konf
@@ -219,7 +220,7 @@ install_all: install_myspell install_ispell install_OO
 #ispell: magyar4ispell.hash
 
 # hu_HU.aff myspell ragozási táblázat és a hu_HU.dic szótár előállítása
-myspell: magyar4myspell.dict magyar.aff hu_HU.aff hu_HU.dic alias kr
+myspell: magyar4myspell.dict magyar.aff hu_HU.aff hu_HU.dic alias kr 
 
 # - hu_HU.aff myspell ragozási táblázat előállítása az összes
 #   lehetséges cserebetűvel
